@@ -1,3 +1,5 @@
+import { Link } from "./links.types";
+
 export enum projectTypes {
   website = "website",
   design = "design",
@@ -9,6 +11,9 @@ export enum projectTags {
   react = "React",
   php = "PHP",
   content = "Content Management",
+  openSource = "Open-Source",
+  contribution = "Contribution",
+  wip = "Work in Progress",
 }
 
 export interface Project {
@@ -28,6 +33,7 @@ export interface Project {
   previewImage?: string;
   /** A collection of images from this project */
   gallery?: string[];
+  tooltipLabel?: string;
 }
 
 export const createProject = (data: Project): Project => {

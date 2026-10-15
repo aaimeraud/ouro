@@ -44,7 +44,10 @@ const ProjectCard = ({ project }: { project: Project }) => {
             {project.description.toLowerCase()}
           </span>
         </div>
-        <Separator id="sep" className={cn("md:hidden dark:bg-neutral-700 bg-neutral-200  ")} />
+        <Separator
+          id="sep"
+          className={cn("bg-neutral-200 md:hidden dark:bg-neutral-700")}
+        />
         <div className={cn(styles.projectInfo.div, "h-full align-bottom")}>
           <span className={cn(styles.projectInfo.year)}>{project.year}</span>
           <span

@@ -9,6 +9,35 @@ import {
 
 const projects: Project[] = [
   createProject({
+    slug: "toolbox",
+    name: "t5x (toolbox)",
+    type: type.website,
+    description: "A free collection of dev & design tools",
+    tags: [tag.react, tag.uiUx, tag.openSource, tag.wip],
+    link: createLink({
+      url: "https://github.com/aaimeraud/t5x",
+      label: "Toolbox",
+      type: LinkType.external,
+    }),
+    year: "2026",
+    tooltipLabel: "started this in october, give me a few weeks ^^",
+  }),
+  createProject({
+    slug: "ouro",
+    name: "ouro(boros)",
+    type: type.website,
+    description: "This very website ^^",
+    tags: [tag.next, tag.react, tag.uiUx, tag.wip],
+    link: createLink({
+      url: "https://fortunedaniel.com/",
+      label: "aaimeraud",
+      type: LinkType.internal,
+    }),
+    year: "2026",
+    tooltipLabel:
+      "I've finally made this fourth redesign in almost a day after a long time of procrastination...",
+  }),
+  createProject({
     slug: "aimerss",
     name: "AimeRSS",
     type: type.website,
@@ -22,20 +51,6 @@ const projects: Project[] = [
     year: "2026",
     tooltipLabel:
       "one shotted this one, i have to work on the ui i know lol...",
-  }),
-  createProject({
-    slug: "toolbox",
-    name: "t5x",
-    type: type.design,
-    description: "A free collection of dev & design tools",
-    tags: [tag.react, tag.uiUx, tag.openSource, tag.wip],
-    link: createLink({
-      url: "https://github.com/aaimeraud/t5x",
-      label: "Toolbox",
-      type: LinkType.external,
-    }),
-    year: "2026",
-    tooltipLabel: "started in october, give me a few weeks ^^",
   }),
 ];
 

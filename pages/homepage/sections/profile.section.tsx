@@ -36,7 +36,7 @@ const Profile = ({ profilePicture = false }: ProfileProps) => {
               }
             />
             <TooltipContent side="right" sideOffset={10}>
-              you can call me
+              but you can call me
               <span className="font-bold">
                 {aaimeraud.profile.fname.toLowerCase()}
               </span>

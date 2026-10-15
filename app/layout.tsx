@@ -20,8 +20,9 @@ const arrow = M_PLUS_Rounded_1c({
 });
 
 export const metadata: Metadata = {
-  title: "'raud",
-  description: "aaimeraud is a web developer. ",
+  title: "aaimeraud",
+  description:
+    "I make websites, i'm learning to make software and try getting better at it everyday.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -30,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geist.variable} ${geistMono.variable} ${arrow.variable} antialiased`}
     >
-      <body className="bg-neutral-50 h-svh m-auto dark:bg-neutral-900">
+      <body className="m-auto h-svh bg-neutral-50 dark:bg-neutral-900">
         <TooltipProvider>{children}</TooltipProvider>
       </body>
     </html>

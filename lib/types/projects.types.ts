@@ -28,11 +28,12 @@ export interface Project {
   tags: projectTags[];
   year: string;
   /** A link to this project */
-  link?: string;
+  link?: Link;
   /** A preview image for this project */
   previewImage?: string;
   /** A collection of images from this project */
   gallery?: string[];
+
   tooltipLabel?: string;
 }
 

@@ -84,14 +84,6 @@ class Aimeraud {
     role: "Frontend developer",
     resumeUrl: "/public/pdf/daniel_fortune_[public].pdf",
     status: {
-      job: {
-        message: "Work-Study @ ComKani",
-        link: createLink({
-          label: "ComKani",
-          url: "https://comkani.fr",
-          type: LinkType.external,
-        }),
-      },
       studies: {
         level: "Bachelor 3",
         link: createLink({

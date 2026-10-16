@@ -27,8 +27,9 @@ export const en = {
     intro:
       "i make websites. i'm learning to make useful and meaningful software, and i'm trying to get better at it every day.",
     currently: "i'm currently a",
-    role: "full-stack developer apprentice in Paris,",
+    role: "full-stack web developer apprentice in Paris,",
     jobTooltip: "at",
+    company: "a Parisian communication agency",
     stack: "mostly working with WordPress and Next.js.",
     learning: "also learning python.",
   },

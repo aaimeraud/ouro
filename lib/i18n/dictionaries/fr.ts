@@ -24,8 +24,9 @@ export const fr: Dictionary = {
     intro:
       "je fais des sites web. j'apprends à créer des logiciels utiles et qui ont du sens, et j'essaie de m'améliorer chaque jour.",
     currently: "je suis actuellement",
-    role: "alternant développeur full-stack à Paris,",
+    role: "alternant développeur web full-stack à Paris,",
     jobTooltip: "chez",
+    company: "une agence de communication parisienne",
     stack: "je travaille surtout avec WordPress et Next.js.",
     learning: "j'apprends aussi python.",
   },

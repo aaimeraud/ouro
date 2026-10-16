@@ -19,7 +19,6 @@ import { localePaths, locales, type Locale } from "@/lib/i18n/config";
 import { cn } from "cn";
 import { Bot, Check, FileText, Languages } from "lucide-react";
 import Link from "next/link";
-import { aaimeraud } from "./aaimeraud.data";
 
 const styles = {
   buttons: cn(
@@ -196,13 +195,7 @@ export const getContent = (locale: Locale) => {
                 render={<span className="underline">{t.about.role}</span>}
               />
               <TooltipContent sideOffset={10} className={"hover:text-blue-400"}>
-                {t.about.jobTooltip}{" "}
-                <a
-                  href={aaimeraud.profile.status.job.link.url}
-                  className="after:font-bagel-fat after:content-['_↗']"
-                >
-                  {aaimeraud.profile.status.job.link.label}
-                </a>
+                {t.about.jobTooltip} {t.about.company}
               </TooltipContent>
               <br /> {t.about.stack}
             </p>

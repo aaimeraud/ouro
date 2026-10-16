@@ -32,7 +32,9 @@ export const fr: Dictionary = {
   ai: {
     groupLabel: "Boutons liés à l'IA",
     resume: "mon cv",
+    resumeShort: "CV",
     askButton: "hi-robot",
+    askShort: "IA",
     askTooltipTitle: "Tu cherches à recruter ?",
     askTooltipBody: "Laisse une IA te donner mes forces et mes faiblesses ^^",
     askClaude: "Demander à Claude",

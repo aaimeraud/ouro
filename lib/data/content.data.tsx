@@ -68,7 +68,7 @@ export const getContent = (locale: Locale) => {
               aria-label={t.ai.groupLabel}
               className="items-center align-middle"
             >
-              {/* On mobile the labels are screen-reader only, so each button shows just its icon. */}
+              {/* On mobile each button shows its icon and a short label; from md on, the full label. */}
               <Button
                 className={cn(styles.buttons)}
                 size={"default"}
@@ -76,7 +76,8 @@ export const getContent = (locale: Locale) => {
                 render={<Link href="/pdf/daniel_fortune_[public].pdf" />}
               >
                 <FileText className="md:hidden" />
-                <span className="sr-only md:not-sr-only">{t.ai.resume}</span>
+                <span className="md:hidden">{t.ai.resumeShort}</span>
+                <span className="hidden md:inline">{t.ai.resume}</span>
               </Button>
 
               <DropdownMenu>
@@ -87,7 +88,8 @@ export const getContent = (locale: Locale) => {
                         render={
                           <Button className={cn(styles.buttons)} size={"default"}>
                             <Bot />
-                            <span className="sr-only md:not-sr-only">
+                            <span className="md:hidden">{t.ai.askShort}</span>
+                            <span className="hidden md:inline">
                               {t.ai.askButton}
                             </span>
                           </Button>
@@ -148,7 +150,10 @@ export const getContent = (locale: Locale) => {
                       aria-label={t.language.label}
                     >
                       <Languages />
-                      <span className="sr-only md:not-sr-only">
+                      <span className="md:hidden">
+                        {locale.toUpperCase()}
+                      </span>
+                      <span className="hidden md:inline">
                         {t.language[locale]}
                       </span>
                     </Button>

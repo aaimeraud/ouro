@@ -107,7 +107,7 @@ export const content = {
       about: (
         <Tooltip>
           <p className="text-sm">
-            i&apos;m currently a full-stack developper as an{" "}
+            i&apos;m currently a full-stack developer as an{" "}
             <TooltipTrigger
               render={<span className="underline">apprentice in paris.</span>}
             />

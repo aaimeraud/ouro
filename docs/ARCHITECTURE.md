@@ -9,7 +9,7 @@ Portfolio one-page en Next.js (App Router), disponible en deux langues :
 - `/` → anglais (langue par défaut)
 - `/fr` → français
 
-Chaque langue a son propre layout racine (`app/(en)/` et `app/(fr)/fr/`) parce que l'attribut `lang` vit sur `<html>`, que seul un layout racine peut rendre. Changer de langue recharge donc la page entièrement — c'est voulu.
+Chaque langue a son propre layout racine (`app/(en)/` et `app/(fr)/fr/`) parce que l'attribut `lang` vit sur `<html>`, que seul un layout racine peut rendre. Changer de langue recharge donc la page entièrement.
 
 ## Structure
 
@@ -42,8 +42,8 @@ public/
 Tous les textes visibles sont dans les dictionnaires, jamais en dur dans les composants.
 
 1. Ajouter/modifier la clé dans `lib/i18n/dictionaries/en.ts`.
-2. Ajouter la traduction dans `lib/i18n/dictionaries/fr.ts` — TypeScript refuse de
-   compiler tant que la clé manque, donc aucune traduction ne peut être oubliée.
+2. Ajouter la traduction dans `lib/i18n/dictionaries/fr.ts` 
+(TypeScript refuse de compiler tant que la clé manque, donc aucune traduction ne peut être oubliée.)
 
 ## Ajouter un projet ou un réseau social
 

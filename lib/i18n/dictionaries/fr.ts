@@ -87,8 +87,8 @@ export const fr: Dictionary = {
     },
   },
   footer: {
-    nohelloBefore: "Lis ceci avant de me contacter :",
+    nohelloBefore: "Lisez ceci avant de me contacter :",
     nohelloAfter:
-      ". Je ne réponds peut-être pas à ton message, ne le prends pas personnellement.",
+      ". Je ne répondrais peut-être pas à ton message, ne le prends pas personnellement.",
   },
 };

@@ -42,9 +42,17 @@ export const content = {
       presentation: (
         <div className="flex flex-col-reverse justify-between gap-3 md:flex-row">
           <p className="text-sm">
-            <span className="font-bold">**constantly growing.**</span> <br />i
-            make websites, i&apos;m learning to make useful and meaningful
-            software and trying to get better at it every day.
+            <span
+              className={cn(
+                "font-bold",
+                "before:text-neutral-300 before:content-['**_'] dark:before:text-neutral-600",
+                "after:text-neutral-300 after:content-['_**'] dark:after:text-neutral-600",
+              )}
+            >
+              constantly growing.
+            </span>{" "}
+            <br />i make websites, i&apos;m learning to make useful and
+            meaningful software and trying to get better at it every day.
           </p>
 
           <ButtonGroup

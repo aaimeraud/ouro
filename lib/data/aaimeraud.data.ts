@@ -29,7 +29,7 @@ const projects: Project[] = [
     description: "This very website ^^",
     tags: [tag.next, tag.react, tag.uiUx, tag.wip],
     link: createLink({
-      url: "https://fortunedaniel.com/",
+      url: "https://github.com/aaimeraud/ouro",
       label: "aaimeraud",
       type: LinkType.internal,
     }),
@@ -44,7 +44,7 @@ const projects: Project[] = [
     description: "A selection of rss feeds i like",
     tags: [tag.next, tag.react],
     link: createLink({
-      url: "https://feed.fortunedaniel.com/",
+      url: "https://github.com/aaimeraud/feed.com",
       label: "AimeRSS",
       type: LinkType.external,
     }),

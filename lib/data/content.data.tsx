@@ -39,7 +39,7 @@ export const content = {
         <div className="flex flex-col-reverse justify-between gap-3 md:flex-row">
           <p className="text-sm">
             <span className="font-bold">**constantly growing.**</span> <br />i
-            make websites, i&apos;m learning to make software and try getting
+            make websites, i&apos;m learning to make useful and meaningful software and trying to get
             better at it everyday.
           </p>
 

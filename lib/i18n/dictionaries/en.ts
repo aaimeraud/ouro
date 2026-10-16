@@ -13,8 +13,8 @@ export const en = {
   },
   language: {
     label: "Change language",
-    en: "English",
-    fr: "Français",
+    en: "english",
+    fr: "français",
   },
   profile: {
     portraitAlt: "A photo of",
@@ -34,8 +34,8 @@ export const en = {
   },
   ai: {
     groupLabel: "AI related button group",
-    resume: "My Resume",
-    askButton: "Ask AI about me",
+    resume: "my resume",
+    askButton: "ask AI about me",
     askTooltipTitle: "Looking to hire ?",
     askTooltipBody: "Let AI tell you my strengths & weaknesses ^^",
     askClaude: "Ask Claude",
@@ -50,7 +50,7 @@ export const en = {
     github: "i'm getting shy... let me tidy up a bit",
   },
   projects: {
-    title: "Projects",
+    title: "projects",
     moreTooltip: "there's more on the way !",
     kind: {
       [projectTypes.website]: "this one's a website",

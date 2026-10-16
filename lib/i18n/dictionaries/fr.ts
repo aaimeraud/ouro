@@ -10,8 +10,8 @@ export const fr: Dictionary = {
   },
   language: {
     label: "Changer de langue",
-    en: "English",
-    fr: "Français",
+    en: "english",
+    fr: "français",
   },
   profile: {
     portraitAlt: "Une photo de",
@@ -31,8 +31,8 @@ export const fr: Dictionary = {
   },
   ai: {
     groupLabel: "Boutons liés à l'IA",
-    resume: "Mon CV",
-    askButton: "Demander à une IA qui je suis",
+    resume: "mon cv",
+    askButton: "hi-robot",
     askTooltipTitle: "Tu cherches à recruter ?",
     askTooltipBody: "Laisse une IA te donner mes forces et mes faiblesses ^^",
     askClaude: "Demander à Claude",
@@ -47,7 +47,7 @@ export const fr: Dictionary = {
     github: "je suis timide... laisse-moi ranger un peu",
   },
   projects: {
-    title: "Projets",
+    title: "projets",
     moreTooltip: "il y en a d'autres en route !",
     kind: {
       [projectTypes.website]: "celui-ci est un site web",
@@ -65,7 +65,8 @@ export const fr: Dictionary = {
     },
     items: {
       toolbox: {
-        description: "Une collection gratuite d'outils pour le dev et le design",
+        description:
+          "Une collection gratuite d'outils pour le dev et le design",
         tooltip: "commencé en octobre, laisse-moi quelques semaines ^^",
       },
       ouro: {

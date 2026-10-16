@@ -1,5 +1,4 @@
 import { CopyPromptMenuItem } from "@/components/custom/CopyPromptMenuItem";
-import LinkCustom from "@/components/custom/LinkCustom";
 import { ClaudeAI } from "@/components/icons/anthropic";
 import { OpenAI } from "@/components/icons/openai";
 import { Button } from "@/components/ui/button";
@@ -18,8 +17,8 @@ import {
 import { getDictionary } from "@/lib/i18n";
 import { localePaths, locales, type Locale } from "@/lib/i18n/config";
 import { cn } from "cn";
-import { Bot, Check, Languages } from "lucide-react";
-import { LinkType } from "../types/links.types";
+import { Bot, Check, FileText, Languages } from "lucide-react";
+import Link from "next/link";
 import { aaimeraud } from "./aaimeraud.data";
 
 const styles = {
@@ -69,17 +68,19 @@ export const getContent = (locale: Locale) => {
               aria-label={t.ai.groupLabel}
               className="items-center align-middle"
             >
-              <DropdownMenu>
-                <Button className={cn(styles.buttons)} size={"default"}>
-                  <LinkCustom
-                    href="/pdf/daniel_fortune_[public].pdf"
-                    label={t.ai.resume}
-                    noInteractivity={true}
-                    type={LinkType.internal}
-                    classname="text-neutral-200 dark:text-neutral-200"
-                  />
-                </Button>
+              {/* On mobile the labels are screen-reader only, so each button shows just its icon. */}
+              <Button
+                className={cn(styles.buttons)}
+                size={"default"}
+                render={
+                  <Link href="/pdf/daniel_fortune_[public].pdf" />
+                }
+              >
+                <FileText className="md:hidden" />
+                <span className="sr-only md:not-sr-only">{t.ai.resume}</span>
+              </Button>
 
+              <DropdownMenu>
                 <Tooltip>
                   <TooltipTrigger
                     render={
@@ -87,7 +88,9 @@ export const getContent = (locale: Locale) => {
                         render={
                           <Button className={cn(styles.buttons)} size={"default"}>
                             <Bot />
-                            {t.ai.askButton}
+                            <span className="sr-only md:not-sr-only">
+                              {t.ai.askButton}
+                            </span>
                           </Button>
                         }
                       />
@@ -146,7 +149,9 @@ export const getContent = (locale: Locale) => {
                       aria-label={t.language.label}
                     >
                       <Languages />
-                      {t.language[locale]}
+                      <span className="sr-only md:not-sr-only">
+                        {t.language[locale]}
+                      </span>
                     </Button>
                   }
                 />

@@ -1,7 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async headers() {
+    return [
+      {
+        source: "/llms/:path*",
+        headers: [
+          { key: "Content-Type", value: "text/markdown; charset=utf-8" },
+        ],
+      },
+    ];
+  },
   turbopack: {
     rules: {
       "*.css": {

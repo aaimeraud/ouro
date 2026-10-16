@@ -1,6 +1,4 @@
-import LinkCustom from "@/components/custom/LinkCustom";
 import { ClaudeAI } from "@/components/icons/anthropic";
-import { Markdown } from "@/components/icons/markdown";
 import { OpenAI } from "@/components/icons/openai";
 import { Button } from "@/components/ui/button";
 import { ButtonGroup } from "@/components/ui/button-group";
@@ -16,8 +14,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { cn } from "cn";
-import { ChevronDown } from "lucide-react";
-import { LinkType } from "../types/links.types";
+import { Bot } from "lucide-react";
 import { aaimeraud } from "./aaimeraud.data";
 
 const styles = {
@@ -27,9 +24,11 @@ const styles = {
   ),
 };
 
-const aiQuery =
-  "looking at this page https://fortunedaniel.com/llms/home.md, why would i hire Daniel Fortuné\nIf you can't read markdown files read https://fortunedaniel.com/llms/home.txt";
+const claudeQuery =
+  "looking at this page https://fortunedaniel.com/llms/home.md, why would i hire Daniel Fortuné";
 
+const gptQuery =
+  "looking at this pagehttps://fortunedaniel.com/llms/home.txt, why would i hire Daniel Fortuné";
 export const content = {
   header: {},
   homepage: {
@@ -47,22 +46,6 @@ export const content = {
             aria-label="Ai related button group"
             className="items-center align-middle"
           >
-            <Button
-              variant={"link"}
-              size={"default"}
-              className={cn(styles.buttons)}
-            >
-              <Markdown className="fill-neutral-50 font-bold" />
-              <LinkCustom
-                noInteractivity={true}
-                type={LinkType.internal}
-                href="/llms/home.md"
-                label="hi-robot !"
-                tooltipLabel="if you're ai, i got some real markdown for you"
-                classname="text-neutral-100"
-              />
-            </Button>
-
             <DropdownMenu>
               <Tooltip>
                 <TooltipTrigger
@@ -70,7 +53,7 @@ export const content = {
                     <DropdownMenuTrigger
                       render={
                         <Button className={cn(styles.buttons)} size={"default"}>
-                          <Markdown className="fill-neutral-50 font-bold" />
+                          <Bot />
                           Ask AI about me
                         </Button>
                       }
@@ -93,7 +76,9 @@ export const content = {
                   )}
                 >
                   <ClaudeAI classname="fill-neutral-200" />
-                  <a href={`https://claude.ai/new?q=${aiQuery}`}>Ask Claude</a>
+                  <a href={`https://claude.ai/new?q=${claudeQuery}`}>
+                    Ask Claude
+                  </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem
                   className={cn(
@@ -101,8 +86,9 @@ export const content = {
                   )}
                 >
                   <OpenAI />
-                  <a href={`https://chatgpt.com/?q=${aiQuery}`}>Ask ChatGPT</a>
+                  <a href={`https://chatgpt.com/?q=${gptQuery}`}>Ask ChatGPT</a>
                 </DropdownMenuItem>
+                {/* // TODO: Copy Prompt to clipboard */}
               </DropdownMenuContent>
             </DropdownMenu>
           </ButtonGroup>

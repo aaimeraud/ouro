@@ -6,7 +6,7 @@ export const fr: Dictionary = {
   meta: {
     title: "aaimeraud",
     description:
-      "Je fais des sites web, j'apprends à créer des logiciels et je progresse chaque jour.",
+      "Daniel Fortuné (aaimeraud), alternant développeur full-stack à Paris. Je crée des sites avec Next.js, React et WordPress, et j'apprends chaque jour.",
   },
   language: {
     label: "Changer de langue",
@@ -18,9 +18,11 @@ export const fr: Dictionary = {
     portraitTooltip: "ne te laisse pas trop distraire",
     nameTooltip: "mais tu peux m'appeler",
     description: "en recherche d'une alternance en développement logiciel",
+    jobTitle: "Alternant développeur full-stack",
   },
   about: {
     highlight: "en constante évolution.",
+    sectionTitle: "À propos",
     intro:
       "je fais des sites web. j'apprends à créer des logiciels utiles et qui ont du sens, et j'essaie de m'améliorer chaque jour.",
     currently: "je suis actuellement",

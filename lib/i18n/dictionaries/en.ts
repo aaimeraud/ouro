@@ -9,7 +9,7 @@ export const en = {
   meta: {
     title: "aaimeraud",
     description:
-      "I make websites, i'm learning to make software and try getting better at it every day.",
+      "Daniel Fortuné (aaimeraud), full-stack developer apprentice in Paris. I make websites with Next.js, React & WordPress and keep learning every day.",
   },
   language: {
     label: "Change language",
@@ -21,9 +21,11 @@ export const en = {
     portraitTooltip: "don't get too distracted now",
     nameTooltip: "but you can call me",
     description: "looking for an apprenticeship in software development",
+    jobTitle: "Full-Stack Developer Apprentice",
   },
   about: {
     highlight: "constantly growing.",
+    sectionTitle: "About",
     intro:
       "i make websites. i'm learning to make useful and meaningful software, and i'm trying to get better at it every day.",
     currently: "i'm currently a",

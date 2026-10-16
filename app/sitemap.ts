@@ -1,25 +1,25 @@
 import { localePaths } from "@/lib/i18n/config";
+import { SITE_URL } from "@/lib/site";
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://aaimeraud.me";
-
 export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date();
   return [
     {
-      url: baseUrl,
-      lastModified: "2026-10-16",
+      url: SITE_URL,
+      lastModified,
       changeFrequency: "monthly",
       priority: 1,
     },
     {
-      url: `${baseUrl}${localePaths.fr}`,
-      lastModified: "2026-10-16",
+      url: `${SITE_URL}${localePaths.fr}`,
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/llms/home.md`,
-      lastModified: "2026-10-16",
+      url: `${SITE_URL}/llms/home.md`,
+      lastModified,
     },
   ];
 }

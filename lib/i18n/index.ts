@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/site";
 import type { Metadata } from "next";
 import { localePaths, type Locale } from "./config";
 import { en } from "./dictionaries/en";
@@ -11,11 +12,12 @@ export const getDictionary = (locale: Locale) => dictionaries[locale];
 export const getMetadata = (locale: Locale): Metadata => {
   const { meta } = getDictionary(locale);
   return {
+    metadataBase: new URL(SITE_URL),
     title: meta.title,
     description: meta.description,
     alternates: {
       canonical: localePaths[locale],
-      languages: localePaths,
+      languages: { ...localePaths, "x-default": localePaths.en },
     },
   };
 };

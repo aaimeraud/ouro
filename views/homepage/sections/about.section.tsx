@@ -21,6 +21,10 @@ const About = ({ locale }: AboutProps) => {
         "flex flex-col gap-5",
       )}
     >
+      {/* Visually hidden heading: gives the section its h2 for heading order without changing the design */}
+      <h2 className="sr-only">
+        {getDictionary(locale).about.sectionTitle}
+      </h2>
       {homepage.aboutMe.presentation}
       {homepage.aboutMe.about}
       {homepage.aboutMe.now}

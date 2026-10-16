@@ -12,13 +12,22 @@ const Projects = () => {
 
   return (
     <section className={cn("flex flex-col gap-3")}>
-      <h2
-        className={cn(
-          "text-md font-bold text-neutral-950 lg:text-xl dark:text-neutral-50",
-        )}
-      >
-        ## Projects
-      </h2>
+      <Tooltip>
+        <TooltipTrigger
+          render={
+            <h2
+              className={cn(
+                "text-md font-bold w-fit text-neutral-950 lg:text-xl dark:text-neutral-50",
+                "before:text-neutral-300 before:content-['##_'] dark:before:text-neutral-600",
+              )}
+            >
+              Projects
+            </h2>
+          }
+        />
+        <TooltipContent side="top" sideOffset={10}>there&apos;s more on the way !</TooltipContent>
+      </Tooltip>
+
       <ul className="flex flex-col gap-4">
         {projects.map((project, index) => (
           <Tooltip key={index}>

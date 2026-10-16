@@ -64,7 +64,7 @@ PROJECTS
    Description: My personal website
    Year: 2026
    Type: Website
-   Tags: Next.js, React, UI/UX design, Work in progress
+   Tags: Next.js, React, UI/UX design
    Link: https://github.com/aaimeraud/ouro
 
 

@@ -1,13 +1,13 @@
 ---
 Date: "october 16, 2026"
 Looking For: "an Apprenticeship in Paris"
-Role Wanted: "Backend Developer"
+Role Wanted: "Backend Developer / Frontend Developer"
 Languages:
   - "Python"
   - "Typescript"
-  - "Go"
+Interested in learning:
   - "Rust"
-Interested in:
+  - "Go"
   - App development
   - Networking
   - Systems

@@ -28,7 +28,7 @@ const styles = {
 };
 
 const aiQuery =
-  "looking at this page https://aaimeraud.me/llms/home.md, why would i hire Daniel Fortuné";
+  "looking at this page https://fortunedaniel.com/llms/home.md, why would i hire Daniel Fortuné";
 
 export const content = {
   header: {},

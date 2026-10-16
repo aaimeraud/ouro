@@ -27,7 +27,7 @@ const projects: Project[] = [
     name: "ouro(boros)",
     type: type.website,
     description: "This very website ^^",
-    tags: [tag.next, tag.react, tag.uiUx, tag.wip],
+    tags: [tag.next, tag.react, tag.uiUx],
     link: createLink({
       url: "https://github.com/aaimeraud/ouro",
       label: "aaimeraud",

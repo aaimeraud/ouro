@@ -1,11 +1,15 @@
 import { createLink, Link, LinkType } from "lib/types/links.types";
 
+import type { Dictionary } from "../i18n/dictionaries/en";
 import {
   createProject,
   Project,
   projectTags as tag,
   projectTypes as type,
 } from "../types/projects.types";
+
+/** Social labels double as keys of `socials` in the i18n dictionaries */
+type SocialLink = Link & { label: keyof Dictionary["socials"] };
 
 const projects: Project[] = [
   createProject({
@@ -46,43 +50,40 @@ const projects: Project[] = [
   }),
 ];
 
-const socials = [
-  createLink({
+const socials: SocialLink[] = [
+  {
     label: "bluesky",
     type: LinkType.external,
     url: "https://bsky.app/profile/aaimeraud.bsky.social",
-  }),
-  createLink({
+  },
+  {
     label: "linkedin",
     type: LinkType.external,
     url: "https://www.linkedin.com/in/danielfortun%C3%A9/",
-  }),
-  createLink({
+  },
+  {
     label: "email",
     type: LinkType.email,
     url: "danielfortune.pro@proton.me?subject=Hi Daniel ! I saw your website",
-  }),
-  createLink({
+  },
+  {
     label: "github",
     type: LinkType.external,
     url: "https://github.com/aaimeraud",
-  }),
+  },
 ];
 
 /** Informations related to me */
-class Aimeraud {
+export const aaimeraud = {
   /** A list of my projects */
-  public projects: Project[] = projects;
+  projects,
   /** Links to my socials */
-  public socials: Link[] = socials;
-
-  public profile = {
+  socials,
+  profile: {
     portrait: "/images/portrait.jpg",
     username: "aaimeraud",
     fname: "Daniel",
     lname: "Fortuné",
-    role: "Frontend developer",
-    resumeUrl: "/public/pdf/daniel_fortune_[public].pdf",
     status: {
       studies: {
         level: "Bachelor 3",
@@ -93,7 +94,5 @@ class Aimeraud {
         }),
       },
     },
-  };
-}
-
-export const aaimeraud = new Aimeraud();
+  },
+};

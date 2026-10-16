@@ -13,12 +13,12 @@ type ProfileProps = {
 const Profile = ({ profilePicture = false }: ProfileProps) => {
   return (
     <section className="w-full">
-      <div className="flex flex-col items-start gap-5 text-neutral-800 dark:text-neutral-50">
+      <div className="flex h-full flex-col items-start gap-5 text-neutral-800 dark:text-neutral-50">
         {profilePicture == true && (
           <Tooltip>
             <TooltipTrigger
               render={
-                <div className="w-20 overflow-hidden rounded-full border-2 border-neutral-300">
+                <div className="w-15 overflow-hidden rounded-full border-2 border-neutral-300 transition-all duration-150 ease-in-out hover:border-blue-600">
                   <Image
                     src={aaimeraud.profile.portrait}
                     alt={`Une photo de ${aaimeraud.profile.username}`}

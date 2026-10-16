@@ -31,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geist.variable} ${geistMono.variable} ${arrow.variable} antialiased`}
     >
-      <body className="m-auto h-svh bg-neutral-50 dark:bg-neutral-900">
+      <body className="bg-neutral-50 dark:bg-neutral-900">
         <TooltipProvider>{children}</TooltipProvider>
       </body>
     </html>

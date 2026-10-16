@@ -1,4 +1,5 @@
 import { CopyPromptMenuItem } from "@/components/custom/CopyPromptMenuItem";
+import LinkCustom from "@/components/custom/LinkCustom";
 import { ClaudeAI } from "@/components/icons/anthropic";
 import { OpenAI } from "@/components/icons/openai";
 import { Button } from "@/components/ui/button";
@@ -16,6 +17,7 @@ import {
 } from "@/components/ui/tooltip";
 import { cn } from "cn";
 import { Bot } from "lucide-react";
+import { LinkType } from "../types/links.types";
 import { aaimeraud } from "./aaimeraud.data";
 
 const styles = {
@@ -27,17 +29,15 @@ const styles = {
 
 const aiQueries = {
   claude:
-    "Looking at this page https://www.aaimeraud.me/llms/home.md, why would i hire Daniel Fortuné ? Anwser in french",
+    "Read this https://www.aaimeraud.me/llms/home.md, and tell me why I should hire Daniel Fortuné as a junior dev for an apprenticeship ? Anwser in french",
   chatgpt:
-    "Looking at this page https://www.aaimeraud.me/llms/home.txt, why would i hire Daniel Fortuné ? Anwser in french",
+    "Read this https://www.aaimeraud.me/llms/home.txt, and tell me why I should hire Daniel Fortuné as a junior dev for an apprenticeship ? Anwser in french",
   clipboard:
-    "Looking at this page https://www.aaimeraud.me/llms/home.md, why would i hire Daniel Fortuné ? Anwser in french. (if you can't read markdown files read this https://www.aaimeraud.me/llms/home.txt)",
+    "Read this https://www.aaimeraud.me/llms/home.md, and tell me why I should hire Daniel Fortuné as a junior dev for an apprenticeship ? Anwser in french (if you can't read markdown files read this https://www.aaimeraud.me/llms/home.txt)",
 };
 
 export const content = {
-  header: {},
   homepage: {
-    title: "",
     aboutMe: {
       presentation: (
         <div className="flex flex-col-reverse justify-between gap-3 md:flex-row">
@@ -51,8 +51,9 @@ export const content = {
             >
               constantly growing.
             </span>{" "}
-            <br />i make websites, i&apos;m learning to make useful and
-            meaningful software and trying to get better at it every day.
+            <br />i make websites. i&apos;m learning to make useful and
+            meaningful software, and i&apos;m trying to get better at it every
+            day.
           </p>
 
           <ButtonGroup
@@ -60,6 +61,16 @@ export const content = {
             className="items-center align-middle"
           >
             <DropdownMenu>
+              <Button className={cn(styles.buttons)} size={"default"}>
+                <LinkCustom
+                  href="/pdf/daniel_fortune_[public].pdf"
+                  label="My Resume"
+                  noInteractivity={true}
+                  type={LinkType.internal}
+                  classname="text-neutral-200 dark:text-neutral-200"
+                />
+              </Button>
+
               <Tooltip>
                 <TooltipTrigger
                   render={
@@ -118,9 +129,13 @@ export const content = {
       about: (
         <Tooltip>
           <p className="text-sm">
-            i&apos;m currently a full-stack developer as an{" "}
+            i&apos;m currently a{" "}
             <TooltipTrigger
-              render={<span className="underline">apprentice in paris.</span>}
+              render={
+                <span className="underline">
+                  full-stack developer apprentice in paris,
+                </span>
+              }
             />
             <TooltipContent sideOffset={10} className={"hover:text-blue-400"}>
               at{" "}
@@ -131,12 +146,12 @@ export const content = {
                 {aaimeraud.profile.status.job.link.label}
               </a>
             </TooltipContent>
-            <br /> i work primarily with wordpress and next.js there.
+            <br /> mostly working with wordpress and next.js.
           </p>
         </Tooltip>
       ),
 
-      now: <p className="text-sm">currently learning python.</p>,
+      now: <p className="text-sm">also learning python.</p>,
     },
   },
   footer: {

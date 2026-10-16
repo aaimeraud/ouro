@@ -1,3 +1,5 @@
+import { getDictionary } from "@/lib/i18n";
+import type { Locale } from "@/lib/i18n/config";
 import { Project } from "@/lib/types/projects.types";
 import { cn } from "@sglara/cn";
 import { Separator } from "../ui/separator";
@@ -29,7 +31,14 @@ const styles = {
   textDiv: cn("flex flex-col  h-fit"),
 };
 
-const ProjectCard = ({ project }: { project: Project }) => {
+type ProjectCardProps = {
+  project: Project;
+  locale: Locale;
+};
+
+const ProjectCard = ({ project, locale }: ProjectCardProps) => {
+  const t = getDictionary(locale).projects;
+
   return (
     <li
       className={cn(
@@ -41,7 +50,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         <div className={cn(styles.textDiv, "h-full align-top")}>
           <h5 className={styles.name}>{project.name}</h5>
           <span className={styles.description}>
-            {project.description.toLowerCase()}
+            {t.items[project.slug].description.toLowerCase()}
           </span>
         </div>
         <Separator
@@ -53,9 +62,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
           <span
             className={cn(styles.projectInfo.year, "mt-2 font-normal md:mt-0")}
           >
-            {project.type === "design"
-              ? `this one's a ${project.type} project`
-              : `this one's a ${project.type}`}
+            {project.type === "design" ? t.kind.design : t.kind.website}
           </span>
           <ul className={cn(styles.ul)}>
             {project.tags.map((tag, index: number) => (
@@ -63,6 +70,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
                 classname={cn(styles.projectInfo.tag, "w-fit")}
                 key={index}
                 tag={tag}
+                label={t.tags[tag]}
                 type="li"
               />
             ))}

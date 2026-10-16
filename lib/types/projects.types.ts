@@ -16,14 +16,15 @@ export enum projectTags {
   wip = "Work in Progress",
 }
 
+/** Matches the keys of `projects.items` in the i18n dictionaries */
+export type ProjectSlug = "toolbox" | "ouro" | "aimerss";
+
 export interface Project {
-  slug: string;
+  slug: ProjectSlug;
   /** The project's name */
   name: string;
   /** The type of this project */
   type: projectTypes;
-  /** A simple description of this project */
-  description: string;
   /** Project tags */
   tags: projectTags[];
   year: string;
@@ -33,8 +34,6 @@ export interface Project {
   previewImage?: string;
   /** A collection of images from this project */
   gallery?: string[];
-
-  tooltipLabel?: string;
 }
 
 export const createProject = (data: Project): Project => {

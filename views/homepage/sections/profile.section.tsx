@@ -4,13 +4,18 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { aaimeraud } from "@/lib/data/aaimeraud.data";
+import { getDictionary } from "@/lib/i18n";
+import type { Locale } from "@/lib/i18n/config";
 import Image from "next/image";
 
 type ProfileProps = {
   profilePicture?: boolean;
+  locale: Locale;
 };
 
-const Profile = ({ profilePicture = false }: ProfileProps) => {
+const Profile = ({ profilePicture = false, locale }: ProfileProps) => {
+  const { profile: t } = getDictionary(locale);
+
   return (
     <section className="w-full">
       <div className="flex h-full flex-col items-start gap-5 text-neutral-800 dark:text-neutral-50">
@@ -21,7 +26,7 @@ const Profile = ({ profilePicture = false }: ProfileProps) => {
                 <div className="w-15 overflow-hidden rounded-full border-2 border-neutral-300 transition-all duration-150 ease-in-out hover:border-blue-600">
                   <Image
                     src={aaimeraud.profile.portrait}
-                    alt={`Une photo de ${aaimeraud.profile.username}`}
+                    alt={`${t.portraitAlt} ${aaimeraud.profile.username}`}
                     width={500}
                     height={500}
                     loading="eager"
@@ -31,7 +36,7 @@ const Profile = ({ profilePicture = false }: ProfileProps) => {
               }
             />
             <TooltipContent side="right" sideOffset={10}>
-              don&apos;t get too distracted now
+              {t.portraitTooltip}
             </TooltipContent>
           </Tooltip>
         )}
@@ -46,14 +51,14 @@ const Profile = ({ profilePicture = false }: ProfileProps) => {
               }
             />
             <TooltipContent side="right" sideOffset={10}>
-              but you can call me
+              {t.nameTooltip}{" "}
               <span className="font-bold">
                 {aaimeraud.profile.fname.toLowerCase()}
               </span>
             </TooltipContent>
           </Tooltip>
           <span className="text-sm tracking-tight text-neutral-600 dark:text-neutral-400">
-            &gt; {aaimeraud.profile.description.toLowerCase()}
+            &gt; {t.description.toLowerCase()}
           </span>
         </div>
       </div>

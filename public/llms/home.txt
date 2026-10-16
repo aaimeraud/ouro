@@ -6,7 +6,7 @@ I'm looking for an apprenticeship (alternance) in software development in Paris,
 Constantly growing.
 I build websites, I'm learning to build software, and I try to get better at it every day.
 
-I'm currently a full-stack developer apprentice at Comkani (https://comkani.fr) in Paris. I work primarily with WordPress and Next.js there.
+I'm currently a full-stack web developer apprentice at a communication agency in Paris. I work primarily with WordPress and Next.js there.
 
 I'm a third-year Bachelor's student (Bac+3) at .decode (https://ecole-decode.fr). I'm currently learning Python and Rust.
 

@@ -32,11 +32,11 @@ const styles = {
 // The prompts are sent to external AI tools and are not translated with the UI.
 const aiQueries = {
   claude:
-    "Read this https://www.aaimeraud.me/llms/home.md, and tell me why I should hire Daniel Fortuné as a junior dev for an apprenticeship ? Anwser in french",
+    "Read this https://www.aaimeraud.me/llms/home.md, and tell me why I should hire Daniel Fortuné as a junior dev for an apprenticeship ? Answer in French",
   chatgpt:
-    "Read this https://www.aaimeraud.me/llms/home.txt, and tell me why I should hire Daniel Fortuné as a junior dev for an apprenticeship ? Anwser in french",
+    "Read this https://www.aaimeraud.me/llms/home.txt, and tell me why I should hire Daniel Fortuné as a junior dev for an apprenticeship ? Answer in French",
   clipboard:
-    "Read this https://www.aaimeraud.me/llms/home.md, and tell me why I should hire Daniel Fortuné as a junior dev for an apprenticeship ? Anwser in french (if you can't read markdown files read this https://www.aaimeraud.me/llms/home.txt)",
+    "Read this https://www.aaimeraud.me/llms/home.md, and tell me why I should hire Daniel Fortuné as a junior dev for an apprenticeship ? Answer in French (if you can't read markdown files read this https://www.aaimeraud.me/llms/home.txt)",
 };
 
 /**

@@ -1,8 +1,8 @@
 import type { Locale } from "@/lib/i18n/config";
-import About from "@/pages/homepage/sections/about.section";
-import Footer from "@/pages/homepage/sections/footer.section";
-import Profile from "@/pages/homepage/sections/profile.section";
-import Projects from "@/pages/homepage/sections/projects.section";
+import About from "@/views/homepage/sections/about.section";
+import Footer from "@/views/homepage/sections/footer.section";
+import Profile from "@/views/homepage/sections/profile.section";
+import Projects from "@/views/homepage/sections/projects.section";
 
 type HomepageProps = {
   locale: Locale;

@@ -5,19 +5,15 @@ import {
 } from "@/components/ui/tooltip";
 import { aaimeraud } from "@/lib/data/aaimeraud.data";
 import { getDictionary } from "@/lib/i18n";
-import { defaultLocale, type Locale } from "@/lib/i18n/config";
+import type { Locale } from "@/lib/i18n/config";
 import Image from "next/image";
 
 type ProfileProps = {
   profilePicture?: boolean;
-  /** Defaults to English: `pages/` is also scanned as Pages Router routes at build time */
-  locale?: Locale;
+  locale: Locale;
 };
 
-const Profile = ({
-  profilePicture = false,
-  locale = defaultLocale,
-}: ProfileProps) => {
+const Profile = ({ profilePicture = false, locale }: ProfileProps) => {
   const { profile: t } = getDictionary(locale);
 
   return (

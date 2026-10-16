@@ -9,7 +9,7 @@ export const en = {
   meta: {
     title: "aaimeraud",
     description:
-      "I make websites, i'm learning to make software and try getting better at it everyday.",
+      "I make websites, i'm learning to make software and try getting better at it every day.",
   },
   language: {
     label: "Change language",
@@ -27,17 +27,17 @@ export const en = {
     intro:
       "i make websites. i'm learning to make useful and meaningful software, and i'm trying to get better at it every day.",
     currently: "i'm currently a",
-    role: "full-stack developer apprentice in paris,",
+    role: "full-stack developer apprentice in Paris,",
     jobTooltip: "at",
-    stack: "mostly working with wordpress and next.js.",
+    stack: "mostly working with WordPress and Next.js.",
     learning: "also learning python.",
   },
   ai: {
-    groupLabel: "Ai related button group",
+    groupLabel: "AI related button group",
     resume: "My Resume",
     askButton: "Ask AI about me",
     askTooltipTitle: "Looking to hire ?",
-    askTooltipBody: "Let AI tell you my strenghs & weaknesses ^^",
+    askTooltipBody: "Let AI tell you my strengths & weaknesses ^^",
     askClaude: "Ask Claude",
     askChatGpt: "Ask ChatGPT",
     copyPrompt: "Copy Prompt",
@@ -77,8 +77,8 @@ export const en = {
           "I've finally made this fourth redesign in almost a day after a long time of procrastination...",
       },
       aimerss: {
-        description: "A selection of rss feeds i like",
-        tooltip: "one shotted this one, i have to work on the ui i know lol...",
+        description: "A selection of RSS feeds i like",
+        tooltip: "one-shotted this one, i have to work on the UI i know lol...",
       },
     },
   },

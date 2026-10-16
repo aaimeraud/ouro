@@ -26,7 +26,7 @@ export const fr: Dictionary = {
     currently: "je suis actuellement",
     role: "alternant développeur full-stack à Paris,",
     jobTooltip: "chez",
-    stack: "je travaille surtout avec wordpress et next.js.",
+    stack: "je travaille surtout avec WordPress et Next.js.",
     learning: "j'apprends aussi python.",
   },
   ai: {
@@ -66,7 +66,7 @@ export const fr: Dictionary = {
     items: {
       toolbox: {
         description: "Une collection gratuite d'outils pour le dev et le design",
-        tooltip: "commencé en octobre, laissez-moi quelques semaines ^^",
+        tooltip: "commencé en octobre, laisse-moi quelques semaines ^^",
       },
       ouro: {
         description: "Ce site, tout simplement ^^",

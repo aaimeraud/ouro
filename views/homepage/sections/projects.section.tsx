@@ -6,15 +6,14 @@ import {
 } from "@/components/ui/tooltip";
 import { aaimeraud } from "@/lib/data/aaimeraud.data";
 import { getDictionary } from "@/lib/i18n";
-import { defaultLocale, type Locale } from "@/lib/i18n/config";
+import type { Locale } from "@/lib/i18n/config";
 import { cn } from "@sglara/cn";
 
 type ProjectsProps = {
-  /** Defaults to English: `pages/` is also scanned as Pages Router routes at build time */
-  locale?: Locale;
+  locale: Locale;
 };
 
-const Projects = ({ locale = defaultLocale }: ProjectsProps) => {
+const Projects = ({ locale }: ProjectsProps) => {
   const projects = aaimeraud.projects;
   const { projects: t } = getDictionary(locale);
 

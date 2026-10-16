@@ -7,9 +7,15 @@ import { useState } from "react";
 
 type CopyPromptMenuItemProps = {
   prompt: string;
+  copyLabel: string;
+  copiedLabel: string;
 };
 
-export function CopyPromptMenuItem({ prompt }: CopyPromptMenuItemProps) {
+export function CopyPromptMenuItem({
+  prompt,
+  copyLabel,
+  copiedLabel,
+}: CopyPromptMenuItemProps) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
@@ -35,7 +41,7 @@ export function CopyPromptMenuItem({ prompt }: CopyPromptMenuItemProps) {
       ) : (
         <Copy className="size-4" />
       )}
-      <span>{copied ? "Copied!" : "Copy Prompt"}</span>
+      <span>{copied ? copiedLabel : copyLabel}</span>
     </DropdownMenuItem>
   );
 }

@@ -12,7 +12,6 @@ const projects: Project[] = [
     slug: "toolbox",
     name: "t5x (toolbox)",
     type: type.website,
-    description: "A free collection of dev & design tools",
     tags: [tag.react, tag.uiUx, tag.openSource, tag.wip],
     link: createLink({
       url: "https://github.com/aaimeraud/t5x",
@@ -20,13 +19,11 @@ const projects: Project[] = [
       type: LinkType.external,
     }),
     year: "2026",
-    tooltipLabel: "started this in october, give me a few weeks ^^",
   }),
   createProject({
     slug: "ouro",
     name: "ouro(boros)",
     type: type.website,
-    description: "This very website ^^",
     tags: [tag.next, tag.react, tag.uiUx],
     link: createLink({
       url: "https://github.com/aaimeraud/ouro",
@@ -34,14 +31,11 @@ const projects: Project[] = [
       type: LinkType.internal,
     }),
     year: "2026",
-    tooltipLabel:
-      "I've finally made this fourth redesign in almost a day after a long time of procrastination...",
   }),
   createProject({
     slug: "aimerss",
     name: "AimeRSS",
     type: type.website,
-    description: "A selection of rss feeds i like",
     tags: [tag.next, tag.react],
     link: createLink({
       url: "https://github.com/aaimeraud/feed.com",
@@ -49,8 +43,6 @@ const projects: Project[] = [
       type: LinkType.external,
     }),
     year: "2026",
-    tooltipLabel:
-      "one shotted this one, i have to work on the ui i know lol...",
   }),
 ];
 
@@ -59,25 +51,21 @@ const socials = [
     label: "bluesky",
     type: LinkType.external,
     url: "https://bsky.app/profile/aaimeraud.bsky.social",
-    tooltipLabel: "Recently got on there (idk why tbh)",
   }),
   createLink({
     label: "linkedin",
     type: LinkType.external,
     url: "https://www.linkedin.com/in/danielfortun%C3%A9/",
-    tooltipLabel: "ughh who likes this one ?",
   }),
   createLink({
     label: "email",
     type: LinkType.email,
     url: "danielfortune.pro@proton.me?subject=Hi Daniel ! I saw your website",
-    tooltipLabel: "wanna hire ? ^^",
   }),
   createLink({
     label: "github",
     type: LinkType.external,
     url: "https://github.com/aaimeraud",
-    tooltipLabel: "i'm getting shy... let me tidy up a bit",
   }),
 ];
 
@@ -93,7 +81,6 @@ class Aimeraud {
     username: "aaimeraud",
     fname: "Daniel",
     lname: "Fortuné",
-    description: "looking for an apprenticeship in software development",
     role: "Frontend developer",
     resumeUrl: "/public/pdf/daniel_fortune_[public].pdf",
     status: {

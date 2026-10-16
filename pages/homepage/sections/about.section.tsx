@@ -1,8 +1,19 @@
 import LinkCustom from "@/components/custom/LinkCustom";
 import { aaimeraud } from "@/lib/data/aaimeraud.data";
-import { content } from "@/lib/data/content.data";
+import { getContent } from "@/lib/data/content.data";
+import { getDictionary } from "@/lib/i18n";
+import { defaultLocale, type Locale } from "@/lib/i18n/config";
 import { cn } from "@sglara/cn";
-const About = () => {
+
+type AboutProps = {
+  /** Defaults to English: `pages/` is also scanned as Pages Router routes at build time */
+  locale?: Locale;
+};
+
+const About = ({ locale = defaultLocale }: AboutProps) => {
+  const { homepage } = getContent(locale);
+  const { socials } = getDictionary(locale);
+
   return (
     <section
       className={cn(
@@ -11,9 +22,9 @@ const About = () => {
         "flex flex-col gap-5",
       )}
     >
-      {content.homepage.aboutMe.presentation}
-      {content.homepage.aboutMe.about}
-      {content.homepage.aboutMe.now}
+      {homepage.aboutMe.presentation}
+      {homepage.aboutMe.about}
+      {homepage.aboutMe.now}
 
       <ul className="flex gap-3">
         {aaimeraud.socials.map((social, index: number) => (
@@ -22,7 +33,11 @@ const About = () => {
               href={social.url}
               type={social.type}
               label={social.label}
-              tooltipLabel={social.tooltipLabel?.toLowerCase().trim()}
+              tooltipLabel={socials[
+                social.label as keyof typeof socials
+              ]
+                .toLowerCase()
+                .trim()}
             />
           </li>
         ))}

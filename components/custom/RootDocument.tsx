@@ -1,7 +1,8 @@
 import { TooltipProvider } from "@/components/ui/tooltip";
-import type { Metadata } from "next";
+import type { Locale } from "@/lib/i18n/config";
 import { Geist, Geist_Mono, M_PLUS_Rounded_1c } from "next/font/google";
-import "./core.css";
+import type { ReactNode } from "react";
+
 const geist = Geist({
   variable: "--font-geist",
   subsets: ["latin"],
@@ -19,16 +20,19 @@ const arrow = M_PLUS_Rounded_1c({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "aaimeraud",
-  description:
-    "I make websites, i'm learning to make software and try getting better at it everyday.",
+type RootDocumentProps = {
+  lang: Locale;
+  children: ReactNode;
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+/**
+ * Shared <html>/<body> shell. Each locale has its own root layout (see app/(en) and app/(fr)),
+ * because `lang` lives on <html> and Next.js only lets a root layout render it.
+ */
+export default function RootDocument({ lang, children }: RootDocumentProps) {
   return (
     <html
-      lang="en"
+      lang={lang}
       className={`${geist.variable} ${geistMono.variable} ${arrow.variable} antialiased`}
     >
       <body className="bg-neutral-50 dark:bg-neutral-900">

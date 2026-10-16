@@ -22,13 +22,13 @@ import { aaimeraud } from "./aaimeraud.data";
 
 const styles = {
   buttons: cn(
-    "bg-neutral-800 border w-fit text-neutral-400 border-neutral-600",
+    "bg-neutral-800 border w-fit text-neutral-200 border-neutral-600",
     "",
   ),
 };
 
 const aiQuery =
-  "looking at this page https://fortunedaniel.com/llms/home.md, why would i hire Daniel Fortuné";
+  "looking at this page https://fortunedaniel.com/llms/home.md, why would i hire Daniel Fortuné\nIf you can't read markdown files read https://fortunedaniel.com/llms/home.txt";
 
 export const content = {
   header: {},
@@ -39,8 +39,8 @@ export const content = {
         <div className="flex flex-col-reverse justify-between gap-3 md:flex-row">
           <p className="text-sm">
             <span className="font-bold">**constantly growing.**</span> <br />i
-            make websites, i&apos;m learning to make useful and meaningful software and trying to get
-            better at it everyday.
+            make websites, i&apos;m learning to make useful and meaningful
+            software and trying to get better at it every day.
           </p>
 
           <ButtonGroup
@@ -70,13 +70,17 @@ export const content = {
                     <DropdownMenuTrigger
                       render={
                         <Button className={cn(styles.buttons)} size={"default"}>
-                          <ChevronDown size={24} className="w-full" />
+                          <Markdown className="fill-neutral-50 font-bold" />
+                          Ask AI about me
                         </Button>
                       }
                     />
                   }
                 />
-                <TooltipContent>Ask AI about me !</TooltipContent>
+                <TooltipContent className={"text-center"}>
+                  Looking to hire ?<br /> Let AI tell you my strenghs &
+                  weaknesses ^^
+                </TooltipContent>
               </Tooltip>
               <DropdownMenuContent
                 className={

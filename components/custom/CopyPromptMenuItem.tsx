@@ -3,7 +3,7 @@
 import { DropdownMenuItem } from "@/components/ui/dropdown-menu";
 import { cn } from "cn";
 import { Check, Copy } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type CopyPromptMenuItemProps = {
   prompt: string;
@@ -17,12 +17,22 @@ export function CopyPromptMenuItem({
   copiedLabel,
 }: CopyPromptMenuItemProps) {
   const [copied, setCopied] = useState(false);
+  const timeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Avoid a state update on an unmounted component
+  useEffect(
+    () => () => {
+      if (timeout.current) clearTimeout(timeout.current);
+    },
+    [],
+  );
 
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(prompt);
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      if (timeout.current) clearTimeout(timeout.current);
+      timeout.current = setTimeout(() => setCopied(false), 2000);
     } catch (error) {
       console.error("Failed to copy prompt to clipboard", error);
     }

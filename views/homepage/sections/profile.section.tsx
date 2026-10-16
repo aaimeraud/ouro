@@ -19,7 +19,7 @@ const Profile = ({ profilePicture = false, locale }: ProfileProps) => {
   return (
     <section className="w-full">
       <div className="flex h-full flex-col items-start gap-5 text-neutral-800 dark:text-neutral-50">
-        {profilePicture == true && (
+        {profilePicture && (
           <Tooltip>
             <TooltipTrigger
               render={

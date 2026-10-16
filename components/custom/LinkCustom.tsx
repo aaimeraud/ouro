@@ -38,9 +38,7 @@ const LinkCustom = ({
                   "dark:text-neutral-400",
                   classname,
                 )}
-                href={
-                  type?.valueOf().includes("email") ? `mailto:${href}` : href
-                }
+                href={type === LinkType.email ? `mailto:${href}` : href}
               >
                 {label}
               </Link>
@@ -63,7 +61,7 @@ const LinkCustom = ({
             "dark:text-neutral-400",
             classname,
           )}
-          href={type?.valueOf().includes("email") ? `mailto:${href}` : href}
+          href={type === LinkType.email ? `mailto:${href}` : href}
         >
           {label}
         </Link>

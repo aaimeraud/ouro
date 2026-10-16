@@ -29,7 +29,7 @@ const projects: Project[] = [
     description: "This very website ^^",
     tags: [tag.next, tag.react, tag.uiUx, tag.wip],
     link: createLink({
-      url: "https://fortunedaniel.com/",
+      url: "https://github.com/aaimeraud/ouro",
       label: "aaimeraud",
       type: LinkType.internal,
     }),
@@ -44,7 +44,7 @@ const projects: Project[] = [
     description: "A selection of rss feeds i like",
     tags: [tag.next, tag.react],
     link: createLink({
-      url: "https://feed.fortunedaniel.com/",
+      url: "https://github.com/aaimeraud/feed.com",
       label: "AimeRSS",
       type: LinkType.external,
     }),
@@ -70,7 +70,7 @@ const socials = [
   createLink({
     label: "email",
     type: LinkType.email,
-    url: "danielfortune.pro@proton.com?subject=Hi Daniel ! I saw your website",
+    url: "danielfortune.pro@proton.me?subject=Hi Daniel ! I saw your website",
     tooltipLabel: "wanna hire ? ^^",
   }),
   createLink({
@@ -93,8 +93,8 @@ class Aimeraud {
     username: "aaimeraud",
     fname: "Daniel",
     lname: "Fortuné",
-    description: "looking for an apprenticeship in software developpment",
-    role: "Frontend Developper",
+    description: "looking for an apprenticeship in software development",
+    role: "Frontend developer",
     resumeUrl: "/public/pdf/daniel_fortune_[public].pdf",
     status: {
       job: {

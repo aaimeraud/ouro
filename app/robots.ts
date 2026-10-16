@@ -20,5 +20,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
+    sitemap: "https://aaimeraud.me/sitemap.xml",
   };
 }

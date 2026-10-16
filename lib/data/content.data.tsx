@@ -72,9 +72,8 @@ export const getContent = (locale: Locale) => {
               <Button
                 className={cn(styles.buttons)}
                 size={"default"}
-                render={
-                  <Link href="/pdf/daniel_fortune_[public].pdf" />
-                }
+                nativeButton={false}
+                render={<Link href="/pdf/daniel_fortune_[public].pdf" />}
               >
                 <FileText className="md:hidden" />
                 <span className="sr-only md:not-sr-only">{t.ai.resume}</span>

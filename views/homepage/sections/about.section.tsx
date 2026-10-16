@@ -1,17 +1,21 @@
 import LinkCustom from "@/components/custom/LinkCustom";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { aaimeraud } from "@/lib/data/aaimeraud.data";
-import { getContent } from "@/lib/data/content.data";
 import { getDictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/config";
 import { cn } from "@sglara/cn";
+import { ActionsButtonGroup } from "./about-actions/actions-button-group";
 
 type AboutProps = {
   locale: Locale;
 };
 
 const About = ({ locale }: AboutProps) => {
-  const { homepage } = getContent(locale);
-  const { socials } = getDictionary(locale);
+  const t = getDictionary(locale);
 
   return (
     <section
@@ -21,22 +25,49 @@ const About = ({ locale }: AboutProps) => {
         "flex flex-col gap-5",
       )}
     >
-      {homepage.aboutMe.presentation}
-      {homepage.aboutMe.about}
-      {homepage.aboutMe.now}
+      {/* Visually hidden heading: gives the section its h2 for heading order without changing the design */}
+      <h2 className="sr-only">{t.about.sectionTitle}</h2>
+
+      <div className="flex flex-col-reverse justify-between gap-3 md:flex-row">
+        <p className="text-sm">
+          <span
+            className={cn(
+              "font-bold",
+              "before:text-neutral-300 before:content-['**_'] dark:before:text-neutral-600",
+              "after:text-neutral-300 after:content-['_**'] dark:after:text-neutral-600",
+            )}
+          >
+            {t.about.highlight}
+          </span>{" "}
+          <br />
+          {t.about.intro}
+        </p>
+        <ActionsButtonGroup locale={locale} />
+      </div>
+
+      <Tooltip>
+        <p className="text-sm">
+          {t.about.currently}{" "}
+          <TooltipTrigger
+            render={<span className="underline">{t.about.role}</span>}
+          />
+          <TooltipContent sideOffset={10} className={"hover:text-blue-400"}>
+            {t.about.jobTooltip} {t.about.company}
+          </TooltipContent>
+          <br /> {t.about.stack}
+        </p>
+      </Tooltip>
+
+      <p className="text-sm">{t.about.learning}</p>
 
       <ul className="flex gap-3">
-        {aaimeraud.socials.map((social, index: number) => (
-          <li key={index}>
+        {aaimeraud.socials.map((social) => (
+          <li key={social.label}>
             <LinkCustom
               href={social.url}
               type={social.type}
               label={social.label}
-              tooltipLabel={socials[
-                social.label as keyof typeof socials
-              ]
-                .toLowerCase()
-                .trim()}
+              tooltipLabel={t.socials[social.label].toLowerCase().trim()}
             />
           </li>
         ))}

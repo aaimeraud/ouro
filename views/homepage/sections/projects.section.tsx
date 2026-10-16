@@ -36,8 +36,8 @@ const Projects = ({ locale }: ProjectsProps) => {
       </Tooltip>
 
       <ul className="flex flex-col gap-4">
-        {projects.map((project, index) => (
-          <Tooltip key={index}>
+        {projects.map((project) => (
+          <Tooltip key={project.slug}>
             <TooltipTrigger
               render={<ProjectCard project={project} locale={locale} />}
             />

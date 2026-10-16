@@ -8,7 +8,7 @@ import Tag from "./Tag";
 const styles = {
   li: cn(
     "dark:bg-neutral-300 border-2 border-transparent justify-between bg-neutral-50 text-neutral-900 dark:text-neutral-50 rounded-lg flex w-full py-2 hover:px-4",
-    "hover:bg-blue-600 hover:border-blue-500 hover:[&>a_h5]:text-blue-50 hover:[&>a_span]:text-blue-200 hover:[&>a_li]:text-blue-200 hover:[&>a_div#sep]:bg-blue-200 ",
+    "hover:bg-blue-600 hover:border-blue-500 hover:[&>a_h3]:text-blue-50 hover:[&>a_span]:text-blue-200 hover:[&>a_li]:text-blue-200 hover:[&>a_div#sep]:bg-blue-200 ",
     "hover:translate-y-1 hover:translate-x-1",
     "transition-all duration-300 ease-in overflow-hidden",
   ),
@@ -48,7 +48,7 @@ const ProjectCard = ({ project, locale }: ProjectCardProps) => {
     >
       <a className={cn(styles.link)} href={project.link?.url}>
         <div className={cn(styles.textDiv, "h-full align-top")}>
-          <h5 className={styles.name}>{project.name}</h5>
+          <h3 className={styles.name}>{project.name}</h3>
           <span className={styles.description}>
             {t.items[project.slug].description.toLowerCase()}
           </span>

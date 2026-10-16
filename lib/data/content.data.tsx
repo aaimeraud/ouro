@@ -25,10 +25,10 @@ const styles = {
 };
 
 const claudeQuery =
-  "Looking at this page https://www.fortunedaniel.com/llms/home.md, why would i hire Daniel Fortuné";
+  "Looking at this page https://www.aaimeraud.me/llms/home.md, why would i hire Daniel Fortuné";
 
 const gptQuery =
-  "Looking at this page https://www.fortunedaniel.com/llms/home.txt, why would i hire Daniel Fortuné";
+  "Looking at this page https://www.aaimeraud.me/llms/home.txt, why would i hire Daniel Fortuné";
 export const content = {
   header: {},
   homepage: {

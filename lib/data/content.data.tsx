@@ -1,3 +1,4 @@
+import { CopyPromptMenuItem } from "@/components/custom/CopyPromptMenuItem";
 import { ClaudeAI } from "@/components/icons/anthropic";
 import { OpenAI } from "@/components/icons/openai";
 import { Button } from "@/components/ui/button";
@@ -24,11 +25,15 @@ const styles = {
   ),
 };
 
-const claudeQuery =
-  "Looking at this page https://www.aaimeraud.me/llms/home.md, why would i hire Daniel Fortuné";
+const aiQueries = {
+  claude:
+    "Looking at this page https://www.aaimeraud.me/llms/home.md, why would i hire Daniel Fortuné ? Anwser in french",
+  chatgpt:
+    "Looking at this page https://www.aaimeraud.me/llms/home.txt, why would i hire Daniel Fortuné ? Anwser in french",
+  clipboard:
+    "Looking at this page https://www.aaimeraud.me/llms/home.md, why would i hire Daniel Fortuné ? Anwser in french. (if you can't read markdown files read this https://www.aaimeraud.me/llms/home.txt)",
+};
 
-const gptQuery =
-  "Looking at this page https://www.aaimeraud.me/llms/home.txt, why would i hire Daniel Fortuné";
 export const content = {
   header: {},
   homepage: {
@@ -37,9 +42,17 @@ export const content = {
       presentation: (
         <div className="flex flex-col-reverse justify-between gap-3 md:flex-row">
           <p className="text-sm">
-            <span className="font-bold">**constantly growing.**</span> <br />i
-            make websites, i&apos;m learning to make useful and meaningful
-            software and trying to get better at it every day.
+            <span
+              className={cn(
+                "font-bold",
+                "before:text-neutral-300 before:content-['**_'] dark:before:text-neutral-600",
+                "after:text-neutral-300 after:content-['_**'] dark:after:text-neutral-600",
+              )}
+            >
+              constantly growing.
+            </span>{" "}
+            <br />i make websites, i&apos;m learning to make useful and
+            meaningful software and trying to get better at it every day.
           </p>
 
           <ButtonGroup
@@ -75,9 +88,12 @@ export const content = {
                     "flex w-full items-center justify-between align-middle",
                   )}
                 >
-                  <ClaudeAI classname="fill-neutral-200" />
-                  <a href={`https://claude.ai/new?q=${claudeQuery}`}>
-                    Ask Claude
+                  <a
+                    href={`https://claude.ai/new?q=${aiQueries.claude}`}
+                    className="flex w-full items-center justify-between gap-1.5"
+                  >
+                    <ClaudeAI className="text-neutral-200 group-focus/dropdown-menu-item:text-[#D97757]" />
+                    <span>Ask Claude</span>
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem
@@ -85,10 +101,15 @@ export const content = {
                     "flex w-full items-center justify-between align-middle",
                   )}
                 >
-                  <OpenAI />
-                  <a href={`https://chatgpt.com/?q=${gptQuery}`}>Ask ChatGPT</a>
+                  <a
+                    href={`https://chatgpt.com/?q=${aiQueries.chatgpt}`}
+                    className="flex w-full items-center justify-between gap-1.5"
+                  >
+                    <OpenAI className="text-neutral-200 group-focus/dropdown-menu-item:text-black" />
+                    <span>Ask ChatGPT</span>
+                  </a>
                 </DropdownMenuItem>
-                {/* // TODO: Copy Prompt to clipboard */}
+                <CopyPromptMenuItem prompt={aiQueries.clipboard} />
               </DropdownMenuContent>
             </DropdownMenu>
           </ButtonGroup>

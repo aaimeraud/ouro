@@ -15,23 +15,33 @@ const Profile = ({ profilePicture = false }: ProfileProps) => {
     <section className="w-full">
       <div className="flex flex-col items-start gap-5 text-neutral-800 dark:text-neutral-50">
         {profilePicture == true && (
-          <div className="w-20 overflow-hidden rounded-full border-2 border-neutral-300">
-            <Image
-              src={aaimeraud.profile.portrait}
-              alt={`Une photo de ${aaimeraud.profile.username}`}
-              width={500}
-              height={500}
-              loading="eager"
-              className=""
+          <Tooltip>
+            <TooltipTrigger
+              render={
+                <div className="w-20 overflow-hidden rounded-full border-2 border-neutral-300">
+                  <Image
+                    src={aaimeraud.profile.portrait}
+                    alt={`Une photo de ${aaimeraud.profile.username}`}
+                    width={500}
+                    height={500}
+                    loading="eager"
+                    className=""
+                  />
+                </div>
+              }
             />
-          </div>
+            <TooltipContent side="right" sideOffset={10}>
+              don&apos;t get too distracted now
+            </TooltipContent>
+          </Tooltip>
         )}
+
         <div className="flex flex-col">
           <Tooltip>
             <TooltipTrigger
               render={
-                <h1 className="w-fit text-xl font-bold tracking-tight text-neutral-800 lg:text-3xl dark:text-neutral-200">
-                  # {aaimeraud.profile.username}
+                <h1 className="w-fit text-xl font-bold tracking-tight text-neutral-800 before:text-neutral-300 before:content-['#_'] lg:text-3xl dark:text-neutral-200 dark:before:text-neutral-600">
+                  {aaimeraud.profile.username}
                 </h1>
               }
             />

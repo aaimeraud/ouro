@@ -38,9 +38,9 @@ export const en = {
   ai: {
     groupLabel: "AI related button group",
     resume: "my resume",
-    resumeShort: "CV",
-    askButton: "ask AI about me",
-    askShort: "AI",
+    resumeShort: "cv",
+    askButton: "ask an llm about me",
+    askShort: "llm",
     askTooltipTitle: "Looking to hire ?",
     askTooltipBody: "Let AI tell you my strengths & weaknesses ^^",
     askClaude: "Ask Claude",

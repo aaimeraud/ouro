@@ -44,7 +44,7 @@ const LinkCustom = ({
               </Link>
             }
           />
-          <TooltipContent side="top" sideOffset={10}>
+          <TooltipContent className={"text-center"} side="top" sideOffset={10}>
             <p>{tooltipLabel}</p>
           </TooltipContent>
         </Tooltip>

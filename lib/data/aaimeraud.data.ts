@@ -25,6 +25,18 @@ const projects: Project[] = [
     year: "2026",
   }),
   createProject({
+    slug: "aarshi",
+    name: "aarshi",
+    type: type.cli,
+    tags: [tag.openSource, tag.rust, tag.agentic],
+    link: createLink({
+      url: "https://github.com/aaimeraud/aarshi",
+      label: "aarshi",
+      type: LinkType.external,
+    }),
+    year: "2026",
+  }),
+  createProject({
     slug: "ouro",
     name: "ouro(boros)",
     type: type.website,

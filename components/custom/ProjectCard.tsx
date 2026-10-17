@@ -62,7 +62,7 @@ const ProjectCard = ({ project, locale }: ProjectCardProps) => {
           <span
             className={cn(styles.projectInfo.year, "mt-2 font-normal md:mt-0")}
           >
-            {project.type === "design" ? t.kind.design : t.kind.website}
+            {t.kind[project.type]}
           </span>
           <ul className={cn(styles.ul)}>
             {project.tags.map((tag, index: number) => (

@@ -2,6 +2,7 @@ import { Link } from "./links.types";
 
 export enum projectTypes {
   website = "website",
+  cli = "command line",
   design = "design",
 }
 
@@ -9,15 +10,17 @@ export enum projectTags {
   uiUx = "UI/UX Design",
   next = "Next.js",
   react = "React",
+  rust = "Rust",
   php = "PHP",
   content = "Content Management",
   openSource = "Open-Source",
   contribution = "Contribution",
   wip = "Work in Progress",
+  agentic = "Agentic Coding",
 }
 
 /** Matches the keys of `projects.items` in the i18n dictionaries */
-export type ProjectSlug = "toolbox" | "ouro" | "aimerss";
+export type ProjectSlug = "toolbox" | "ouro" | "aimerss" | "aarshi";
 
 export interface Project {
   slug: ProjectSlug;

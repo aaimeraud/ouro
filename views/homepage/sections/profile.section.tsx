@@ -35,7 +35,11 @@ const Profile = ({ profilePicture = false, locale }: ProfileProps) => {
                 </div>
               }
             />
-            <TooltipContent side="right" sideOffset={10}>
+            <TooltipContent
+              className={"text-center"}
+              side="right"
+              sideOffset={10}
+            >
               {t.portraitTooltip}
             </TooltipContent>
           </Tooltip>
@@ -50,7 +54,11 @@ const Profile = ({ profilePicture = false, locale }: ProfileProps) => {
                 </h1>
               }
             />
-            <TooltipContent side="right" sideOffset={10}>
+            <TooltipContent
+              className={"text-center"}
+              side="right"
+              sideOffset={10}
+            >
               {t.nameTooltip}{" "}
               <span className="font-bold">
                 {aaimeraud.profile.fname.toLowerCase()}

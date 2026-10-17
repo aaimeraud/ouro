@@ -55,8 +55,9 @@ export const fr: Dictionary = {
     title: "projets",
     moreTooltip: "il y en a d'autres en route !",
     kind: {
-      [projectTypes.website]: "celui-ci est un site web",
-      [projectTypes.design]: "celui-ci est un projet de design",
+      [projectTypes.website]: "un site web",
+      [projectTypes.design]: "un projet de design",
+      [projectTypes.cli]: "un projet en ligne de commandes",
     },
     tags: {
       [projectTags.uiUx]: "Design UI/UX",
@@ -67,6 +68,8 @@ export const fr: Dictionary = {
       [projectTags.openSource]: "Open-Source",
       [projectTags.contribution]: "Contribution",
       [projectTags.wip]: "En cours",
+      [projectTags.agentic]: "Coding Agentique",
+      [projectTags.rust]: "Rust",
     },
     items: {
       toolbox: {
@@ -84,11 +87,17 @@ export const fr: Dictionary = {
         tooltip:
           "celui-ci est passé d'un coup, il faut que je travaille l'UI je sais lol...",
       },
+      aarshi: {
+        description:
+          "Une CLI qui génère le squelette d'une app Next.js et simplifie mon expérience développeur",
+        tooltip:
+          "J'ai payé un mois d'API OpenCode, donc je me suis fait plaisir en la créant haha",
+      },
     },
   },
   footer: {
     nohelloBefore: "Lisez ceci avant de me contacter :",
     nohelloAfter:
-      ". Je ne répondrais peut-être pas à ton message, ne le prends pas personnellement.",
+      ". Je ne répondrai peut-être pas à ton message, ne le prends pas personnellement.",
   },
 };

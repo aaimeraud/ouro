@@ -1,5 +1,5 @@
 DANIEL FORTUNÉ (aaimeraud)
-Last updated: 2026-10-16
+Last updated: 2026-10-17
 
 I'm looking for an apprenticeship (alternance) in software development in Paris, France.
 
@@ -46,19 +46,19 @@ Email: danielfortune.pro@proton.me
 PROJECTS
 ========================================
 
-1. AimeRSS
-   Description: A curated selection of RSS feeds I like
-   Year: 2026
-   Type: Website
-   Tags: Next.js, React, RSS feeds, Content management
-   Link: https://github.com/aaimeraud/feed.com
-
-2. t5x
+1. t5x
    Description: A free collection of developer and design tools
    Year: 2026
    Type: Website
    Tags: Next.js, React, UI/UX design, Open source, Work in progress
    Link: https://github.com/aaimeraud/t5x
+
+2. aarshi
+   Description: A CLI that scaffolds a Next.js app and simplifies my developer experience
+   Year: 2026
+   Type: CLI
+   Tags: Rust, Open source, Agentic coding
+   Link: https://github.com/aaimeraud/aarshi
 
 3. ouro(boros)
    Description: My personal website
@@ -66,6 +66,13 @@ PROJECTS
    Type: Website
    Tags: Next.js, React, UI/UX design
    Link: https://github.com/aaimeraud/ouro
+
+4. AimeRSS
+   Description: A curated selection of RSS feeds I like
+   Year: 2026
+   Type: Website
+   Tags: Next.js, React, RSS feeds, Content management
+   Link: https://github.com/aaimeraud/feed.com
 
 
 ========================================

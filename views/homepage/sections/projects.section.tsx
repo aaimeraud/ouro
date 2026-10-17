@@ -24,7 +24,7 @@ const Projects = ({ locale }: ProjectsProps) => {
           render={
             <h2
               className={cn(
-                "text-md font-bold w-fit text-neutral-950 lg:text-xl dark:text-neutral-50",
+                "text-md w-fit font-bold text-neutral-950 lg:text-xl dark:text-neutral-50",
                 "before:text-neutral-300 before:content-['##_'] dark:before:text-neutral-600",
               )}
             >
@@ -32,7 +32,9 @@ const Projects = ({ locale }: ProjectsProps) => {
             </h2>
           }
         />
-        <TooltipContent side="top" sideOffset={10}>{t.moreTooltip}</TooltipContent>
+        <TooltipContent className={"text-center"} side="top" sideOffset={10}>
+          {t.moreTooltip}
+        </TooltipContent>
       </Tooltip>
 
       <ul className="flex flex-col gap-4">
@@ -41,7 +43,11 @@ const Projects = ({ locale }: ProjectsProps) => {
             <TooltipTrigger
               render={<ProjectCard project={project} locale={locale} />}
             />
-            <TooltipContent side="top" sideOffset={10}>
+            <TooltipContent
+              className={"text-center"}
+              side="top"
+              sideOffset={10}
+            >
               {t.items[project.slug].tooltip}
             </TooltipContent>
           </Tooltip>

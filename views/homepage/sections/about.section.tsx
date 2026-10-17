@@ -53,9 +53,12 @@ const About = ({ locale }: AboutProps) => {
         <p className="text-sm">
           {t.about.currently}{" "}
           <TooltipTrigger
-            render={<span className="underline">{t.about.role}</span>}
+            render={<span className="font-semibold">{t.about.role}</span>}
           />
-          <TooltipContent sideOffset={10} className={"hover:text-blue-400"}>
+          <TooltipContent
+            sideOffset={10}
+            className={"text-center hover:text-blue-400"}
+          >
             {t.about.jobTooltip} {t.about.company}
           </TooltipContent>
           <br /> {t.about.stack}

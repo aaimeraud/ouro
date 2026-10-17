@@ -1,5 +1,5 @@
 DANIEL FORTUNÉ (aaimeraud)
-Last updated: 2026-10-16
+Last updated: 2026-10-17
 
 I'm looking for an apprenticeship (alternance) in software development in Paris, France.
 
@@ -66,6 +66,13 @@ PROJECTS
    Type: Website
    Tags: Next.js, React, UI/UX design
    Link: https://github.com/aaimeraud/ouro
+
+4. aarshi
+   Description: A CLI that scaffolds a Next.js app and simplifies my developer experience
+   Year: 2026
+   Type: CLI
+   Tags: Rust, Open source, Agentic coding
+   Link: https://github.com/aaimeraud/aarshi
 
 
 ========================================

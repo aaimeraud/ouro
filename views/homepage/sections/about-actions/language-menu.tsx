@@ -23,10 +23,10 @@ export function LanguageMenu({ locale }: { locale: Locale }) {
             className={cn(actionButtonStyles)}
             size={"default"}
             // Includes the visible label so the accessible name matches it (WCAG 2.5.3)
-            aria-label={`${t.language[locale]} — ${t.language.label}`}
+            aria-label={`${t.language[locale]} - ${t.language.label}`}
           >
             <Languages />
-            <span className="md:hidden">{locale.toUpperCase()}</span>
+            <span className="md:hidden">{locale}</span>
             <span className="hidden md:inline">{t.language[locale]}</span>
           </Button>
         }

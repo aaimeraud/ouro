@@ -1,7 +1,6 @@
 import { ButtonGroup } from "@/components/ui/button-group";
 import { getDictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/config";
-import { AskAiMenu } from "./ask-ai-menu";
 import { LanguageMenu } from "./language-menu";
 import { ResumeButton } from "./resume-button";
 
@@ -12,10 +11,9 @@ export function ActionsButtonGroup({ locale }: { locale: Locale }) {
   return (
     <ButtonGroup
       aria-label={t.ai.groupLabel}
-      className="items-center align-middle"
+      className=" w-full  grid grid-cols-2"
     >
       <ResumeButton locale={locale} />
-      <AskAiMenu locale={locale} />
       <LanguageMenu locale={locale} />
     </ButtonGroup>
   );

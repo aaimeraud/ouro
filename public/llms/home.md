@@ -71,10 +71,10 @@ I'm a third-year Bachelor's student (Bac+3) at [.decode](https://ecole-decode.fr
 
 |    Title    |                                Description                                | Year |  Type   |                            Tags                             |                      Link                       |
 | :---------: | :-----------------------------------------------------------------------: | :--: | :-----: | :---------------------------------------------------------: | :---------------------------------------------: |
-|   AimeRSS   |                  A curated selection of RSS feeds I like                  | 2026 | Website |        Next.js, React, RSS feeds, Content management        | [GitHub](https://github.com/aaimeraud/feed.com) |
 |     t5x     |              A free collection of developer and design tools              | 2026 | Website | Next.js, React, UI/UX design, Open source, Work in progress |   [GitHub](https://github.com/aaimeraud/t5x)    |
-| ouro(boros) |                            My personal website                            | 2026 | Website |                Next.js, React, UI/UX design                 |   [GitHub](https://github.com/aaimeraud/ouro)   |
 |   aarshi    | A CLI that scaffolds a Next.js app and simplifies my developer experience | 2026 |   CLI   |              Rust, Open source, Agentic coding              |  [GitHub](https://github.com/aaimeraud/aarshi)  |
+| ouro(boros) |                            My personal website                            | 2026 | Website |                Next.js, React, UI/UX design                 |   [GitHub](https://github.com/aaimeraud/ouro)   |
+|   AimeRSS   |                  A curated selection of RSS feeds I like                  | 2026 | Website |        Next.js, React, RSS feeds, Content management        | [GitHub](https://github.com/aaimeraud/feed.com) |
 
 # About Daniel
 

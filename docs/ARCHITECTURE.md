@@ -39,11 +39,11 @@ public/
 
 ## Modifier un texte
 
-Tous les textes visibles sont dans les dictionnaires, jamais en dur dans les composants.
+Tous les textes visibles sont dans les dictionnaires.
 
 1. Ajouter/modifier la clé dans `lib/i18n/dictionaries/en.ts`.
-2. Ajouter la traduction dans `lib/i18n/dictionaries/fr.ts` 
-(TypeScript refuse de compiler tant que la clé manque, donc aucune traduction ne peut être oubliée.)
+2. Ajouter la traduction dans `lib/i18n/dictionaries/fr.ts`
+   (TypeScript refuse de compiler tant que la clé manque, donc aucune traduction ne peut être oubliée.)
 
 ## Ajouter un projet ou un réseau social
 
@@ -59,13 +59,94 @@ Tous les textes visibles sont dans les dictionnaires, jamais en dur dans les com
 2. Ajouter son tooltip dans les deux dictionnaires, sous `socials[label]`.
    Le label est typé de la même façon.
 
+## Ajouter une page
+
+Exemple avec une page « À propos » servie sur `/about` (EN) et `/fr/about` (FR).
+Les layouts racines s'appliquent automatiquement : rien à y toucher.
+
+**1. Créer la vue** - `views/about/about.view.tsx` (+ `sections/` si la page
+grossit). Elle reçoit la langue en prop :
+
+```tsx
+import { getDictionary } from "@/lib/i18n";
+import type { Locale } from "@/lib/i18n/config";
+
+type AboutProps = {
+  locale: Locale;
+};
+
+export default function AboutPage({ locale }: AboutProps) {
+  const t = getDictionary(locale);
+  return (
+    <main className="m-auto flex max-w-lg flex-col gap-5 p-5 md:max-w-3xl">
+      <h1>{t.aboutPage.title}</h1>
+    </main>
+  );
+}
+```
+
+**2. Créer les deux routes** - un fichier par langue, seul `locale` change.
+Le segment `fr` n'existe que dans le groupe `(fr)` : l'URL anglaise n'a pas de préfixe.
+
+```tsx
+// app/(en)/about/page.tsx
+import { getMetadata } from "@/lib/i18n";
+import AboutPage from "@/views/about/about.view";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = getMetadata("en", "/about");
+
+export default function Page() {
+  return <AboutPage locale="en" />;
+}
+```
+
+```tsx
+// app/(fr)/fr/about/page.tsx - identique avec "fr"
+export const metadata: Metadata = getMetadata("fr", "/about");
+
+export default function Page() {
+  return <AboutPage locale="fr" />;
+}
+```
+
+`getMetadata(locale, path)` produit le canonical et les `hreflang` de la sous-page
+(`/about` ↔ `/fr/about`) tout seul.
+
+**3. Ajouter les textes** - nouvelle clé `aboutPage` dans `en.ts`, puis sa
+traduction dans `fr.ts` (obligatoire : le build échoue tant qu'elle manque).
+
+**4. Référencer la page** - ajouter les deux URLs dans `app/sitemap.ts` :
+
+```ts
+{
+  url: `${SITE_URL}${pagePath("en", "/about")}`,
+  lastModified,
+  changeFrequency: "monthly",
+  priority: 0.8,
+},
+{
+  url: `${SITE_URL}${pagePath("fr", "/about")}`,
+  lastModified,
+  changeFrequency: "monthly",
+  priority: 0.8,
+},
+```
+
+**5. Vérifier** - `bun run build`, puis ouvrir `/about` et `/fr/about` : le bon
+`<html lang>`, les textes traduits, et le sélecteur de langue qui pointe vers la
+bonne URL.
+
+> Le JSON-LD de la home ne concerne que la home; une page qui mérite ses propres
+> données structurées peut injecter son propre `<script type="application/ld+json">`
+> dans sa vue (voir `views/homepage/homepage.view.tsx` pour le pattern).
+
 ## Les fichiers `public/llms/`
 
 `home.md` et `home.txt` sont écrits pour être lus par des IA (ils alimentent les
 prompts « Ask AI »). Ils contiennent plus d'infos que le site.
 
-⚠️ **Ils ne sont pas générés.** Après avoir modifié `home.md`, copier son contenu
-dans `home.txt` à la main. ChatGPT ne lit que le `.txt`, Claude lit les deux.
+Après avoir modifié `home.md`, copier son contenu dans `home.txt` à la main.
 
 ## SEO
 

@@ -9,6 +9,7 @@ import { getDictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/config";
 import { cn } from "@sglara/cn";
 import { ActionsButtonGroup } from "./about-actions/actions-button-group";
+import { AskAiMenu } from "./about-actions/ask-ai-menu";
 
 type AboutProps = {
   locale: Locale;
@@ -29,7 +30,7 @@ const About = ({ locale }: AboutProps) => {
       <h2 className="sr-only">{t.about.sectionTitle}</h2>
 
       <div className="flex flex-col-reverse justify-between gap-3 md:flex-row">
-        <p className="text-sm">
+        <p className="content-center text-sm">
           <span
             className={cn(
               "font-bold",
@@ -42,7 +43,10 @@ const About = ({ locale }: AboutProps) => {
           <br />
           {t.about.intro}
         </p>
-        <ActionsButtonGroup locale={locale} />
+        <div className="my-5 flex w-full flex-col gap-2 md:my-0 md:w-fit md:items-end">
+          <AskAiMenu locale={locale} />
+          <ActionsButtonGroup locale={locale} />
+        </div>
       </div>
 
       <Tooltip>
@@ -60,7 +64,7 @@ const About = ({ locale }: AboutProps) => {
 
       <p className="text-sm">{t.about.learning}</p>
 
-      <ul className="flex gap-3">
+      <ul className="grid grid-cols-2 gap-2 md:flex md:flex-row md:gap-3">
         {aaimeraud.socials.map((social) => (
           <li key={social.label}>
             <LinkCustom

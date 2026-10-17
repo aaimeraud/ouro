@@ -9,3 +9,9 @@ export const localePaths: Record<Locale, string> = {
   en: "/",
   fr: "/fr",
 };
+
+/** Public URL of a page within a locale, e.g. pagePath("fr", "/about") === "/fr/about". */
+export const pagePath = (locale: Locale, path = ""): string => {
+  const base = localePaths[locale] === "/" ? "" : localePaths[locale];
+  return `${base}${path}` || "/";
+};

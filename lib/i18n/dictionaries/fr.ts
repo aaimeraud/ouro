@@ -89,15 +89,15 @@ export const fr: Dictionary = {
       },
       aarshi: {
         description:
-          "Une CLI qui génère le squelette d’une app Next.js et simplifie mon expérience développeur",
+          "Une CLI qui génère le squelette d'une app Next.js et simplifie mon expérience développeur",
         tooltip:
-          "J’ai payé un mois d’API OpenCode, donc je me suis fait plaisir en la créant haha",
+          "J'ai payé un mois d'API OpenCode, donc je me suis fait plaisir en la créant haha",
       },
     },
   },
   footer: {
     nohelloBefore: "Lisez ceci avant de me contacter :",
     nohelloAfter:
-      ". Je ne répondrais peut-être pas à ton message, ne le prends pas personnellement.",
+      ". Je ne répondrai peut-être pas à ton message, ne le prends pas personnellement.",
   },
 };

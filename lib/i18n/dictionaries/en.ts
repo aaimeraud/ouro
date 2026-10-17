@@ -89,7 +89,8 @@ export const en = {
         tooltip: "one-shotted this one, i have to work on the UI i know lol...",
       },
       aarshi: {
-        description: "A CLI that scaffolds a Next.js app and simplifies my developer exprience",
+        description:
+          "A CLI that scaffolds a Next.js app and simplifies my developer experience",
         tooltip:
           "I paid for a month of OpenCode API access, so I had a bit of fun making this haha",
       },

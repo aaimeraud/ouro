@@ -1,5 +1,5 @@
-import { createLink, Link, LinkType } from "lib/types/links.types";
 import { SITE_URL } from "lib/site";
+import { createLink, Link, LinkType } from "lib/types/links.types";
 
 import type { Dictionary } from "../i18n/dictionaries/en";
 import {
@@ -59,6 +59,11 @@ const projects: Project[] = [
     name: "AimeRSS",
     type: type.website,
     tags: [tag.next, tag.react],
+    website: createLink({
+      url: "https://feed.fortunedaniel.com",
+      label: "feed.com",
+      type: LinkType.external,
+    }),
     repo: createLink({
       url: "https://github.com/aaimeraud/feed.com",
       label: "AimeRSS",

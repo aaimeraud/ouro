@@ -54,7 +54,7 @@ PROJECTS
    Link: https://github.com/aaimeraud/t5x
 
 2. aarshi
-   Description: A CLI that scaffolds a Next.js app and simplifies my developer experience
+   Description: aarshi is a Rust CLI that scaffolds a multilingual Next.js App Router site, then helps you keep it in order. It writes the route tree, the typed dictionaries, the sitemap and the language switcher once, and adds pages, sections, languages and icons without copying files by hand.
    Year: 2026
    Type: CLI
    Tags: Rust, Open source, Agentic coding

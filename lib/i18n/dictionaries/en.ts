@@ -60,6 +60,7 @@ export const en = {
     kind: {
       [projectTypes.website]: "this one's a website",
       [projectTypes.design]: "this one's a design project",
+      [projectTypes.cli]: "this one's a cli project",
     },
     tags: {
       [projectTags.uiUx]: "UI/UX Design",
@@ -70,6 +71,8 @@ export const en = {
       [projectTags.openSource]: "Open-Source",
       [projectTags.contribution]: "Contribution",
       [projectTags.wip]: "Work in Progress",
+      [projectTags.agentic]: "Agentic Coding",
+      [projectTags.rust]: "Rust",
     },
     items: {
       toolbox: {
@@ -84,6 +87,12 @@ export const en = {
       aimerss: {
         description: "A selection of RSS feeds i like",
         tooltip: "one-shotted this one, i have to work on the UI i know lol...",
+      },
+      aarshi: {
+        description:
+          "A CLI that scaffolds a Next.js app and simplifies my developer experience",
+        tooltip:
+          "I paid for a month of OpenCode API access, so I had a bit of fun making this haha",
       },
     },
   },

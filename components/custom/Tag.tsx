@@ -23,6 +23,8 @@ const Tag = ({ tag, label, type = "li", href, classname }: TagProps) => {
     );
   } else if (tag === projectTags.wip) {
     return <Type className={cn(classname, base, "text-red-600 dark:text-red-400 font-bold animate-pulse")}>{label}</Type>;
+  } else if (tag === projectTags.agentic) {
+    return <Type className={cn(classname, base, "text-teal-600 dark:text-teal-400 font-bold animate-pulse")}>{label}</Type>;
   } else {
     return <Type className={cn(classname, base)}>{label}</Type>;
   }

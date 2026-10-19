@@ -31,8 +31,10 @@ export interface Project {
   /** Project tags */
   tags: projectTags[];
   year: string;
-  /** A link to this project */
-  link?: Link;
+  /** The project's live site, when it has one */
+  website?: Link;
+  /** The project's source repository */
+  repo?: Link;
   /** A preview image for this project */
   previewImage?: string;
   /** A collection of images from this project */

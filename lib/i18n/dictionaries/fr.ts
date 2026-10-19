@@ -54,6 +54,11 @@ export const fr: Dictionary = {
   projects: {
     title: "projets",
     moreTooltip: "il y en a d'autres en route !",
+    actions: {
+      viewSite: "voir le site",
+      viewRepo: "voir le repo github",
+      close: "fermer",
+    },
     kind: {
       [projectTypes.website]: "un site web",
       [projectTypes.design]: "un projet de design",

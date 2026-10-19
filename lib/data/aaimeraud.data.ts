@@ -1,4 +1,5 @@
 import { createLink, Link, LinkType } from "lib/types/links.types";
+import { SITE_URL } from "lib/site";
 
 import type { Dictionary } from "../i18n/dictionaries/en";
 import {
@@ -17,7 +18,7 @@ const projects: Project[] = [
     name: "t5x (toolbox)",
     type: type.website,
     tags: [tag.react, tag.uiUx, tag.openSource, tag.wip],
-    link: createLink({
+    repo: createLink({
       url: "https://github.com/aaimeraud/t5x",
       label: "Toolbox",
       type: LinkType.external,
@@ -29,7 +30,7 @@ const projects: Project[] = [
     name: "aarshi",
     type: type.cli,
     tags: [tag.openSource, tag.rust, tag.agentic],
-    link: createLink({
+    repo: createLink({
       url: "https://github.com/aaimeraud/aarshi",
       label: "aarshi",
       type: LinkType.external,
@@ -41,7 +42,12 @@ const projects: Project[] = [
     name: "ouro(boros)",
     type: type.website,
     tags: [tag.next, tag.react, tag.uiUx],
-    link: createLink({
+    website: createLink({
+      url: SITE_URL,
+      label: "aaimeraud.me",
+      type: LinkType.external,
+    }),
+    repo: createLink({
       url: "https://github.com/aaimeraud/ouro",
       label: "aaimeraud",
       type: LinkType.internal,
@@ -53,7 +59,7 @@ const projects: Project[] = [
     name: "AimeRSS",
     type: type.website,
     tags: [tag.next, tag.react],
-    link: createLink({
+    repo: createLink({
       url: "https://github.com/aaimeraud/feed.com",
       label: "AimeRSS",
       type: LinkType.external,

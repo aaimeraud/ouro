@@ -57,6 +57,11 @@ export const en = {
   projects: {
     title: "projects",
     moreTooltip: "there's more on the way !",
+    actions: {
+      viewSite: "visit the site",
+      viewRepo: "see the repo",
+      close: "close",
+    },
     kind: {
       [projectTypes.website]: "this one's a website",
       [projectTypes.design]: "this one's a design project",

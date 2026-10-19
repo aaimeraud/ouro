@@ -105,6 +105,8 @@ export const en = {
     nohelloBefore: "Read this before contacting me:",
     nohelloAfter:
       ". I may not respond to your message, please don't take it personally.",
+    commitLabel: "last commit",
+    commitTitle: "See the latest commit on main",
   },
 };
 

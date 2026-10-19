@@ -104,5 +104,7 @@ export const fr: Dictionary = {
     nohelloBefore: "Lisez ceci avant de me contacter :",
     nohelloAfter:
       ". Je ne répondrai peut-être pas à ton message, ne le prends pas personnellement.",
+    commitLabel: "dernier commit",
+    commitTitle: "Voir le dernier commit sur main",
   },
 };

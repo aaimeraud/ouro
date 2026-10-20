@@ -1,7 +1,7 @@
 ---
 name: Daniel Fortuné
 handle: aaimeraud
-last_updated: 2026-10-17
+last_updated: 2026-10-20
 location: Paris, France
 education: "Bachelor 3 (Bac+3), .decode"
 looking_for: "Apprenticeship (alternance) in software development, Paris, France"
@@ -65,7 +65,7 @@ I'm a third-year Bachelor's student (Bac+3) at [.decode](https://ecole-decode.fr
 
 - GitHub: [github.com/aaimeraud](https://github.com/aaimeraud)
 - LinkedIn: [Daniel Fortuné](https://www.linkedin.com/in/danielfortun%C3%A9/)
-- Email: [danielfortune.pro@proton.me](mailto:danielfortune.pro@proton.me?subject=Hi%20Daniel%20!%20I%20saw%20your%20website)
+- Email: [danielfortune.pro@proton.me](mailto:danielfortune.pro@proton.me?subject=Bonjour%20Daniel%20!&body=J'ai%20vu%20ton%20site!)
 
 ## Projects
 

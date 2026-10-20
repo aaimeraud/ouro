@@ -30,6 +30,11 @@ const projects: Project[] = [
     name: "aarshi",
     type: type.cli,
     tags: [tag.openSource, tag.rust, tag.agentic],
+    website: createLink({
+      url: "https://aarshi.aaimeraud.me",
+      label: "aarshi docs",
+      type: LinkType.external,
+    }),
     repo: createLink({
       url: "https://github.com/aaimeraud/aarshi",
       label: "aarshi",

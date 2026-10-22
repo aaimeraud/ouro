@@ -34,7 +34,7 @@ components/
   ui/                           → primitives shadcn/base-ui (ne pas modifier à la main)
   custom/                       → composants maison (LinkCustom, ProjectCard, Tag…)
 public/
-  llms/home.md, home.txt        → fichiers destinés aux IA (synchronisation MANUELLE)
+  home.txt        → fichiers destinés aux IA (synchronisation MANUELLE)
 ```
 
 ## Modifier un texte
@@ -141,12 +141,10 @@ bonne URL.
 > données structurées peut injecter son propre `<script type="application/ld+json">`
 > dans sa vue (voir `views/homepage/homepage.view.tsx` pour le pattern).
 
-## Les fichiers `public/llms/`
+## Le fichier `public/home.txt`
 
-`home.md` et `home.txt` sont écrits pour être lus par des IA (ils alimentent les
-prompts « Ask AI »). Ils contiennent plus d'infos que le site.
-
-Après avoir modifié `home.md`, copier son contenu dans `home.txt` à la main.
+`home.txt`est écrit pour être lus par des IA (il alimente les
+prompts « Ask AI »). Ils contient plus d'infos que le site.
 
 ## SEO
 

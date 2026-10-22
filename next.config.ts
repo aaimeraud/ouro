@@ -4,11 +4,11 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/llms/:path*.txt",
+        source: "/:path*.txt",
         headers: [{ key: "Content-Type", value: "text/plain; charset=utf-8" }],
       },
       {
-        source: "/llms/:path*.md",
+        source: "/:path*.md",
         headers: [
           { key: "Content-Type", value: "text/markdown; charset=utf-8" },
         ],

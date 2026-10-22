@@ -1,0 +1,73 @@
+# Daniel Fortuné
+
+**Développeur Full-Stack Junior** · Paris, France
+
+[danielfortune.pro@proton.me](mailto:danielfortune.pro@proton.me) · [aaimeraud.me](https://www.aaimeraud.me) · [GitHub](https://github.com/aaimeraud) · [LinkedIn](https://linkedin.com/in/danielfortuné)
+
+## Profil
+
+Étudiant en 3e année de Bachelor Développement Web à .decode (Paris) et développeur full-stack en alternance. Je recherche une alternance en développement logiciel, avec un fort intérêt pour la qualité du code et les concepts bas niveau. J'apprends Rust en parallèle de ma stack web (React, Next.js, PostgreSQL). À l'aise en français et en anglais (courant).
+
+## Compétences techniques
+
+- **Langages :** TypeScript, JavaScript, Python (apprentissage), PHP, Rust (apprentissage), C++, Java, HTML, CSS
+- **Frameworks :** React, Next.js, TailwindCSS
+- **Bases de données :** PostgreSQL, Supabase
+- **Outils :** Git, GitHub, Docker, Bash/Linux, Figma, Penpot
+- **CMS :** WordPress, PayloadCMS
+- **Parcours IA :** Agentic coding (OpenCode, T3 Code), workflows d'automatisation (n8n)
+
+## Expérience
+
+### Développeur Full-Stack (stage de 4 mois puis alternance à partir de Septembre, Cherche une nouvelle alternance car besoin de changement et + d'expérience)
+
+**ComKani**, Paris, France · Avril 2026 – Octobre 2026
+
+- Travail au sein d'une agence de communication sur des projets clients variés
+- Développement de sites et landing pages avec WordPress et Next.js
+- Gestion de bases de données PostgreSQL via Supabase pour un MVP SaaS
+- Participation aux phases de préparation : veille concurrentielle, moodboards
+
+### Assistant Support Informatique (stage)
+
+**Chloé**, Paris, France
+
+- Gestion des droits d'accès et traitement des tickets via Microsoft Teams
+- Inventaire et suivi du parc informatique
+
+## Formation
+
+### Bachelor Développement Web (Bac+3)
+
+**.decode**, Paris 75008, France · 2025 – 2027
+
+- Algorithmie et structures de données (Java)
+- Back-end : programmation orientée objet (PHP avancé)
+- Modélisation relationnelle et optimisation SQL (PostgreSQL)
+- Conteneurisation (Docker), Git et bonnes pratiques de collaboration
+- Gestion de projet : audit de projet, rédaction de cahier des charges et appels d'offre
+- Accessibilité web (RGAA) et workflows d'IA agentic (OpenCode, T3 Code)
+
+### Baccalauréat STMG
+
+**Lycée George Sand**, Domont 95330, France · 2019 – 2023
+
+## Projets
+
+### [aarshi](https://github.com/aaimeraud/aarshi)
+
+CLI en Rust qui génère un site Next.js multilingue (i18n) en une commande : arbre de routes, dictionnaires typés, sitemap et sélecteur de langue générés automatiquement. Approche agentic coding.
+
+*Rust · Open source*
+
+### [ouro(boros)](https://github.com/aaimeraud/ouro)
+
+Site personnel, refait de zéro avec Next.js et React, avec une attention particulière au design UI/UX.
+
+*Next.js · React*
+
+### [AimeRSS](https://github.com/aaimeraud/feed.com)
+
+Agrégateur de flux RSS provenant de différentes sources, avec routes dynamiques et parsing RSS. Interface responsive avec TailwindCSS, déployée sur Vercel.
+
+*Next.js · TailwindCSS*

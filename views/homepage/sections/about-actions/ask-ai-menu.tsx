@@ -19,17 +19,11 @@ import { cn } from "cn";
 import { Bot } from "lucide-react";
 import { actionButtonStyles } from "./styles";
 
-// The prompts are sent to external AI tools and are not translated with the UI.
-const aiQueries = {
-  claude:
-    "Read this https://www.aaimeraud.me/llms/home.md, and tell me why I should hire Daniel Fortuné as a junior dev for an apprenticeship ? Answer in French",
-  chatgpt:
-    "Read this https://www.aaimeraud.me/llms/home.txt, and tell me why I should hire Daniel Fortuné as a junior dev for an apprenticeship ? Answer in French",
-  clipboard:
-    "Read this https://www.aaimeraud.me/llms/home.md, and tell me why I should hire Daniel Fortuné as a junior dev for an apprenticeship ? Answer in French (if you can't read markdown files read this https://www.aaimeraud.me/llms/home.txt)",
-};
+// The prompt is sent to external AI tools and are not translated with the UI.
+const aiQuery =
+  "Read this https://www.aaimeraud.me/home.txt, and tell me why I should hire Daniel Fortuné as a junior dev for an apprenticeship ? Answer in French";
 
-/** "Ask AI about me" menu: opens Claude or ChatGPT with a prefilled prompt, or copies it. */
+/** "Ask an LLM about me" menu: opens Claude or ChatGPT with a prefilled prompt, or copies it. */
 export function AskAiMenu({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
 
@@ -60,10 +54,12 @@ export function AskAiMenu({ locale }: { locale: Locale }) {
         }
       >
         <DropdownMenuItem
-          className={cn("flex w-full items-center justify-between align-middle")}
+          className={cn(
+            "flex w-full items-center justify-between align-middle",
+          )}
         >
           <a
-            href={`https://claude.ai/new?q=${encodeURIComponent(aiQueries.claude)}`}
+            href={`https://claude.ai/new?q=${encodeURIComponent(aiQuery)}`}
             className="flex w-full items-center justify-between gap-1.5"
           >
             <ClaudeAI className="text-neutral-200 group-focus/dropdown-menu-item:text-[#D97757]" />
@@ -71,18 +67,20 @@ export function AskAiMenu({ locale }: { locale: Locale }) {
           </a>
         </DropdownMenuItem>
         <DropdownMenuItem
-          className={cn("flex w-full items-center justify-between align-middle")}
+          className={cn(
+            "flex w-full items-center justify-between align-middle",
+          )}
         >
           <a
-            href={`https://chatgpt.com/?q=${encodeURIComponent(aiQueries.chatgpt)}`}
+            href={`https://chatgpt.com/?q=${encodeURIComponent(aiQuery)}`}
             className="flex w-full items-center justify-between gap-1.5"
           >
             <OpenAI className="text-neutral-200 group-focus/dropdown-menu-item:text-black" />
-            <span>{t.ai.askChatGpt}</span>
+            <span>{t.ai.askClaude}</span>
           </a>
         </DropdownMenuItem>
         <CopyPromptMenuItem
-          prompt={aiQueries.clipboard}
+          prompt={aiQuery}
           copyLabel={t.ai.copyPrompt}
           copiedLabel={t.ai.copiedPrompt}
         />

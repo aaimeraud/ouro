@@ -15,7 +15,7 @@ export default function robots(): MetadataRoute.Robots {
           "ChatGPT-User",
           "PerplexityBot",
         ],
-        allow: ["/", "/llms/"],
+        allow: ["/"],
       },
       {
         userAgent: "*",

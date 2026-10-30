@@ -13,18 +13,18 @@ import {
 type SocialLink = Link & { label: keyof Dictionary["socials"] };
 
 const projects: Project[] = [
-  createProject({
-    slug: "toolbox",
-    name: "t5x (toolbox)",
-    type: type.website,
-    tags: [tag.react, tag.uiUx, tag.openSource, tag.wip],
-    repo: createLink({
-      url: "https://github.com/aaimeraud/t5x",
-      label: "Toolbox",
-      type: LinkType.external,
-    }),
-    year: "2026",
-  }),
+  // createProject({
+  //   slug: "toolbox",
+  //   name: "t5x (toolbox)",
+  //   type: type.website,
+  //   tags: [tag.react, tag.uiUx, tag.openSource, tag.wip],
+  //   repo: createLink({
+  //     url: "https://github.com/aaimeraud/t5x",
+  //     label: "Toolbox",
+  //     type: LinkType.external,
+  //   }),
+  //   year: "2026",
+  // }),
   createProject({
     slug: "aarshi",
     name: "aarshi",

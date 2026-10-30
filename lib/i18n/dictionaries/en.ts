@@ -102,9 +102,9 @@ export const en = {
     },
   },
   footer: {
-    nohelloBefore: "Read this before contacting me:",
+    nohelloBefore: "please read this before contacting me:",
     nohelloAfter:
-      ". I may not respond to your message, please don't take it personally.",
+      ". i may not respond to your message, please don't take it personally.",
     commitLabel: "last commit",
     commitTitle: "See the latest commit on main",
   },

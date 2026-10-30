@@ -49,7 +49,7 @@ export const en = {
     copiedPrompt: "Copied!",
   },
   socials: {
-    bluesky: "Recently got on there (idk why tbh)",
+    twitter: "i'll never call it X sorry",
     linkedin: "ughh who likes this one ?",
     email: "wanna hire ? ^^",
     github: "i'm getting shy... let me tidy up a bit",
@@ -102,9 +102,9 @@ export const en = {
     },
   },
   footer: {
-    nohelloBefore: "Read this before contacting me:",
+    nohelloBefore: "please read this before contacting me:",
     nohelloAfter:
-      ". I may not respond to your message, please don't take it personally.",
+      ". i may not respond to your message, please don't take it personally.",
     commitLabel: "last commit",
     commitTitle: "See the latest commit on main",
   },

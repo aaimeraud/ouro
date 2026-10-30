@@ -46,7 +46,7 @@ export const fr: Dictionary = {
     copiedPrompt: "Copié !",
   },
   socials: {
-    bluesky: "Je me suis inscrit récemment",
+    twitter: "Je ne l'appellerais jamais X désolé",
     linkedin: "euh, qui aime ce truc ?",
     email: "tu veux m'embaucher ? ^^",
     github: "je suis timide... laisse-moi ranger un peu",
@@ -101,9 +101,9 @@ export const fr: Dictionary = {
     },
   },
   footer: {
-    nohelloBefore: "Lisez ceci avant de me contacter :",
+    nohelloBefore: "s'il vous plaît lisez ceci avant de me contacter :",
     nohelloAfter:
-      ". Je ne répondrai peut-être pas à ton message, ne le prends pas personnellement.",
+      ". je ne répondrai peut-être pas à ton message, ne le prends pas personnellement.",
     commitLabel: "dernier commit",
     commitTitle: "Voir le dernier commit sur main",
   },

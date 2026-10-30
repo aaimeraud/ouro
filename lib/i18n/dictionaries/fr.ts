@@ -46,7 +46,7 @@ export const fr: Dictionary = {
     copiedPrompt: "Copié !",
   },
   socials: {
-    bluesky: "Je me suis inscrit récemment",
+    twitter: "Je ne l'appellerais jamais X désolé",
     linkedin: "euh, qui aime ce truc ?",
     email: "tu veux m'embaucher ? ^^",
     github: "je suis timide... laisse-moi ranger un peu",

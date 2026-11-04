@@ -65,7 +65,8 @@ export const en = {
     kind: {
       [projectTypes.website]: "this one's a website",
       [projectTypes.design]: "this one's a design project",
-      [projectTypes.cli]: "this one's a cli project",
+      [projectTypes.cli]: "this one's a cli tool",
+      [projectTypes.game]: "this one's a game",
     },
     tags: {
       [projectTags.uiUx]: "UI/UX Design",
@@ -80,9 +81,10 @@ export const en = {
       [projectTags.rust]: "Rust",
     },
     items: {
-      toolbox: {
-        description: "A free collection of dev & design tools",
-        tooltip: "started this in october, give me a few weeks ^^",
+      spacejo: {
+        description: "A Skyjo clone for my friends and I",
+        tooltip:
+          "I had to make a full web app with AI at school so I made this ! They were all so happy haha !",
       },
       ouro: {
         description: "This very website ^^",

@@ -8,18 +8,23 @@ import {
 } from "../types/projects.types";
 
 export const projects: Project[] = [
-  // createProject({
-  //   slug: "toolbox",
-  //   name: "t5x (toolbox)",
-  //   type: type.website,
-  //   tags: [tag.react, tag.uiUx, tag.openSource, tag.wip],
-  //   repo: createLink({
-  //     url: "https://github.com/aaimeraud/t5x",
-  //     label: "Toolbox",
-  //     type: LinkType.external,
-  //   }),
-  //   year: "2026",
-  // }),
+  createProject({
+    slug: "spacejo",
+    name: "spacejo",
+    type: type.game,
+    tags: [tag.react, tag.uiUx, tag.openSource, tag.rust, tag.agentic],
+    repo: createLink({
+      url: "https://github.com/aaimeraud/spacejo",
+      label: "SpaceJo",
+      type: LinkType.external,
+    }),
+    website: createLink({
+      url: "https://spacejo.aaimeraud.me",
+      label: "SpaceJo",
+      type: LinkType.external,
+    }),
+    year: "2026",
+  }),
   createProject({
     slug: "aarshi",
     name: "aarshi",

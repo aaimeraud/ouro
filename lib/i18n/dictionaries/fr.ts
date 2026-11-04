@@ -62,7 +62,8 @@ export const fr: Dictionary = {
     kind: {
       [projectTypes.website]: "un site web",
       [projectTypes.design]: "un projet de design",
-      [projectTypes.cli]: "un projet en ligne de commandes",
+      [projectTypes.cli]: "un outil en ligne de commandes",
+      [projectTypes.game]: "un jeu",
     },
     tags: {
       [projectTags.uiUx]: "Design UI/UX",
@@ -70,17 +71,17 @@ export const fr: Dictionary = {
       [projectTags.react]: "React",
       [projectTags.php]: "PHP",
       [projectTags.content]: "Gestion de contenu",
-      [projectTags.openSource]: "Open-Source",
+      [projectTags.openSource]: "OSS",
       [projectTags.contribution]: "Contribution",
       [projectTags.wip]: "En cours",
       [projectTags.agentic]: "Coding Agentique",
       [projectTags.rust]: "Rust",
     },
     items: {
-      toolbox: {
-        description:
-          "Une collection gratuite d'outils pour le dev et le design",
-        tooltip: "commencé en octobre, laisse-moi quelques semaines ^^",
+      spacejo: {
+        description: "Un Skyjo en ligne pour mes amis",
+        tooltip:
+          "Je devais faire un site complet (db, frontend...) avec des agents IA.",
       },
       ouro: {
         description: "Ce site, tout simplement ^^",

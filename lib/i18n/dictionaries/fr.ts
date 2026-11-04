@@ -10,34 +10,36 @@ export const fr: Dictionary = {
   },
   language: {
     label: "Changer de langue",
-    en: "english",
-    fr: "français",
+    en: "English",
+    fr: "Français",
   },
   profile: {
     portraitAlt: "Une photo de",
-    portraitTooltip: "ne te laisse pas trop distraire",
-    nameTooltip: "mais tu peux m'appeler",
-    description: "en recherche d'une alternance en développement logiciel",
+    portraitTooltip: "Ne te laisse pas trop distraire",
+    nameTooltip: "Mais tu peux m'appeler",
+    description: "En recherche d'une alternance en développement logiciel",
     jobTitle: "Alternant développeur full-stack",
   },
   about: {
-    highlight: "en constante évolution.",
+    highlight: "En constante évolution.",
     sectionTitle: "À propos",
     intro:
-      "je fais des sites web. j'apprends à créer des logiciels utiles et qui ont du sens, et j'essaie de m'améliorer chaque jour.",
-    currently: "je suis actuellement",
+      "Je fais des sites web. J'apprends à créer des logiciels utiles et qui ont du sens, et j'essaie de m'améliorer chaque jour.",
+    currently: "Je suis actuellement",
     role: "alternant développeur web full-stack à Paris,",
     jobTooltip: "chez",
     company: "une agence de communication parisienne",
     stack: "je travaille surtout avec WordPress et Next.js.",
-    learning: "j'apprends aussi python.",
+    learning: "J'apprends aussi Python.",
+    nowBefore: "Curieux de savoir ce que je fais en ce moment ? Va voir ma",
+    nowLink: "page /now",
   },
   ai: {
     groupLabel: "Boutons liés à l'IA",
-    resume: "mon cv",
-    resumeShort: "cv",
-    askButton: "hi-robot",
-    askShort: "demandez à un llm",
+    resume: "Mon CV",
+    resumeShort: "CV",
+    askButton: "Demande à un LLM à mon sujet",
+    askShort: "LLM",
     askTooltipTitle: "Tu cherches à recruter ?",
     askTooltipBody: "Laisse l'IA te donner mes forces et faiblesses ^^",
     askClaude: "Demander à Claude",
@@ -47,22 +49,23 @@ export const fr: Dictionary = {
   },
   socials: {
     twitter: "Je ne l'appellerais jamais X désolé",
-    linkedin: "euh, qui aime ce truc ?",
-    email: "tu veux m'embaucher ? ^^",
-    github: "je suis timide... laisse-moi ranger un peu",
+    linkedin: "Euh, qui aime ce truc ?",
+    email: "Tu veux m'embaucher ? ^^",
+    github: "Je suis timide... laisse-moi ranger un peu",
   },
   projects: {
-    title: "projets",
-    moreTooltip: "il y en a d'autres en route !",
+    title: "Projets",
+    moreTooltip: "Il y en a d'autres en route !",
     actions: {
-      viewSite: "voir le site",
-      viewRepo: "voir le repo github",
-      close: "fermer",
+      viewSite: "Voir le site",
+      viewRepo: "Voir le repo GitHub",
+      close: "Fermer",
     },
     kind: {
-      [projectTypes.website]: "un site web",
-      [projectTypes.design]: "un projet de design",
-      [projectTypes.cli]: "un projet en ligne de commandes",
+      [projectTypes.website]: "Un site web",
+      [projectTypes.design]: "Un projet de design",
+      [projectTypes.cli]: "Un outil en ligne de commandes",
+      [projectTypes.game]: "Un jeu",
     },
     tags: {
       [projectTags.uiUx]: "Design UI/UX",
@@ -77,10 +80,10 @@ export const fr: Dictionary = {
       [projectTags.rust]: "Rust",
     },
     items: {
-      toolbox: {
-        description:
-          "Une collection gratuite d'outils pour le dev et le design",
-        tooltip: "commencé en octobre, laisse-moi quelques semaines ^^",
+      spacejo: {
+        description: "Un Skyjo en ligne pour mes amis",
+        tooltip:
+          "Je devais faire un site complet (db, frontend...) avec des agents IA.",
       },
       ouro: {
         description: "Ce site, tout simplement ^^",
@@ -90,7 +93,7 @@ export const fr: Dictionary = {
       aimerss: {
         description: "Une sélection de flux RSS que j'aime",
         tooltip:
-          "celui-ci est passé d'un coup, il faut que je travaille l'UI je sais lol...",
+          "Celui-ci je l'ai fait en une soirée d'illumination, il faut que je travaille l'UI et j'ai plein d'idées de fonctionnalités à ajouter",
       },
       aarshi: {
         description:
@@ -100,11 +103,50 @@ export const fr: Dictionary = {
       },
     },
   },
+  nowPage: {
+    meta: {
+      title: "Now · aaimeraud",
+      description:
+        "Ce que fait Daniel Fortuné (aaimeraud) en ce moment : où il travaille, ce qu'il apprend et les projets sur lesquels il bosse.",
+    },
+    title: "Now",
+    subtitle: "Ce que je fais en ce moment",
+    back: "Retour à l'accueil",
+    lastUpdated: "Mis à jour le",
+    basedIn: "Basé à",
+    at: "chez",
+    since: "depuis",
+    sections: {
+      work: "Travail",
+      learning: "Apprentissage",
+      projects: "Projets en cours",
+    },
+    aboutBefore: "Ceci est une page now, une idée de",
+    aboutAfter: ". Si tu as un site, tu devrais en faire une aussi.",
+  },
+  cvPage: {
+    meta: {
+      title: "CV · aaimeraud",
+      description:
+        "CV de Daniel Fortuné (aaimeraud), développeur full-stack junior à Paris : compétences, expérience, formation et projets.",
+    },
+    back: "Retour à l'accueil",
+    download: "PDF",
+    viewSite: "Site",
+    viewRepo: "Repo",
+    sections: {
+      profile: "Profil",
+      skills: "Compétences techniques",
+      experience: "Expérience",
+      education: "Formation",
+      projects: "Projets",
+    },
+  },
   footer: {
-    nohelloBefore: "s'il vous plaît lisez ceci avant de me contacter :",
+    nohelloBefore: "S'il vous plaît lisez ceci avant de me contacter :",
     nohelloAfter:
-      ". je ne répondrai peut-être pas à ton message, ne le prends pas personnellement.",
-    commitLabel: "dernier commit",
+      ". Je ne répondrai peut-être pas à ton message, ne le prends pas personnellement.",
+    commitLabel: "Dernier commit",
     commitTitle: "Voir le dernier commit sur main",
   },
 };

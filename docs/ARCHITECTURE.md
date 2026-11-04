@@ -59,6 +59,28 @@ Tous les textes visibles sont dans les dictionnaires.
 2. Ajouter son tooltip dans les deux dictionnaires, sous `socials[label]`.
    Le label est typé de la même façon.
 
+## Mettre à jour la page `/now`
+
+Tout le contenu de `/now` (EN) et `/fr/now` (FR) est dans `lib/data/now.data.ts` :
+
+- `work` → où je travaille / étudie (`role`, `place`, `note`, `url`, `since` optionnels)
+- `learning` → ce que j'apprends (`topic` + `note`)
+- `projects` → ce sur quoi je bosse ; `slug` réutilise le lien d'un projet de la home,
+  sinon mettre `url`
+
+Chaque texte est un objet `{ en, fr }` : TypeScript refuse une traduction manquante.
+Penser à changer `lastUpdated` (affiché sur la page et utilisé par le sitemap).
+Les libellés fixes de la page (titres, « mis à jour le »…) sont sous `nowPage` dans les dictionnaires.
+
+## Mettre à jour la page `/cv`
+
+Le contenu de `/cv` et `/fr/cv` est dans `lib/data/cv.data.ts`, recopié du PDF
+`public/pdf/daniel_fortune_[public].pdf` : quand l'un change, mettre l'autre à jour.
+Les projets sont rangés du plus récent au plus ancien ; leurs liens viennent des
+projets de la home via `slug`. Le chemin du PDF est `RESUME_PDF` dans `lib/site.ts`.
+Les blocs communs aux sous-pages (nav, sections `##`, liens) sont dans
+`components/custom/Subpage.tsx`.
+
 ## Ajouter une page
 
 Exemple avec une page « À propos » servie sur `/about` (EN) et `/fr/about` (FR).

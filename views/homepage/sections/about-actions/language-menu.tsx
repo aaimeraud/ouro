@@ -6,13 +6,24 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { getDictionary } from "@/lib/i18n";
-import { localePaths, locales, type Locale } from "@/lib/i18n/config";
+import { locales, pagePath, type Locale } from "@/lib/i18n/config";
 import { cn } from "cn";
 import { Check, Languages } from "lucide-react";
 import { actionButtonStyles } from "./styles";
 
-/** Locale switcher. Plain links: each locale is its own root layout, so switching does a full page load. */
-export function LanguageMenu({ locale }: { locale: Locale }) {
+/**
+ * Locale switcher. Plain links: each locale is its own root layout, so switching does a full page load.
+ * `path` keeps the visitor on the same page, e.g. "/now" ↔ "/fr/now".
+ */
+export function LanguageMenu({
+  locale,
+  path = "",
+  className,
+}: {
+  locale: Locale;
+  path?: string;
+  className?: string;
+}) {
   const t = getDictionary(locale);
 
   return (
@@ -20,7 +31,7 @@ export function LanguageMenu({ locale }: { locale: Locale }) {
       <DropdownMenuTrigger
         render={
           <Button
-            className={cn(actionButtonStyles)}
+            className={cn(actionButtonStyles, className)}
             size={"default"}
             // Includes the visible label so the accessible name matches it (WCAG 2.5.3)
             aria-label={`${t.language[locale]} - ${t.language.label}`}
@@ -44,7 +55,7 @@ export function LanguageMenu({ locale }: { locale: Locale }) {
             )}
           >
             <a
-              href={localePaths[code]}
+              href={pagePath(code, path)}
               hrefLang={code}
               aria-current={code === locale ? "true" : undefined}
               className="flex w-full items-center justify-between gap-1.5"

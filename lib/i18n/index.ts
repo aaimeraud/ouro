@@ -8,12 +8,18 @@ const dictionaries = { en, fr } as const;
 
 export const getDictionary = (locale: Locale) => dictionaries[locale];
 
+type PageMeta = { title: string; description: string };
+
 /**
  * Page metadata for a locale, including the alternate-language links.
- * Pass `path` for a sub-page, e.g. getMetadata("fr", "/about").
+ * Pass `path` for a sub-page, e.g. getMetadata("fr", "/about"), and `meta`
+ * to override the site-wide title and description.
  */
-export const getMetadata = (locale: Locale, path = ""): Metadata => {
-  const { meta } = getDictionary(locale);
+export const getMetadata = (
+  locale: Locale,
+  path = "",
+  meta: PageMeta = getDictionary(locale).meta,
+): Metadata => {
   return {
     metadataBase: new URL(SITE_URL),
     title: meta.title,

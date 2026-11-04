@@ -4,6 +4,7 @@ export enum projectTypes {
   website = "website",
   cli = "command line",
   design = "design",
+  game = "game",
 }
 
 export enum projectTags {
@@ -20,7 +21,7 @@ export enum projectTags {
 }
 
 /** Matches the keys of `projects.items` in the i18n dictionaries */
-export type ProjectSlug = "toolbox" | "ouro" | "aimerss" | "aarshi";
+export type ProjectSlug = "spacejo" | "ouro" | "aimerss" | "aarshi";
 
 export interface Project {
   slug: ProjectSlug;

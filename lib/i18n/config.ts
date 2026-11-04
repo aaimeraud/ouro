@@ -2,6 +2,9 @@ export const locales = ["en", "fr"] as const;
 
 export type Locale = (typeof locales)[number];
 
+/** A text written in every locale: TypeScript refuses a missing translation. */
+export type Localized = Record<Locale, string>;
+
 export const defaultLocale: Locale = "en";
 
 /** Public URL of each locale. English is the base site, served at "/". */

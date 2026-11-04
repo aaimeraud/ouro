@@ -13,34 +13,36 @@ export const en = {
   },
   language: {
     label: "Change language",
-    en: "english",
-    fr: "français",
+    en: "English",
+    fr: "Français",
   },
   profile: {
     portraitAlt: "A photo of",
-    portraitTooltip: "don't get too distracted now",
-    nameTooltip: "but you can call me",
-    description: "looking for an apprenticeship in software development",
+    portraitTooltip: "Don't get too distracted now",
+    nameTooltip: "But you can call me",
+    description: "Looking for an apprenticeship in software development",
     jobTitle: "Full-Stack Developer Apprentice",
   },
   about: {
-    highlight: "constantly growing.",
+    highlight: "Constantly growing.",
     sectionTitle: "About",
     intro:
-      "i make websites. i'm learning to make useful and meaningful software, and i'm trying to get better at it every day.",
-    currently: "i'm currently a",
+      "I make websites. I'm learning to make useful and meaningful software, and I'm trying to get better at it every day.",
+    currently: "I'm currently a",
     role: "full-stack web developer apprentice in Paris,",
     jobTooltip: "at",
     company: "a Parisian communication agency",
     stack: "mostly working with WordPress and Next.js.",
-    learning: "also learning python.",
+    learning: "Also learning Python.",
+    nowBefore: "Curious about what I'm up to right now? See my",
+    nowLink: "/now page",
   },
   ai: {
     groupLabel: "AI related button group",
-    resume: "my resume",
-    resumeShort: "cv",
-    askButton: "ask an llm about me",
-    askShort: "llm",
+    resume: "My resume",
+    resumeShort: "CV",
+    askButton: "Ask an LLM about me",
+    askShort: "LLM",
     askTooltipTitle: "Looking to hire ?",
     askTooltipBody: "Let AI tell you my strengths & weaknesses ^^",
     askClaude: "Ask Claude",
@@ -49,23 +51,24 @@ export const en = {
     copiedPrompt: "Copied!",
   },
   socials: {
-    twitter: "i'll never call it X sorry",
-    linkedin: "ughh who likes this one ?",
-    email: "wanna hire ? ^^",
-    github: "i'm getting shy... let me tidy up a bit",
+    twitter: "I'll never call it X sorry",
+    linkedin: "Ughh who likes this one ?",
+    email: "Wanna hire ? ^^",
+    github: "I'm getting shy... let me tidy up a bit",
   },
   projects: {
-    title: "projects",
-    moreTooltip: "there's more on the way !",
+    title: "Projects",
+    moreTooltip: "There's more on the way !",
     actions: {
-      viewSite: "visit the site",
-      viewRepo: "see the repo",
-      close: "close",
+      viewSite: "Visit the site",
+      viewRepo: "See the repo",
+      close: "Close",
     },
     kind: {
-      [projectTypes.website]: "this one's a website",
-      [projectTypes.design]: "this one's a design project",
-      [projectTypes.cli]: "this one's a cli project",
+      [projectTypes.website]: "This one's a website",
+      [projectTypes.design]: "This one's a design project",
+      [projectTypes.cli]: "This one's a CLI tool",
+      [projectTypes.game]: "This one's a game",
     },
     tags: {
       [projectTags.uiUx]: "UI/UX Design",
@@ -80,9 +83,10 @@ export const en = {
       [projectTags.rust]: "Rust",
     },
     items: {
-      toolbox: {
-        description: "A free collection of dev & design tools",
-        tooltip: "started this in october, give me a few weeks ^^",
+      spacejo: {
+        description: "A Skyjo clone for my friends and I",
+        tooltip:
+          "I had to make a full web app with AI at school so I made this ! They were all so happy haha !",
       },
       ouro: {
         description: "This very website ^^",
@@ -90,8 +94,8 @@ export const en = {
           "I've finally made this fourth redesign in almost a day after a long time of procrastination...",
       },
       aimerss: {
-        description: "A selection of RSS feeds i like",
-        tooltip: "one-shotted this one, i have to work on the UI i know lol...",
+        description: "A selection of RSS feeds I like",
+        tooltip: "One-shotted this one, I have to work on the UI I know lol...",
       },
       aarshi: {
         description:
@@ -101,11 +105,50 @@ export const en = {
       },
     },
   },
+  nowPage: {
+    meta: {
+      title: "Now · aaimeraud",
+      description:
+        "What Daniel Fortuné (aaimeraud) is doing right now: where he works, what he's learning and the projects he's building.",
+    },
+    title: "Now",
+    subtitle: "What I'm up to at the moment",
+    back: "Back home",
+    lastUpdated: "Last updated",
+    basedIn: "Based in",
+    at: "at",
+    since: "since",
+    sections: {
+      work: "Work",
+      learning: "Learning",
+      projects: "Building",
+    },
+    aboutBefore: "This is a now page, an idea from",
+    aboutAfter: ". If you have a site, you should make one too.",
+  },
+  cvPage: {
+    meta: {
+      title: "Resume · aaimeraud",
+      description:
+        "Resume of Daniel Fortuné (aaimeraud), junior full-stack developer in Paris: skills, experience, education and projects.",
+    },
+    back: "Back home",
+    download: "PDF",
+    viewSite: "Site",
+    viewRepo: "Repo",
+    sections: {
+      profile: "Profile",
+      skills: "Technical skills",
+      experience: "Experience",
+      education: "Education",
+      projects: "Projects",
+    },
+  },
   footer: {
-    nohelloBefore: "please read this before contacting me:",
+    nohelloBefore: "Please read this before contacting me:",
     nohelloAfter:
-      ". i may not respond to your message, please don't take it personally.",
-    commitLabel: "last commit",
+      ". I may not respond to your message, please don't take it personally.",
+    commitLabel: "Last commit",
     commitTitle: "See the latest commit on main",
   },
 };

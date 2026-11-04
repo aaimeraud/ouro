@@ -14,6 +14,7 @@ Skills: TypeScript, React, Next.js, PostgreSQL, Supabase, Git/GitHub, Bash/Linux
 ## About
 - [Home (Markdown)](${SITE_URL}/home.txt): presentation, skills and what I am looking for
 - [Resume (Markdown)](${SITE_URL}/resume.txt): education, experience and project list
+- [Resume](${SITE_URL}/cv): resume as a web page (also in French at /fr/cv)
 - [Now](${SITE_URL}/now): what I am working on, learning and building at the moment
 
 ## Projects

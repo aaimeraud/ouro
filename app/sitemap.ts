@@ -9,6 +9,7 @@ const LAST_MODIFIED = new Date("2026-10-20");
 const pages = [
   { path: "", lastModified: LAST_MODIFIED },
   { path: "/now", lastModified: new Date(now.lastUpdated) },
+  { path: "/cv", lastModified: new Date("2026-11-04") },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

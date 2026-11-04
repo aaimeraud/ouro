@@ -73,7 +73,7 @@ export const fr: Dictionary = {
       [projectTags.react]: "React",
       [projectTags.php]: "PHP",
       [projectTags.content]: "Gestion de contenu",
-      [projectTags.openSource]: "OSS",
+      [projectTags.openSource]: "Open-Source",
       [projectTags.contribution]: "Contribution",
       [projectTags.wip]: "En cours",
       [projectTags.agentic]: "Coding Agentique",
@@ -93,7 +93,7 @@ export const fr: Dictionary = {
       aimerss: {
         description: "Une sélection de flux RSS que j'aime",
         tooltip:
-          "Celui-ci est passé d'un coup, il faut que je travaille l'UI je sais lol...",
+          "Celui-ci je l'ai fait en une soirée d'illumination, il faut que je travaille l'UI et j'ai plein d'idées de fonctionnalités à ajouter",
       },
       aarshi: {
         description:
@@ -123,6 +123,24 @@ export const fr: Dictionary = {
     },
     aboutBefore: "Ceci est une page now, une idée de",
     aboutAfter: ". Si tu as un site, tu devrais en faire une aussi.",
+  },
+  cvPage: {
+    meta: {
+      title: "CV · aaimeraud",
+      description:
+        "CV de Daniel Fortuné (aaimeraud), développeur full-stack junior à Paris : compétences, expérience, formation et projets.",
+    },
+    back: "Retour à l'accueil",
+    download: "PDF",
+    viewSite: "Site",
+    viewRepo: "Repo",
+    sections: {
+      profile: "Profil",
+      skills: "Compétences techniques",
+      experience: "Expérience",
+      education: "Formation",
+      projects: "Projets",
+    },
   },
   footer: {
     nohelloBefore: "S'il vous plaît lisez ceci avant de me contacter :",

@@ -126,6 +126,24 @@ export const en = {
     aboutBefore: "This is a now page, an idea from",
     aboutAfter: ". If you have a site, you should make one too.",
   },
+  cvPage: {
+    meta: {
+      title: "Resume · aaimeraud",
+      description:
+        "Resume of Daniel Fortuné (aaimeraud), junior full-stack developer in Paris: skills, experience, education and projects.",
+    },
+    back: "Back home",
+    download: "PDF",
+    viewSite: "Site",
+    viewRepo: "Repo",
+    sections: {
+      profile: "Profile",
+      skills: "Technical skills",
+      experience: "Experience",
+      education: "Education",
+      projects: "Projects",
+    },
+  },
   footer: {
     nohelloBefore: "Please read this before contacting me:",
     nohelloAfter:

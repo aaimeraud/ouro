@@ -72,6 +72,15 @@ Chaque texte est un objet `{ en, fr }` : TypeScript refuse une traduction manqua
 Penser à changer `lastUpdated` (affiché sur la page et utilisé par le sitemap).
 Les libellés fixes de la page (titres, « mis à jour le »…) sont sous `nowPage` dans les dictionnaires.
 
+## Mettre à jour la page `/cv`
+
+Le contenu de `/cv` et `/fr/cv` est dans `lib/data/cv.data.ts`, recopié du PDF
+`public/pdf/daniel_fortune_[public].pdf` : quand l'un change, mettre l'autre à jour.
+Les projets sont rangés du plus récent au plus ancien ; leurs liens viennent des
+projets de la home via `slug`. Le chemin du PDF est `RESUME_PDF` dans `lib/site.ts`.
+Les blocs communs aux sous-pages (nav, sections `##`, liens) sont dans
+`components/custom/Subpage.tsx`.
+
 ## Ajouter une page
 
 Exemple avec une page « À propos » servie sur `/about` (EN) et `/fr/about` (FR).

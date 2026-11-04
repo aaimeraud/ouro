@@ -1,8 +1,5 @@
-import type { Locale } from "../i18n/config";
+import type { Localized } from "../i18n/config";
 import type { ProjectSlug } from "../types/projects.types";
-
-/** A text written in every locale: TypeScript refuses a missing translation. */
-type Localized = Record<Locale, string>;
 
 export type NowWork = {
   role: Localized;

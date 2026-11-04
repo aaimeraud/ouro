@@ -34,6 +34,8 @@ export const en = {
     company: "a Parisian communication agency",
     stack: "mostly working with WordPress and Next.js.",
     learning: "also learning python.",
+    nowBefore: "curious about what i'm up to right now ? see my",
+    nowLink: "/now page",
   },
   ai: {
     groupLabel: "AI related button group",
@@ -102,6 +104,27 @@ export const en = {
           "I paid for a month of OpenCode API access, so I had a bit of fun making this haha",
       },
     },
+  },
+  nowPage: {
+    meta: {
+      title: "now · aaimeraud",
+      description:
+        "What Daniel Fortuné (aaimeraud) is doing right now: where he works, what he's learning and the projects he's building.",
+    },
+    title: "now",
+    subtitle: "what i'm up to at the moment",
+    back: "back home",
+    lastUpdated: "last updated",
+    basedIn: "based in",
+    at: "at",
+    since: "since",
+    sections: {
+      work: "work",
+      learning: "learning",
+      projects: "building",
+    },
+    aboutBefore: "this is a now page, an idea from",
+    aboutAfter: ". if you have a site, you should make one too.",
   },
   footer: {
     nohelloBefore: "please read this before contacting me:",

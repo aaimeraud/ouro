@@ -6,8 +6,9 @@ import {
 } from "@/components/ui/tooltip";
 import { aaimeraud } from "@/lib/data/aaimeraud.data";
 import { getDictionary } from "@/lib/i18n";
-import type { Locale } from "@/lib/i18n/config";
+import { pagePath, type Locale } from "@/lib/i18n/config";
 import { cn } from "@sglara/cn";
+import Link from "next/link";
 import { ActionsButtonGroup } from "./about-actions/actions-button-group";
 import { AskAiMenu } from "./about-actions/ask-ai-menu";
 
@@ -66,6 +67,16 @@ const About = ({ locale }: AboutProps) => {
       </Tooltip>
 
       <p className="text-sm">{t.about.learning}</p>
+
+      <p className="text-sm">
+        {t.about.nowBefore}{" "}
+        <Link
+          href={pagePath(locale, "/now")}
+          className="font-semibold underline decoration-neutral-300 underline-offset-4 transition-colors hover:text-blue-600 hover:decoration-blue-600 dark:decoration-neutral-600 dark:hover:text-blue-300"
+        >
+          {t.about.nowLink}
+        </Link>
+      </p>
 
       <ul className="grid grid-cols-2 gap-2 md:flex md:flex-row md:gap-3">
         {aaimeraud.socials.map((social) => (

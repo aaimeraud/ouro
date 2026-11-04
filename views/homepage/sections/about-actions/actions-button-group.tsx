@@ -11,7 +11,7 @@ export function ActionsButtonGroup({ locale }: { locale: Locale }) {
   return (
     <ButtonGroup
       aria-label={t.ai.groupLabel}
-      className=" w-full  grid grid-cols-2"
+      className="grid w-full grid-cols-2"
     >
       <ResumeButton locale={locale} />
       <LanguageMenu locale={locale} />

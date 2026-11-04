@@ -31,6 +31,8 @@ export const fr: Dictionary = {
     company: "une agence de communication parisienne",
     stack: "je travaille surtout avec WordPress et Next.js.",
     learning: "j'apprends aussi python.",
+    nowBefore: "curieux de savoir ce que je fais en ce moment ? va voir ma",
+    nowLink: "page /now",
   },
   ai: {
     groupLabel: "Boutons liés à l'IA",
@@ -100,6 +102,27 @@ export const fr: Dictionary = {
           "J'ai payé un mois d'API OpenCode, donc je me suis fait plaisir en la créant haha",
       },
     },
+  },
+  nowPage: {
+    meta: {
+      title: "now · aaimeraud",
+      description:
+        "Ce que fait Daniel Fortuné (aaimeraud) en ce moment : où il travaille, ce qu'il apprend et les projets sur lesquels il bosse.",
+    },
+    title: "now",
+    subtitle: "ce que je fais en ce moment",
+    back: "retour à l'accueil",
+    lastUpdated: "mis à jour le",
+    basedIn: "basé à",
+    at: "chez",
+    since: "depuis",
+    sections: {
+      work: "travail",
+      learning: "apprentissage",
+      projects: "projets en cours",
+    },
+    aboutBefore: "ceci est une page now, une idée de",
+    aboutAfter: ". si tu as un site, tu devrais en faire une aussi.",
   },
   footer: {
     nohelloBefore: "s'il vous plaît lisez ceci avant de me contacter :",

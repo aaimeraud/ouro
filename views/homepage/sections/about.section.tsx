@@ -84,8 +84,8 @@ const About = ({ locale }: AboutProps) => {
             <LinkCustom
               href={social.url}
               type={social.type}
-              label={social.label}
-              tooltipLabel={t.socials[social.label].toLowerCase().trim()}
+              label={social.name}
+              tooltipLabel={t.socials[social.label]}
             />
           </li>
         ))}

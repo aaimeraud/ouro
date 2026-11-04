@@ -60,13 +60,11 @@ const Profile = ({ profilePicture = false, locale }: ProfileProps) => {
               sideOffset={10}
             >
               {t.nameTooltip}{" "}
-              <span className="font-bold">
-                {aaimeraud.profile.fname.toLowerCase()}
-              </span>
+              <span className="font-bold">{aaimeraud.profile.fname}</span>
             </TooltipContent>
           </Tooltip>
           <span className="text-sm tracking-tight text-neutral-600 dark:text-neutral-400">
-            &gt; {t.description.toLowerCase()}
+            &gt; {t.description}
           </span>
         </div>
       </div>

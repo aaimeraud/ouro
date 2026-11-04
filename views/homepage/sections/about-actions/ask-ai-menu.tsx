@@ -76,7 +76,7 @@ export function AskAiMenu({ locale }: { locale: Locale }) {
             className="flex w-full items-center justify-between gap-1.5"
           >
             <OpenAI className="text-neutral-200 group-focus/dropdown-menu-item:text-black" />
-            <span>{t.ai.askClaude}</span>
+            <span>{t.ai.askChatGpt}</span>
           </a>
         </DropdownMenuItem>
         <CopyPromptMenuItem

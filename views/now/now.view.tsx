@@ -30,9 +30,10 @@ const styles = {
 
 /** Turns "2026-11-04" into a date written the way each locale reads it. */
 const formatDate = (date: string, locale: Locale) =>
-  new Intl.DateTimeFormat(locale, { dateStyle: "long", timeZone: "UTC" })
-    .format(new Date(date))
-    .toLowerCase();
+  new Intl.DateTimeFormat(locale, {
+    dateStyle: "long",
+    timeZone: "UTC",
+  }).format(new Date(date));
 
 const Section = ({
   title,

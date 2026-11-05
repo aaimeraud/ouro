@@ -1,7 +1,7 @@
 ---
 name: Daniel Fortuné
 handle: aaimeraud
-last_updated: 2026-10-20
+last_updated: 2026-11-05
 location: Paris, France
 education: "Bachelor 3 (Bac+3), .decode"
 looking_for: "Apprenticeship (alternance) in software development, Paris, France"
@@ -36,6 +36,7 @@ tools:
   - Linux (command line, file ownership, user groups)
   - Supabase
   - PayloadCMS
+  - Tauri
 ai_workflows:
   - Agentic coding
   - OpenCode
@@ -59,7 +60,7 @@ I build websites, I'm learning to build software, and I try to get better at it 
 
 I'm currently a full-stack web developer apprentice at a communication agency in Paris. I work primarily with WordPress and Next.js there.
 
-I'm a third-year Bachelor's student (Bac+3) at [.decode](https://ecole-decode.fr). I'm currently learning Python and Rust.
+I'm a third-year Bachelor's student (Bac+3) at [.decode](https://ecole-decode.fr). I'm currently learning Python and Rust by building real projects: [aarshi](https://github.com/aaimeraud/aarshi), a CLI that scaffolds multilingual Next.js sites, and [yank](https://github.com/aaimeraud/Yank), a desktop app around yt-dlp made with Tauri.
 
 ## Contact
 
@@ -69,12 +70,13 @@ I'm a third-year Bachelor's student (Bac+3) at [.decode](https://ecole-decode.fr
 
 ## Projects
 
-|    Title    |                                                                                                                                       Description                                                                                                                                       | Year |  Type   |                            Tags                             |                      Link                       |
-| :---------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--: | :-----: | :---------------------------------------------------------: | :---------------------------------------------: |
-|     t5x     |                                                                                                                     A free collection of developer and design tools                                                                                                                     | 2026 | Website | Next.js, React, UI/UX design, Open source, Work in progress |   [GitHub](https://github.com/aaimeraud/t5x)    |
-|   aarshi    | aarshi is a Rust CLI that scaffolds a multilingual Next.js App Router site, then helps you keep it in order. It writes the route tree, the typed dictionaries, the sitemap and the language switcher once, and adds pages, sections, languages and icons without copying files by hand. | 2026 |   CLI   |              Rust, Open source, Agentic coding              |  [GitHub](https://github.com/aaimeraud/aarshi)  |
-| ouro(boros) |                                                                                                                                   My personal website                                                                                                                                   | 2026 | Website |                Next.js, React, UI/UX design                 |   [GitHub](https://github.com/aaimeraud/ouro)   |
-|   AimeRSS   |                                                                                                                         A curated selection of RSS feeds I like                                                                                                                         | 2026 | Website |        Next.js, React, RSS feeds, Content management        | [GitHub](https://github.com/aaimeraud/feed.com) |
+|    Title    |                                                                                                                                       Description                                                                                                                                       | Year |    Type     |                             Tags                              |                                           Link                                           |
+| :---------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--: | :---------: | :-----------------------------------------------------------: | :--------------------------------------------------------------------------------------: |
+|    yank     |                                                                                                  A yt-dlp frontend and YouTube client to download and watch videos or entire playlists                                                                                                  | 2026 | Desktop app | React, Rust, Tauri, UI/UX design, Open source, Agentic coding |                       [GitHub](https://github.com/aaimeraud/Yank)                        |
+|   spacejo   |                                                                                                                     An online Skyjo clone made for my friends and I                                                                                                                     | 2026 |    Game     |    React, Rust, UI/UX design, Open source, Agentic coding     |  [Site](https://spacejo.aaimeraud.me) · [GitHub](https://github.com/aaimeraud/spacejo)   |
+|   aarshi    | aarshi is a Rust CLI that scaffolds a multilingual Next.js App Router site, then helps you keep it in order. It writes the route tree, the typed dictionaries, the sitemap and the language switcher once, and adds pages, sections, languages and icons without copying files by hand. | 2026 |     CLI     |               Rust, Open source, Agentic coding               |   [Site](https://aarshi.aaimeraud.me) · [GitHub](https://github.com/aaimeraud/aarshi)    |
+| ouro(boros) |                                                                                                                                   My personal website                                                                                                                                   | 2026 |   Website   |                 Next.js, React, UI/UX design                  |      [Site](https://www.aaimeraud.me) · [GitHub](https://github.com/aaimeraud/ouro)      |
+|   AimeRSS   |                                                                                                                         A curated selection of RSS feeds I like                                                                                                                         | 2026 |   Website   |                        Next.js, React                         | [Site](https://feed.fortunedaniel.com) · [GitHub](https://github.com/aaimeraud/feed.com) |
 
 # About Daniel
 
@@ -92,7 +94,7 @@ I can read technical documentation, document my code, and debug. I care about cl
 
 ## Skills and education
 
-I've mostly worked with TypeScript and React. I know object-oriented programming (OOP). I've taken courses in C++, Java, PHP, TypeScript/JavaScript, design patterns, and accessibility (including RGAA compliance, the French web accessibility framework). I'm currently learning Python, and I'd like to learn Go later on.
+I've mostly worked with TypeScript and React. I know object-oriented programming (OOP). I've taken courses in C++, Java, PHP, TypeScript/JavaScript, design patterns, and accessibility (including RGAA compliance, the French web accessibility framework). I'm currently learning Python and Rust, and I'd like to learn Go later on.
 
 I speak English and French fluently.
 

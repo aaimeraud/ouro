@@ -39,7 +39,7 @@ type Now = {
 };
 
 export const now: Now = {
-  lastUpdated: "2026-11-04",
+  lastUpdated: "2026-11-05",
   location: { en: "Paris, France", fr: "Paris, France" },
 
   work: [
@@ -92,6 +92,14 @@ export const now: Now = {
   ],
 
   projects: [
+    {
+      name: "yank",
+      slug: "yank",
+      note: {
+        en: "Building a desktop front-end for yt-dlp to download whole YouTube playlists.",
+        fr: "Je construis une interface desktop pour yt-dlp afin de télécharger des playlists YouTube entières.",
+      },
+    },
     {
       name: "spacejo",
       slug: "spacejo",

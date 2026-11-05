@@ -69,6 +69,7 @@ export const en = {
       [projectTypes.design]: "This one's a design project",
       [projectTypes.cli]: "This one's a CLI tool",
       [projectTypes.game]: "This one's a game",
+      [projectTypes.app]: "This one's a desktop application",
     },
     tags: {
       [projectTags.uiUx]: "UI/UX Design",
@@ -80,9 +81,16 @@ export const en = {
       [projectTags.contribution]: "Contribution",
       [projectTags.wip]: "Work in Progress",
       [projectTags.agentic]: "Agentic Coding",
+      [projectTags.tauri]: "Tauri",
       [projectTags.rust]: "Rust",
     },
     items: {
+      yank: {
+        description:
+          "A yt-dlp frontend and youtube client to download and watch videos or entire playlists",
+        tooltip:
+          "I was looking for a way to download 15 videos of a course in one go so I paved my own",
+      },
       spacejo: {
         description: "A Skyjo clone for my friends and I",
         tooltip:

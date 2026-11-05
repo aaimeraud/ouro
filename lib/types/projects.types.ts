@@ -5,12 +5,14 @@ export enum projectTypes {
   cli = "command line",
   design = "design",
   game = "game",
+  app = "application",
 }
 
 export enum projectTags {
   uiUx = "UI/UX Design",
   next = "Next.js",
   react = "React",
+  tauri = "Tauri",
   rust = "Rust",
   php = "PHP",
   content = "Content Management",
@@ -21,7 +23,7 @@ export enum projectTags {
 }
 
 /** Matches the keys of `projects.items` in the i18n dictionaries */
-export type ProjectSlug = "spacejo" | "ouro" | "aimerss" | "aarshi";
+export type ProjectSlug = "yank" | "spacejo" | "ouro" | "aimerss" | "aarshi";
 
 export interface Project {
   slug: ProjectSlug;

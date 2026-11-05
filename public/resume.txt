@@ -15,11 +15,11 @@
 - **Bases de données :** PostgreSQL, Supabase
 - **Outils :** Git, GitHub, Docker, Bash/Linux, Figma, Penpot
 - **CMS :** WordPress, PayloadCMS
-- **Parcours IA :** Agentic coding (OpenCode, T3 Code), workflows d'automatisation (n8n)
+- **Parcours IA :** Agentic coding (Claude Code, OpenCode, T3 Code), workflows d'automatisation (n8n)
 
 ## Expérience
 
-### Développeur Full-Stack (stage de 4 mois puis alternance à partir de Septembre, Cherche une nouvelle alternance car besoin de changement et + d'expérience)
+### Développeur Full-Stack (alternance)
 
 **ComKani**, Paris, France · Avril 2026 – Octobre 2026
 
@@ -54,20 +54,26 @@
 
 ## Projets
 
-### [aarshi](https://github.com/aaimeraud/aarshi)
+### [yank](https://github.com/aaimeraud/Yank)
 
-CLI en Rust qui génère un site Next.js multilingue (i18n) en une commande : arbre de routes, dictionnaires typés, sitemap et sélecteur de langue générés automatiquement. Approche agentic coding.
+Application desktop autour de yt-dlp : parcourir, regarder et télécharger des vidéos YouTube ou des playlists entières. Réalisée avec Tauri, Rust et React, en agentic coding.
+
+*React · Rust · Tauri · Open source*
+
+### [spacejo](https://spacejo.aaimeraud.me)
+
+Jeu de cartes en ligne inspiré du Skyjo, fait pour jouer entre amis. Application web complète (base de données, front-end) réalisée en agentic coding dans le cadre de l'école. ([GitHub](https://github.com/aaimeraud/spacejo))
+
+*React · Rust · Open source*
+
+### [aarshi](https://aarshi.aaimeraud.me)
+
+CLI en Rust qui génère un site Next.js multilingue (i18n) en une commande : arbre de routes, dictionnaires typés, sitemap et sélecteur de langue générés automatiquement. Approche agentic coding. ([GitHub](https://github.com/aaimeraud/aarshi))
 
 *Rust · Open source*
 
-### [ouro(boros)](https://github.com/aaimeraud/ouro)
+### [ouro(boros)](https://www.aaimeraud.me)
 
-Site personnel, refait de zéro avec Next.js et React, avec une attention particulière au design UI/UX.
+Site personnel, refait de zéro avec Next.js et React, avec une attention particulière au design UI/UX. ([GitHub](https://github.com/aaimeraud/ouro))
 
 *Next.js · React*
-
-### [AimeRSS](https://github.com/aaimeraud/feed.com)
-
-Agrégateur de flux RSS provenant de différentes sources, avec routes dynamiques et parsing RSS. Interface responsive avec TailwindCSS, déployée sur Vercel.
-
-*Next.js · TailwindCSS*

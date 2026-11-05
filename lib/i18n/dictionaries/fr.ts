@@ -66,6 +66,7 @@ export const fr: Dictionary = {
       [projectTypes.design]: "Un projet de design",
       [projectTypes.cli]: "Un outil en ligne de commandes",
       [projectTypes.game]: "Un jeu",
+      [projectTypes.app]: "Une application",
     },
     tags: {
       [projectTags.uiUx]: "Design UI/UX",
@@ -78,8 +79,15 @@ export const fr: Dictionary = {
       [projectTags.wip]: "En cours",
       [projectTags.agentic]: "Coding Agentique",
       [projectTags.rust]: "Rust",
+      [projectTags.tauri]: "Tauri",
     },
     items: {
+      yank: {
+        description:
+          "Un frontend pour yt-dlp et un client youtube pour regarder ou télécharger des videos youtube ou des playlists entières",
+        tooltip:
+          "Je cherchais une façon de télécharger 15 videos d'un cours en ligne d'un coup alors j'ai fait ça",
+      },
       spacejo: {
         description: "Un Skyjo en ligne pour mes amis",
         tooltip:

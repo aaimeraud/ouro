@@ -2,7 +2,10 @@ import { projectTags } from "@/lib/types/projects.types";
 import { cn } from "@sglara/cn";
 import Link from "next/link";
 
-const base = cn("text-xs md:text-md dark:bg-white/5 bg-black/5 py-1 px-2 rounded-full");
+const base = cn(
+  "shrink-0 rounded-full px-2 py-1 text-xs leading-tight md:whitespace-nowrap",
+  "bg-black/5 dark:bg-white/5",
+);
 
 type TagProps = {
   tag: projectTags;

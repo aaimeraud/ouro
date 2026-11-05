@@ -32,7 +32,7 @@ const styles = {
   name: cn("font-sans font-semibold text-md"),
   description: cn("font-sans text-sm text-neutral-600 dark:text-neutral-400"),
   ul: cn(
-    "md:flex gap-3 items-center w-full justify-end",
+    "md:flex md:flex-wrap gap-3 items-center w-full justify-end",
     "grid mt-2 grid-cols-2",
   ),
   link: cn(
@@ -43,9 +43,9 @@ const styles = {
   projectInfo: {
     year: cn("w-fit text-neutral-600 text-xs md:text-md dark:text-neutral-400"),
     tag: cn("text-neutral-600 font-normal dark:text-neutral-400"),
-    div: cn("flex flex-col md:items-end gap-1"),
+    div: cn("flex flex-col gap-1 md:shrink-0 md:items-end"),
   },
-  textDiv: cn("flex flex-col  h-fit"),
+  textDiv: cn("flex min-w-0 flex-col h-fit"),
   action: cn(
     "flex w-full items-center gap-2 rounded-lg border px-3 py-2 text-sm font-medium transition-colors",
     "border-neutral-200 bg-neutral-50 text-neutral-900",

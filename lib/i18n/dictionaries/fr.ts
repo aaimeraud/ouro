@@ -140,8 +140,6 @@ export const fr: Dictionary = {
     },
     back: "Retour à l'accueil",
     download: "PDF",
-    viewSite: "Site",
-    viewRepo: "Repo",
     sections: {
       profile: "Profil",
       skills: "Compétences techniques",

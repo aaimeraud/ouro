@@ -17,13 +17,11 @@ export type CvEntry = {
 };
 
 export type CvProject = {
-  name: string;
-  /** Links the entry to a homepage project, which provides its URLs */
+  /** Links the entry to a homepage project, which provides its name, tags and URLs */
   slug: ProjectSlug;
   /** Shown next to the name, e.g. "Novembre 2026" */
   date?: Localized;
   description: Localized;
-  tags: string[];
 };
 
 type Cv = {
@@ -205,44 +203,36 @@ export const cv: Cv = {
 
   projects: [
     {
-      name: "yank",
       slug: "yank",
       date: { en: "November 2026", fr: "Novembre 2026" },
       description: {
         en: "Desktop app built around yt-dlp: browse, watch and download YouTube videos or entire playlists. Made with Tauri, Rust and React, following an agentic coding approach.",
         fr: "Application desktop autour de yt-dlp : parcourir, regarder et télécharger des vidéos YouTube ou des playlists entières. Réalisée avec Tauri, Rust et React, en agentic coding.",
       },
-      tags: ["React", "Rust", "Tauri", "Open source"],
     },
     {
-      name: "spacejo",
       slug: "spacejo",
       date: { en: "November 2026", fr: "Novembre 2026" },
       description: {
         en: "Online card game inspired by Skyjo, made to play with my friends. A full web app (database, front-end) built with agentic coding as a school project.",
         fr: "Jeu de cartes en ligne inspiré du Skyjo, fait pour jouer entre amis. Application web complète (base de données, front-end) réalisée en agentic coding dans le cadre de l'école.",
       },
-      tags: ["React", "Rust", "Open source"],
     },
     {
-      name: "aarshi",
       slug: "aarshi",
       date: { en: "October 2026", fr: "Octobre 2026" },
       description: {
         en: "Rust CLI that generates a multilingual (i18n) Next.js site in one command: route tree, typed dictionaries, sitemap and language switcher generated automatically. Agentic coding approach.",
         fr: "CLI en Rust qui génère un site Next.js multilingue (i18n) en une commande : arbre de routes, dictionnaires typés, sitemap et sélecteur de langue générés automatiquement. Approche agentic coding.",
       },
-      tags: ["Rust", "Open source"],
     },
     {
-      name: "ouro(boros)",
       slug: "ouro",
       date: { en: "October 2026", fr: "Octobre 2026" },
       description: {
         en: "Personal website, rebuilt from scratch with Next.js and React, with special care for UI/UX design.",
         fr: "Site personnel, refait de zéro avec Next.js et React, avec une attention particulière au design UI/UX.",
       },
-      tags: ["Next.js", "React"],
     },
   ],
 };

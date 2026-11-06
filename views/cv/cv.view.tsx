@@ -1,29 +1,26 @@
+import ProjectCard from "@/components/custom/ProjectCard";
 import {
   MaybeLink,
   SubpageNav,
   SubpageSection,
   subpageStyles as styles,
 } from "@/components/custom/Subpage";
-import { Github } from "@/components/icons/github";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { aaimeraud } from "@/lib/data/aaimeraud.data";
 import { cv, type CvEntry } from "@/lib/data/cv.data";
 import { getDictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/config";
 import { RESUME_PDF } from "@/lib/site";
 import { cn } from "@sglara/cn";
-import { FileDown, Globe } from "lucide-react";
+import { FileDown } from "lucide-react";
 
 type CvProps = {
   locale: Locale;
 };
-
-const tag = cn(
-  "rounded-full bg-black/5 px-2.5 py-1 text-sm text-neutral-600 dark:bg-white/5 dark:text-neutral-400",
-);
-
-const iconLink = cn(
-  "flex items-center gap-1 text-sm font-medium text-neutral-600 transition-colors hover:text-blue-600 dark:text-neutral-400 dark:hover:text-blue-300",
-);
 
 /** A job or a degree: title and dates, then the place, then the bullet points. */
 const Entry = ({ entry, locale }: { entry: CvEntry; locale: Locale }) => (
@@ -61,7 +58,8 @@ const Entry = ({ entry, locale }: { entry: CvEntry; locale: Locale }) => (
 );
 
 export default function CvPage({ locale }: CvProps) {
-  const t = getDictionary(locale).cvPage;
+  const dictionary = getDictionary(locale);
+  const t = dictionary.cvPage;
 
   return (
     <main className={styles.main}>
@@ -132,57 +130,31 @@ export default function CvPage({ locale }: CvProps) {
 
       <SubpageSection title={t.sections.projects}>
         {cv.projects.map((project) => {
-          const links = aaimeraud.projects.find((p) => p.slug === project.slug);
+          const homeProject = aaimeraud.projects.find(
+            (p) => p.slug === project.slug,
+          );
+          if (!homeProject) return null;
+
           return (
-            <li
-              key={project.slug}
-              className={cn(styles.item, styles.card, "gap-2 text-base")}
-            >
-              <div className="flex flex-col justify-between gap-x-4 md:flex-row md:items-baseline">
-                <h3 className="font-semibold">{project.name}</h3>
-                {project.date ? (
-                  <span className={cn(styles.meta, "shrink-0 text-sm")}>
-                    {project.date[locale]}
-                  </span>
-                ) : null}
-              </div>
-              <p className={cn(styles.note, "text-base")}>
-                {project.description[locale]}
-              </p>
-              <div className="flex flex-wrap items-center justify-between gap-2">
-                <ul className="flex flex-wrap gap-2">
-                  {project.tags.map((name) => (
-                    <li key={name} className={tag}>
-                      {name}
-                    </li>
-                  ))}
-                </ul>
-                <div className="flex gap-3">
-                  {links?.website ? (
-                    <a
-                      href={links.website.url}
-                      className={iconLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Globe className="size-3.5" aria-hidden />
-                      {t.viewSite}
-                    </a>
-                  ) : null}
-                  {links?.repo ? (
-                    <a
-                      href={links.repo.url}
-                      className={iconLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Github className="size-3.5" />
-                      {t.viewRepo}
-                    </a>
-                  ) : null}
-                </div>
-              </div>
-            </li>
+            <Tooltip key={project.slug}>
+              <TooltipTrigger
+                render={
+                  <ProjectCard
+                    project={homeProject}
+                    locale={locale}
+                    description={project.description[locale]}
+                    year={project.date?.[locale]}
+                  />
+                }
+              />
+              <TooltipContent
+                className="text-center"
+                side="top"
+                sideOffset={10}
+              >
+                {dictionary.projects.items[project.slug].tooltip}
+              </TooltipContent>
+            </Tooltip>
           );
         })}
       </SubpageSection>

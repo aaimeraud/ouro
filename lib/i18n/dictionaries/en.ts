@@ -142,8 +142,6 @@ export const en = {
     },
     back: "Back home",
     download: "PDF",
-    viewSite: "Site",
-    viewRepo: "Repo",
     sections: {
       profile: "Profile",
       skills: "Technical skills",

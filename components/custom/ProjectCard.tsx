@@ -58,16 +58,22 @@ const styles = {
 type ProjectCardProps = {
   project: Project;
   locale: Locale;
+  /** Overrides the short homepage description, e.g. with the CV's longer one */
+  description?: string;
+  /** Overrides the year, e.g. with a more precise date */
+  year?: string;
 } & ComponentProps<"li">;
 
 const ProjectCard = ({
   project,
   locale,
+  description: descriptionOverride,
+  year,
   className,
   ...props
 }: ProjectCardProps) => {
   const t = getDictionary(locale).projects;
-  const description = t.items[project.slug].description;
+  const description = descriptionOverride ?? t.items[project.slug].description;
 
   const links: {
     href: string;
@@ -111,7 +117,9 @@ const ProjectCard = ({
             className={cn("bg-neutral-200 md:hidden dark:bg-neutral-700")}
           />
           <div className={cn(styles.projectInfo.div, "h-full align-bottom")}>
-            <span className={cn(styles.projectInfo.year)}>{project.year}</span>
+            <span className={cn(styles.projectInfo.year)}>
+              {year ?? project.year}
+            </span>
             <span
               className={cn(
                 styles.projectInfo.year,

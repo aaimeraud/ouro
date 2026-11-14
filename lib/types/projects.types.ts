@@ -23,7 +23,7 @@ export enum projectTags {
 }
 
 /** Matches the keys of `projects.items` in the i18n dictionaries */
-export type ProjectSlug = "yank" | "spacejo" | "ouro" | "aimerss" | "aarshi";
+export type ProjectSlug = "spacejo" | "ouro" | "aimerss" | "aarshi";
 
 export interface Project {
   slug: ProjectSlug;

@@ -93,14 +93,6 @@ export const now: Now = {
 
   projects: [
     {
-      name: "yank",
-      slug: "yank",
-      note: {
-        en: "Building a desktop front-end for yt-dlp to download whole YouTube playlists.",
-        fr: "Je construis une interface desktop pour yt-dlp afin de télécharger des playlists YouTube entières.",
-      },
-    },
-    {
       name: "spacejo",
       slug: "spacejo",
       note: {

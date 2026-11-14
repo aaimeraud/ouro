@@ -203,14 +203,6 @@ export const cv: Cv = {
 
   projects: [
     {
-      slug: "yank",
-      date: { en: "November 2026", fr: "Novembre 2026" },
-      description: {
-        en: "Desktop app built around yt-dlp: browse, watch and download YouTube videos or entire playlists. Made with Tauri, Rust and React, following an agentic coding approach.",
-        fr: "Application desktop autour de yt-dlp : parcourir, regarder et télécharger des vidéos YouTube ou des playlists entières. Réalisée avec Tauri, Rust et React, en agentic coding.",
-      },
-    },
-    {
       slug: "spacejo",
       date: { en: "November 2026", fr: "Novembre 2026" },
       description: {

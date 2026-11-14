@@ -54,12 +54,6 @@
 
 ## Projets
 
-### [yank](https://github.com/aaimeraud/Yank)
-
-Application desktop autour de yt-dlp : parcourir, regarder et télécharger des vidéos YouTube ou des playlists entières. Réalisée avec Tauri, Rust et React, en agentic coding.
-
-*React · Rust · Tauri · Open source*
-
 ### [spacejo](https://spacejo.aaimeraud.me)
 
 Jeu de cartes en ligne inspiré du Skyjo, fait pour jouer entre amis. Application web complète (base de données, front-end) réalisée en agentic coding dans le cadre de l'école. ([GitHub](https://github.com/aaimeraud/spacejo))

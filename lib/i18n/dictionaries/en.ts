@@ -85,12 +85,6 @@ export const en = {
       [projectTags.rust]: "Rust",
     },
     items: {
-      yank: {
-        description:
-          "A yt-dlp frontend and youtube client to download and watch videos or entire playlists",
-        tooltip:
-          "I was looking for a way to download 15 videos of a course in one go so I paved my own",
-      },
       spacejo: {
         description: "A Skyjo clone for my friends and I",
         tooltip:

@@ -1,7 +1,7 @@
 ---
 name: Daniel Fortuné
 handle: aaimeraud
-last_updated: 2026-11-05
+last_updated: 2026-11-15
 location: Paris, France
 education: "Bachelor 3 (Bac+3), .decode"
 looking_for: "Apprenticeship (alternance) in software development, Paris, France"
@@ -18,7 +18,7 @@ databases:
   - PostgreSQL
 currently_learning:
   - Python
-  - Rust
+  - Rust (including Tauri for desktop apps)
 want_to_learn:
   - Go
   - App development
@@ -36,16 +36,16 @@ tools:
   - Linux (command line, file ownership, user groups)
   - Supabase
   - PayloadCMS
-  - Tauri
 ai_workflows:
   - Agentic coding
+  - Claude Code
   - OpenCode
   - T3 Code
   - "Agent Skills (Matt Pocock, Pstack)"
 ai_workflows_context: "Learned in agentic AI courses at school"
 experience:
   - 2 internships
-  - 1 apprenticeship (current, full-stack developer, Paris)
+  - 1 apprenticeship (full-stack developer, Paris, ended November 2026)
 links:
   github: https://github.com/aaimeraud
   linkedin: https://www.linkedin.com/in/danielfortun%C3%A9/
@@ -58,7 +58,7 @@ links:
 **Constantly growing.**
 I build websites, I'm learning to build software, and I try to get better at it every day.
 
-I'm currently a full-stack web developer apprentice at a communication agency in Paris. I work primarily with WordPress and Next.js there.
+I was a full-stack web developer apprentice at a communication agency in Paris, where I mainly worked with WordPress and Next.js. I'm now looking for a new apprenticeship.
 
 I'm a third-year Bachelor's student (Bac+3) at [.decode](https://ecole-decode.fr). I'm currently learning Python and Rust by building real projects: [aarshi](https://github.com/aaimeraud/aarshi), a CLI that scaffolds multilingual Next.js sites.
 
@@ -89,11 +89,11 @@ I haven't published many projects yet, but I'm actively building more, and not o
 
 During my apprenticeship and internships, I experienced firsthand how painful it is to work with undocumented code and custom internal frameworks. That's why I'm a strong advocate for clean, well-commented code and for well-organized, well-documented workflows.
 
-I can read technical documentation, document my code, and debug. I care about clear Git commits and pull requests, and I know how to use the GitHub flow properly. I don't use LLMs on a daily basis; I work with them mainly through my agentic AI courses at school. I'm still learning, and it's important to me to understand the concepts and fundamentals first.
+I can read technical documentation, document my code, and debug. I care about clear Git commits and pull requests, and I know how to use the GitHub flow properly. I only recently started using LLMs more, mainly through my agentic AI courses at school, and I try to keep that use limited. I also learn with AI through [Learn Harness](https://github.com/amosblomqvist/learnharness/), an open-source AI app that teaches step by step, starting from what you already understand. I want to keep writing code by hand so I keep learning. What matters most to me is really learning to code, build and program properly, and understanding what I read before I rely on anything else.
 
 ## Skills and education
 
-I've mostly worked with TypeScript and React. I know object-oriented programming (OOP). I've taken courses in C++, Java, PHP, TypeScript/JavaScript, design patterns, and accessibility (including RGAA compliance, the French web accessibility framework). I'm currently learning Python and Rust, and I'd like to learn Go later on.
+I've mostly worked with TypeScript and React. I know object-oriented programming (OOP). I've taken courses in C++, Java, PHP, TypeScript/JavaScript, design patterns, and accessibility (including RGAA compliance, the French web accessibility framework). I'm also learning Shopify (Liquid) at school, though I haven't built anything with it on my own yet. I'm currently learning Python and Rust, and I'd like to learn Go later on.
 
 I speak English and French fluently.
 

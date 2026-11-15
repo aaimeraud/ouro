@@ -5,11 +5,11 @@ export const dynamic = "force-static";
 export function GET() {
   const body = `# Daniel Fortuné
 
-> Bachelor 3 student and full-stack apprentice based in Paris, aiming for backend / software engineering. Looking for a work-study position (alternance) in Paris, as a backend or frontend developer.
+> Bachelor 3 student and former full-stack apprentice based in Paris, aiming for backend / software engineering. Looking for an apprenticeship (alternance) in Paris and Île-de-France, as a backend or frontend developer.
 
 I mostly work with TypeScript, React and Next.js, and I am learning Rust by building real projects: aarshi, a CLI that scaffolds multilingual Next.js sites. I speak French and English fluently.
 
-Skills: TypeScript, React, Next.js, TailwindCSS, PostgreSQL, Supabase, Git/GitHub, Bash/Linux. CMS: WordPress, Shopify (Liquid), PayloadCMS. Design: Figma, Penpot, Affinity, Illustrator.
+Skills: TypeScript, React, Next.js, TailwindCSS, PostgreSQL, Supabase, Git/GitHub, Bash/Linux. CMS: WordPress, PayloadCMS. Design: Figma, Penpot, Affinity, Illustrator.
 
 ## About
 - [Home (Markdown)](${SITE_URL}/home.txt): presentation, skills and what I am looking for

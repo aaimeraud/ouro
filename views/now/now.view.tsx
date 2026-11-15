@@ -49,7 +49,7 @@ export default function NowPage({ locale }: NowProps) {
         {now.work.map((job) => (
           <li key={job.role.en} className={styles.item}>
             <p>
-              <span className="font-semibold">{job.role[locale]}</span> {t.at}{" "}
+              <span className="font-semibold">{job.role[locale]}</span>{" "}
               <MaybeLink url={job.url}>{job.place[locale]}</MaybeLink>
               {job.since ? (
                 <span className={styles.note}>

@@ -39,29 +39,29 @@ type Now = {
 };
 
 export const now: Now = {
-  lastUpdated: "2026-11-05",
+  lastUpdated: "2026-11-14",
   location: { en: "Paris, France", fr: "Paris, France" },
 
   work: [
     {
       role: {
-        en: "Full-stack web developer apprentice",
-        fr: "Alternant développeur web full-stack",
+        en: "Looking for an apprenticeship",
+        fr: "Recherche d'une alternance",
       },
       place: {
-        en: "a Parisian communication agency",
-        fr: "une agence de communication parisienne",
+        en: "in Paris and Île-de-France, as a full-stack developer (backend / frontend)",
+        fr: "à Paris et en Île-de-France, en développement full-stack (backend / frontend)",
       },
       note: {
-        en: "Mostly WordPress and Next.js.",
-        fr: "Surtout du WordPress et du Next.js.",
+        en: "Three weeks at a company, one week at school.",
+        fr: "Trois semaines en entreprise, une semaine en cours.",
       },
     },
     // {
     //   role: {}
     // },
     {
-      role: { en: "Bachelor 3 student", fr: "Étudiant en Bachelor 3" },
+      role: { en: "Bachelor 3 student at", fr: "Étudiant en Bachelor 3 à" },
       place: { en: ".decode", fr: ".decode" },
       url: "https://ecole-decode.fr",
     },

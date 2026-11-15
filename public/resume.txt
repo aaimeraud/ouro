@@ -6,7 +6,7 @@
 
 ## Profil
 
-Étudiant en 3e année de Bachelor Développement Web à .decode (Paris) et développeur full-stack en alternance. Je recherche une alternance en développement logiciel, avec un fort intérêt pour la qualité du code et les concepts bas niveau. J'apprends Rust en parallèle de ma stack web (React, Next.js, PostgreSQL). À l'aise en français et en anglais (courant).
+Étudiant en 3e année de Bachelor Développement Web à .decode (Paris), ancien alternant développeur full-stack. Je recherche une alternance en développement logiciel, avec un fort intérêt pour la qualité du code et les concepts bas niveau. J'apprends Rust en parallèle de ma stack web (React, Next.js, PostgreSQL). À l'aise en français et en anglais (courant).
 
 ## Compétences techniques
 
@@ -21,7 +21,7 @@
 
 ### Développeur Full-Stack (alternance)
 
-**ComKani**, Paris, France · Avril 2026 – Octobre 2026
+**ComKani**, Paris, France · Avril 2026 – Novembre 2026
 
 - Travail au sein d'une agence de communication sur des projets clients variés
 - Développement de sites et landing pages avec WordPress et Next.js

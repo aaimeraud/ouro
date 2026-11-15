@@ -1,13 +1,5 @@
-import { CopyPromptMenuItem } from "@/components/custom/CopyPromptMenuItem";
-import { ClaudeAI } from "@/components/icons/anthropic";
 import { OpenAI } from "@/components/icons/openai";
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import {
   Tooltip,
   TooltipContent,
@@ -16,75 +8,42 @@ import {
 import { getDictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/config";
 import { cn } from "cn";
-import { Bot } from "lucide-react";
 import { actionButtonStyles } from "./styles";
 
 // The prompt is sent to external AI tools and are not translated with the UI.
 const aiQuery =
   "Read this https://www.aaimeraud.me/home.txt, and tell me why I should hire Daniel Fortuné as a junior dev for an apprenticeship ? Answer in French";
 
-/** "Ask an LLM about me" menu: opens Claude or ChatGPT with a prefilled prompt, or copies it. */
+/** "Ask ChatGPT about me" button: opens ChatGPT in a new tab with a prefilled prompt. */
 export function AskAiMenu({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
 
   return (
-    <DropdownMenu>
-      <Tooltip>
-        <TooltipTrigger
-          render={
-            <DropdownMenuTrigger
-              render={
-                <Button className={cn(actionButtonStyles)} size={"default"}>
-                  <Bot />
-                  <span className="md:hidden">{t.ai.askShort}</span>
-                  <span className="hidden md:inline">{t.ai.askButton}</span>
-                </Button>
-              }
-            />
-          }
-        />
-        <TooltipContent className={"text-center"}>
-          {t.ai.askTooltipTitle}
-          <br /> {t.ai.askTooltipBody}
-        </TooltipContent>
-      </Tooltip>
-      <DropdownMenuContent
-        className={
-          "w-full border border-neutral-600 bg-neutral-800 text-neutral-200"
+    <Tooltip>
+      <TooltipTrigger
+        render={
+          <Button
+            nativeButton={false}
+            render={
+              <a
+                href={`https://chatgpt.com/?q=${encodeURIComponent(aiQuery)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              />
+            }
+            className={cn(actionButtonStyles)}
+            size={"default"}
+          >
+            <OpenAI />
+            <span className="md:hidden">{t.ai.askShort}</span>
+            <span className="hidden md:inline">{t.ai.askButton}</span>
+          </Button>
         }
-      >
-        <DropdownMenuItem
-          className={cn(
-            "flex w-full items-center justify-between align-middle",
-          )}
-        >
-          <a
-            href={`https://claude.ai/new?q=${encodeURIComponent(aiQuery)}`}
-            className="flex w-full items-center justify-between gap-1.5"
-          >
-            <ClaudeAI className="text-neutral-200 group-focus/dropdown-menu-item:text-[#D97757]" />
-            <span>{t.ai.askClaude}</span>
-          </a>
-        </DropdownMenuItem>
-        <DropdownMenuItem
-          className={cn(
-            "flex w-full items-center justify-between align-middle",
-          )}
-        >
-          <a
-            href={`https://chatgpt.com/?q=${encodeURIComponent(aiQuery)}`}
-            className="flex w-full items-center justify-between gap-1.5"
-          >
-            <OpenAI className="text-neutral-200 group-focus/dropdown-menu-item:text-black" />
-            <span>{t.ai.askChatGpt}</span>
-          </a>
-        </DropdownMenuItem>
-        <CopyPromptMenuItem
-          prompt={aiQuery}
-          copyLabel={t.ai.copyPrompt}
-          copiedLabel={t.ai.copiedPrompt}
-        />
-      </DropdownMenuContent>
-    </DropdownMenu>
+      />
+      <TooltipContent className={"text-center"}>
+        {t.ai.askTooltipTitle}
+        <br /> {t.ai.askTooltipBody}
+      </TooltipContent>
+    </Tooltip>
   );
 }

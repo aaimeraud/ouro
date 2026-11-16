@@ -39,7 +39,7 @@ type Now = {
 };
 
 export const now: Now = {
-  lastUpdated: "2026-11-14",
+  lastUpdated: "2026-11-16",
   location: { en: "Paris, France", fr: "Paris, France" },
 
   work: [
@@ -68,6 +68,13 @@ export const now: Now = {
   ],
 
   learning: [
+    {
+      topic: "CS50",
+      note: {
+        en: "Following Harvard's introduction to computer science.",
+        fr: "Je suis le cours d'introduction à l'informatique de Harvard.",
+      },
+    },
     {
       topic: "Rust",
       note: {

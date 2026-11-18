@@ -6,34 +6,35 @@
 
 ## Profil
 
-Étudiant en 3e année de Bachelor Développement Web à .decode (Paris), ancien alternant développeur full-stack. Je recherche une alternance en développement logiciel, avec un fort intérêt pour la qualité du code et les concepts bas niveau. J'apprends Rust en parallèle de ma stack web (React, Next.js, PostgreSQL). À l'aise en français et en anglais (courant).
+Étudiant en 3e année de Bachelor Développement Web à .decode (Paris), déjà passé par une alternance full-stack. Je recherche une alternance full-stack (backend/frontend) à Paris ou en Île-de-France, rythme 3 semaines en entreprise / 1 semaine à l'école, disponible immédiatement. À l'aise pour prototyper vite en pilotant des agents IA, je consolide mes fondamentaux en codant moi-même : Rust, CS50 (Harvard), SQL. Français et anglais courants.
 
 ## Compétences techniques
 
-- **Langages :** TypeScript, JavaScript, Python (apprentissage), PHP, Rust (apprentissage), C++, Java, HTML, CSS
+- **Langages :** TypeScript, JavaScript, HTML, CSS | notions : PHP, Java, C++ | en apprentissage : Rust, Python, SQL
 - **Frameworks :** React, Next.js, TailwindCSS
 - **Bases de données :** PostgreSQL, Supabase
 - **Outils :** Git, GitHub, Docker, Bash/Linux, Figma, Penpot
 - **CMS :** WordPress, PayloadCMS
-- **Parcours IA :** Agentic coding (Claude Code, OpenCode, T3 Code), workflows d'automatisation (n8n)
+- **IA :** Développement agentique (Claude Code, OpenCode, T3 Code), workflows d'automatisation (n8n)
 
 ## Expérience
 
-### Développeur Full-Stack (alternance)
+### Développeur Full-Stack (stage puis alternance)
 
-**ComKani**, Paris, France · Avril 2026 – Novembre 2026
+**ComKani**, Paris, France · Avril 2026 – Novembre 2026 (stage : avr.–juil. 2026 | alternance : août–nov. 2026)
 
-- Travail au sein d'une agence de communication sur des projets clients variés
-- Développement de sites et landing pages avec WordPress et Next.js
-- Gestion de bases de données PostgreSQL via Supabase pour un MVP SaaS
-- Participation aux phases de préparation : veille concurrentielle, moodboards
+- Refonte d'un site WordPress pour un cabinet d'architecture : montée de version PHP et reproduction à l'identique
+- Création du site d'une société de taxi avec Next.js et PayloadCMS
+- Démarrage d'un site WordPress B2B de commande et de demande de devis
+- MVP d'un SaaS : authentification et modélisation de la base PostgreSQL avec Supabase
+- Maintenance de sites WordPress/PHP : sauvegardes, corrections CSS et d'affichage
+- Préparation des projets : veille concurrentielle, moodboards
 
-### Assistant Support Informatique (stage)
+### Assistant Support Informatique (stage d'observation)
 
-**Chloé**, Paris, France
+**Chloé**, Paris, France · Mars 2022
 
-- Gestion des droits d'accès et traitement des tickets via Microsoft Teams
-- Inventaire et suivi du parc informatique
+- Gestion des droits d'accès, traitement des tickets via Microsoft Teams, inventaire du parc informatique
 
 ## Formation
 
@@ -41,12 +42,9 @@
 
 **.decode**, Paris 75008, France · 2025 – 2027
 
-- Algorithmie et structures de données (Java)
-- Back-end : programmation orientée objet (PHP avancé)
-- Modélisation relationnelle et optimisation SQL (PostgreSQL)
-- Conteneurisation (Docker), Git et bonnes pratiques de collaboration
-- Gestion de projet : audit de projet, rédaction de cahier des charges et appels d'offre
-- Accessibilité web (RGAA) et workflows d'IA agentic (OpenCode, T3 Code)
+- Algorithmie et structures de données (Java), programmation orientée objet (PHP avancé)
+- Modélisation relationnelle et optimisation SQL (PostgreSQL), Docker, Git et travail collaboratif
+- Gestion de projet (audit, cahier des charges, appels d'offres), accessibilité web (RGAA), IA agentique
 
 ### Baccalauréat STMG
 
@@ -54,20 +52,26 @@
 
 ## Projets
 
-### [spacejo](https://spacejo.aaimeraud.me)
+### [spacejo](https://spacejo.aaimeraud.me) · Novembre 2026
 
-Jeu de cartes en ligne inspiré du Skyjo, fait pour jouer entre amis. Application web complète (base de données, front-end) réalisée en agentic coding dans le cadre de l'école. ([GitHub](https://github.com/aaimeraud/spacejo))
+Jeu de cartes multijoueur en ligne inspiré de Skyjo. Prototype rapide en développement agentique : j'ai défini l'architecture (API Rust, temps réel, base de données, front React) et dirigé les agents jusqu'à un jeu fonctionnel. ([GitHub](https://github.com/aaimeraud/spacejo))
 
-*React · Rust · Open source*
+*Rust · React · Open source*
 
-### [aarshi](https://aarshi.aaimeraud.me)
+### [aarshi](https://aarshi.aaimeraud.me) · Octobre 2026
 
-CLI en Rust qui génère un site Next.js multilingue (i18n) en une commande : arbre de routes, dictionnaires typés, sitemap et sélecteur de langue générés automatiquement. Approche agentic coding. ([GitHub](https://github.com/aaimeraud/aarshi))
+CLI en Rust qui génère un site Next.js multilingue (i18n) en une commande : arbre de routes, dictionnaires typés, sitemap et sélecteur de langue. Conçu et piloté en développement agentique. ([GitHub](https://github.com/aaimeraud/aarshi))
 
 *Rust · Open source*
 
-### [ouro(boros)](https://www.aaimeraud.me)
+### [ouro(boros)](https://www.aaimeraud.me) · Octobre 2026
 
 Site personnel, refait de zéro avec Next.js et React, avec une attention particulière au design UI/UX. ([GitHub](https://github.com/aaimeraud/ouro))
 
 *Next.js · React*
+
+### [AimeRSS](https://feed.fortunedaniel.com) · Juin 2025
+
+Agrégateur de flux RSS (routes dynamiques, parsing RSS), responsive, déployé sur Vercel. ([GitHub](https://github.com/aaimeraud/feed.com))
+
+*Next.js · TailwindCSS*

@@ -1,12 +1,8 @@
 import { TooltipProvider } from "@/components/ui/tooltip";
 import type { Locale } from "@/lib/i18n/config";
-import { Geist, Geist_Mono, M_PLUS_Rounded_1c } from "next/font/google";
+import "allo-font";
+import { Geist_Mono, M_PLUS_Rounded_1c } from "next/font/google";
 import type { ReactNode } from "react";
-
-const geist = Geist({
-  variable: "--font-geist",
-  subsets: ["latin"],
-});
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -33,7 +29,7 @@ export default function RootDocument({ lang, children }: RootDocumentProps) {
   return (
     <html
       lang={lang}
-      className={`${geist.variable} ${geistMono.variable} ${arrow.variable} antialiased`}
+      className={`${geistMono.variable} ${arrow.variable} antialiased`}
     >
       <body className="bg-neutral-50 dark:bg-neutral-900">
         <TooltipProvider>{children}</TooltipProvider>

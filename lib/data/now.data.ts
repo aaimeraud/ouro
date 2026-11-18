@@ -39,7 +39,7 @@ type Now = {
 };
 
 export const now: Now = {
-  lastUpdated: "2026-11-16",
+  lastUpdated: "2026-11-18",
   location: { en: "Paris, France", fr: "Paris, France" },
 
   work: [
@@ -87,6 +87,13 @@ export const now: Now = {
       note: {
         en: "Slowly but surely.",
         fr: "Doucement mais sûrement.",
+      },
+    },
+    {
+      topic: "SQL",
+      note: {
+        en: "Relational databases and query optimization.",
+        fr: "Bases de données relationnelles et optimisation des requêtes.",
       },
     },
     {

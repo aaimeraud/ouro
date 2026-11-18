@@ -21,7 +21,7 @@ Skills: TypeScript, React, Next.js, TailwindCSS, PostgreSQL, Supabase, Git/GitHu
 - [SpaceJo](https://spacejo.aaimeraud.me): online Skyjo clone made for friends, a full web app built with React and Rust
 - [Aarshi](https://aarshi.aaimeraud.me): Rust CLI that scaffolds a multilingual Next.js App Router site, then adds pages, languages and sections without copying files by hand
 - [ouro](https://github.com/aaimeraud/ouro): source code of this site (Next.js, App Router, i18n)
-- [AimeRSS](https://feed.fortunedaniel.com): a curated selection of RSS feeds I like, built with Next.js and React
+- [AimeRSS](https://feed.fortunedaniel.com): a curated selection of RSS feeds I like, built with Next.js and TailwindCSS
 
 ## Links
 - [GitHub](https://github.com/aaimeraud)

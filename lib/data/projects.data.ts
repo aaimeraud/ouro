@@ -61,7 +61,7 @@ export const projects: Project[] = [
   }),
   createProject({
     slug: "aimerss",
-    name: "aimerss",
+    name: "AimeRSS",
     type: type.website,
     tags: [tag.next, tag.react],
     website: createLink({

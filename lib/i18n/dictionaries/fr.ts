@@ -6,7 +6,7 @@ export const fr: Dictionary = {
   meta: {
     title: "aaimeraud",
     description:
-      "Daniel Fortuné (aaimeraud), alternant développeur full-stack à Paris. Je crée des sites avec Next.js, React et WordPress, et j'apprends chaque jour.",
+      "Daniel Fortuné (aaimeraud), développeur full-stack junior à Paris, en recherche d'une alternance. Je crée des sites avec Next.js, React et WordPress, et j'apprends chaque jour.",
   },
   language: {
     label: "Changer de langue",
@@ -18,18 +18,18 @@ export const fr: Dictionary = {
     portraitTooltip: "Ne te laisse pas trop distraire",
     nameTooltip: "Mais tu peux m'appeler",
     description: "En recherche d'une alternance en développement logiciel",
-    jobTitle: "Alternant développeur full-stack",
+    jobTitle: "Développeur full-stack junior",
   },
   about: {
     highlight: "En constante évolution.",
     sectionTitle: "À propos",
     intro:
       "Je fais des sites web. J'apprends à créer des logiciels utiles et qui ont du sens, et j'essaie de m'améliorer chaque jour.",
-    currently: "Je suis actuellement",
-    role: "alternant développeur web full-stack à Paris,",
-    jobTooltip: "chez",
+    currently: "Je suis",
+    role: "développeur full-stack junior à Paris,",
+    jobTooltip: "ancien alternant chez",
     company: "une agence de communication parisienne",
-    stack: "je travaille surtout avec WordPress et Next.js.",
+    stack: "je travaille surtout avec WordPress et Next.js, et je recherche une alternance.",
     learning: "J'apprends aussi Python.",
     nowBefore: "Curieux de savoir ce que je fais en ce moment ? Va voir ma",
     nowLink: "page /now",

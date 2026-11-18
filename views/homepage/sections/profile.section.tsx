@@ -49,7 +49,7 @@ const Profile = ({ profilePicture = false, locale }: ProfileProps) => {
           <Tooltip>
             <TooltipTrigger
               render={
-                <h1 className="w-fit text-xl font-bold tracking-tight text-neutral-800 before:text-neutral-300 before:content-['#_'] lg:text-3xl dark:text-neutral-200 dark:before:text-neutral-600">
+                <h1 className="w-fit text-xl font-bold tracking-tight text-neutral-800 lg:text-3xl dark:text-neutral-200">
                   {aaimeraud.profile.username}
                 </h1>
               }
@@ -64,7 +64,7 @@ const Profile = ({ profilePicture = false, locale }: ProfileProps) => {
             </TooltipContent>
           </Tooltip>
           <span className="text-sm tracking-tight text-neutral-600 dark:text-neutral-400">
-            &gt; {t.description}
+            {t.description}
           </span>
         </div>
       </div>

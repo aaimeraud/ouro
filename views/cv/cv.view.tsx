@@ -76,7 +76,7 @@ export default function CvPage({ locale }: CvProps) {
       <header className="flex flex-col text-neutral-800 dark:text-neutral-50">
         <h1 className={styles.h1}>{cv.name}</h1>
         <span className={cn(styles.subtitle, "text-base")}>
-          &gt; {cv.headline[locale]} · {cv.location[locale]}
+          {cv.headline[locale]} · {cv.location[locale]}
         </span>
         <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-base">
           <li>

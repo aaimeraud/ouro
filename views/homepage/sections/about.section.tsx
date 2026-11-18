@@ -35,8 +35,6 @@ const About = ({ locale }: AboutProps) => {
           <span
             className={cn(
               "font-bold",
-              "before:text-neutral-300 before:content-['**_'] dark:before:text-neutral-600",
-              "after:text-neutral-300 after:content-['_**'] dark:after:text-neutral-600",
             )}
           >
             {t.about.highlight}

@@ -5,18 +5,16 @@ import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-/** Building blocks shared by the sub-pages (/now, /cv), in the homepage's markdown look. */
+/** Building blocks shared by the sub-pages (/now, /cv). */
 export const subpageStyles = {
   main: cn(
     "m-auto flex max-w-lg flex-col gap-8 p-5 transition-all duration-150 selection:bg-blue-600 selection:text-blue-50 md:max-w-3xl lg:max-w-4xl xl:max-w-6xl",
   ),
   h1: cn(
     "w-fit text-xl font-bold tracking-tight text-neutral-800 lg:text-3xl dark:text-neutral-200",
-    "before:text-neutral-300 before:content-['#_'] dark:before:text-neutral-600",
   ),
   h2: cn(
     "text-md w-fit font-bold text-neutral-950 lg:text-xl dark:text-neutral-50",
-    "before:text-neutral-300 before:content-['##_'] dark:before:text-neutral-600",
   ),
   subtitle: cn("text-sm tracking-tight text-neutral-600 dark:text-neutral-400"),
   meta: cn("font-mono text-xs text-neutral-400 dark:text-neutral-600"),
@@ -65,7 +63,7 @@ export const SubpageNav = ({
   </nav>
 );
 
-/** A `## title` section; `list` wraps the children in a <ul>. */
+/** A section with a title; `list` wraps the children in a <ul>. */
 export const SubpageSection = ({
   title,
   list = true,

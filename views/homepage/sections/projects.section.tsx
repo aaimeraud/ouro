@@ -25,7 +25,6 @@ const Projects = ({ locale }: ProjectsProps) => {
             <h2
               className={cn(
                 "text-md w-fit font-bold text-neutral-950 lg:text-xl dark:text-neutral-50",
-                "before:text-neutral-300 before:content-['##_'] dark:before:text-neutral-600",
               )}
             >
               {t.title}

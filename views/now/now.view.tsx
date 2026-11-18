@@ -34,7 +34,7 @@ export default function NowPage({ locale }: NowProps) {
 
       <header className="flex flex-col text-neutral-800 dark:text-neutral-50">
         <h1 className={styles.h1}>{t.title}</h1>
-        <span className={styles.subtitle}>&gt; {t.subtitle}</span>
+        <span className={styles.subtitle}>{t.subtitle}</span>
         <p className={cn(styles.meta, "mt-3")}>
           {t.lastUpdated}{" "}
           <time dateTime={now.lastUpdated}>
@@ -74,8 +74,6 @@ export default function NowPage({ locale }: NowProps) {
             <span
               className={cn(
                 "font-bold",
-                "before:text-neutral-300 before:content-['**'] dark:before:text-neutral-600",
-                "after:text-neutral-300 after:content-['**'] dark:after:text-neutral-600",
               )}
             >
               {item.topic}

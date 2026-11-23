@@ -196,6 +196,14 @@ export const cv: Cv = {
 
   projects: [
     {
+      slug: "skills",
+      date: { en: "November 2026", fr: "Novembre 2026" },
+      description: {
+        en: "Collection of skills for AI agents, one plugin per use case: homework (8 skills that guide a student without giving the answer) and linear (planning discussion into a Linear project). Releases automated (release-please). In progress.",
+        fr: "Collection de skills pour agents IA, un plugin par cas d'usage : homework (8 skills qui guident un élève sans donner la réponse) et linear (discussion de planification en projet Linear). Releases automatisées (release-please). En cours.",
+      },
+    },
+    {
       slug: "spacejo",
       date: { en: "November 2026", fr: "Novembre 2026" },
       description: {

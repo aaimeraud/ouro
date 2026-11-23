@@ -22,7 +22,7 @@ export const subpageStyles = {
     "flex flex-col gap-0.5 text-sm text-neutral-800 dark:text-neutral-50",
   ),
   card: cn(
-    "rounded-lg border border-neutral-200 bg-neutral-100 p-4 dark:border-neutral-700 dark:bg-neutral-800",
+    "rounded-lg border border-neutral-200 bg-neutral-100 p-4 dark:border-neutral-700/50 dark:bg-neutral-800",
   ),
   note: cn("text-sm text-neutral-600 dark:text-neutral-400"),
   link: cn(

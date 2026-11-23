@@ -44,7 +44,7 @@ export function LanguageMenu({
       />
       <DropdownMenuContent
         className={
-          "w-full border border-neutral-600 bg-neutral-800 text-neutral-200"
+          "w-full border border-neutral-700 bg-neutral-800 text-neutral-200"
         }
       >
         {locales.map((code) => (

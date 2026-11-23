@@ -66,6 +66,7 @@ export const en = {
       [projectTypes.cli]: "This one's a CLI tool",
       [projectTypes.game]: "This one's a game",
       [projectTypes.app]: "This one's a desktop application",
+      [projectTypes.collection]: "This one's a collection",
     },
     tags: {
       [projectTags.uiUx]: "UI/UX Design",
@@ -79,8 +80,14 @@ export const en = {
       [projectTags.agentic]: "Agentic Coding",
       [projectTags.tauri]: "Tauri",
       [projectTags.rust]: "Rust",
+      [projectTags.githubActions]: "GitHub Actions",
     },
     items: {
+      skills: {
+        description:
+          "A collection of AI agent skills, grouped by theme, each use case an installable plugin",
+        tooltip: "Still a work in progress, I'm adding plugins as I go",
+      },
       spacejo: {
         description: "A Skyjo clone for my friends and I",
         tooltip:

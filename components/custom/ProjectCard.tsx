@@ -51,7 +51,7 @@ const styles = {
     "border-neutral-200 bg-neutral-50 text-neutral-900",
     "hover:border-blue-500 hover:bg-blue-600 hover:text-blue-50",
     "focus-visible:outline-2 focus-visible:outline-blue-600",
-    "dark:border-neutral-700 dark:bg-neutral-900/60 dark:text-neutral-50 dark:hover:border-blue-500 dark:hover:bg-blue-600 dark:hover:text-blue-50",
+    "dark:border-neutral-800 dark:bg-neutral-900/60 dark:text-neutral-50 dark:hover:border-blue-500 dark:hover:bg-blue-600 dark:hover:text-blue-50",
   ),
 };
 
@@ -101,7 +101,7 @@ const ProjectCard = ({
     <li
       className={cn(
         styles.li,
-        "border border-neutral-200 bg-neutral-100 p-4 transition-all duration-300 ease-in-out dark:border-neutral-700 dark:bg-neutral-800",
+        "border border-neutral-200 bg-neutral-100 p-4 transition-all duration-300 ease-in-out dark:border-neutral-700/50 dark:bg-neutral-800",
         className,
       )}
       {...props}
@@ -175,7 +175,7 @@ const ProjectCard = ({
                 <Button
                   variant="outline"
                   size="sm"
-                  className="dark:border-neutral-600 dark:hover:bg-neutral-700"
+                  className="dark:border-neutral-700 dark:hover:bg-neutral-700"
                 />
               }
             >

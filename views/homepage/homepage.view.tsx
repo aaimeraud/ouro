@@ -11,7 +11,7 @@ type HomepageProps = {
 
 export default function Homepage({ locale }: HomepageProps) {
   return (
-    <main className="m-auto flex max-w-lg flex-col gap-5 p-5 transition-all duration-150 selection:bg-blue-600 selection:text-blue-50 md:max-w-3xl lg:max-w-4xl xl:max-w-6xl">
+    <main className="m-auto flex max-w-lg flex-col gap-8 p-5 transition-all duration-150 selection:bg-blue-600 selection:text-blue-50 md:max-w-3xl lg:max-w-4xl xl:max-w-6xl">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

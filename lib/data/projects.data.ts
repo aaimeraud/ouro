@@ -9,6 +9,18 @@ import {
 
 export const projects: Project[] = [
   createProject({
+    slug: "skills",
+    name: "skills",
+    type: type.collection,
+    tags: [tag.openSource, tag.githubActions, tag.wip],
+    repo: createLink({
+      url: "https://github.com/aaimeraud/skills",
+      label: "skills",
+      type: LinkType.external,
+    }),
+    year: "2026",
+  }),
+  createProject({
     slug: "spacejo",
     name: "spacejo",
     type: type.game,

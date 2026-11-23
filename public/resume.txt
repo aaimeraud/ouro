@@ -52,6 +52,10 @@
 
 ## Projets
 
+### [skills](https://github.com/aaimeraud/skills) · Novembre 2026
+
+Collection de skills pour agents IA, un plugin par cas d'usage : homework (8 skills qui guident un élève sans donner la réponse) et linear (discussion de planification en projet Linear). Releases automatisées (release-please). En cours. ([GitHub](https://github.com/aaimeraud/skills))
+
 ### [spacejo](https://spacejo.aaimeraud.me) · Novembre 2026
 
 Jeu de cartes multijoueur en ligne inspiré de Skyjo. Prototype rapide en développement agentique : j'ai défini l'architecture (API Rust, temps réel, base de données, front React) et dirigé les agents jusqu'à un jeu fonctionnel. ([GitHub](https://github.com/aaimeraud/spacejo))

@@ -18,6 +18,7 @@ Skills: TypeScript, React, Next.js, TailwindCSS, PostgreSQL, Supabase, Git/GitHu
 - [Now](${SITE_URL}/now): what I am working on, learning and building at the moment
 
 ## Projects
+- [skills](https://github.com/aaimeraud/skills): work-in-progress collection of AI agent skills (Claude Code and others), one installable plugin per use case, with automated releases
 - [SpaceJo](https://spacejo.aaimeraud.me): online Skyjo clone made for friends, a full web app built with React and Rust
 - [Aarshi](https://aarshi.aaimeraud.me): Rust CLI that scaffolds a multilingual Next.js App Router site, then adds pages, languages and sections without copying files by hand
 - [ouro](https://github.com/aaimeraud/ouro): source code of this site (Next.js, App Router, i18n)

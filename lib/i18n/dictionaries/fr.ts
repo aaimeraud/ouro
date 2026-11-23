@@ -63,6 +63,7 @@ export const fr: Dictionary = {
       [projectTypes.cli]: "Un outil en ligne de commandes",
       [projectTypes.game]: "Un jeu",
       [projectTypes.app]: "Une application",
+      [projectTypes.collection]: "Une collection",
     },
     tags: {
       [projectTags.uiUx]: "Design UI/UX",
@@ -76,8 +77,14 @@ export const fr: Dictionary = {
       [projectTags.agentic]: "Coding Agentique",
       [projectTags.rust]: "Rust",
       [projectTags.tauri]: "Tauri",
+      [projectTags.githubActions]: "GitHub Actions",
     },
     items: {
+      skills: {
+        description:
+          "Une collection de skills pour agents IA, classés par thème, chaque cas d'usage étant un plugin installable",
+        tooltip: "Toujours en cours, j'ajoute des plugins au fur et à mesure",
+      },
       spacejo: {
         description: "Un Skyjo en ligne pour mes amis",
         tooltip:

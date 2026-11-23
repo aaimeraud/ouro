@@ -6,6 +6,7 @@ export enum projectTypes {
   design = "design",
   game = "game",
   app = "application",
+  collection = "collection",
 }
 
 export enum projectTags {
@@ -20,10 +21,11 @@ export enum projectTags {
   contribution = "Contribution",
   wip = "Work in Progress",
   agentic = "Agentic Coding",
+  githubActions = "GitHub Actions",
 }
 
 /** Matches the keys of `projects.items` in the i18n dictionaries */
-export type ProjectSlug = "spacejo" | "ouro" | "aimerss" | "aarshi";
+export type ProjectSlug = "skills" | "spacejo" | "ouro" | "aimerss" | "aarshi";
 
 export interface Project {
   slug: ProjectSlug;

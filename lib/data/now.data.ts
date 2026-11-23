@@ -39,7 +39,7 @@ type Now = {
 };
 
 export const now: Now = {
-  lastUpdated: "2026-11-18",
+  lastUpdated: "2026-11-24",
   location: { en: "Paris, France", fr: "Paris, France" },
 
   work: [
@@ -76,10 +76,10 @@ export const now: Now = {
       },
     },
     {
-      topic: "Rust",
+      topic: "Systems programming",
       note: {
-        en: "To understand programming fundamentals in depth.",
-        fr: "Pour comprendre les fondamentaux de la programmation en profondeur.",
+        en: "Rust and Go, to understand how things work under the hood.",
+        fr: "Rust et Go, pour comprendre comment les choses fonctionnent sous le capot.",
       },
     },
     {
@@ -107,11 +107,18 @@ export const now: Now = {
 
   projects: [
     {
-      name: "spacejo",
-      slug: "spacejo",
+      name: "skills",
+      slug: "skills",
       note: {
-        en: "Polishing the online Skyjo I made for my friends.",
-        fr: "Je peaufine le Skyjo en ligne fait pour mes amis.",
+        en: "Building a collection of AI agent skills, one installable plugin per use case.",
+        fr: "Je construis une collection de skills pour agents IA, un plugin installable par cas d'usage.",
+      },
+    },
+    {
+      name: "rep(g)o",
+      note: {
+        en: "Writing a CLI that creates GitHub repos from a template to learn Go.",
+        fr: "J'écris une CLI qui crée des dépôts GitHub depuis une template pour apprendre le Go.",
       },
     },
     // {
